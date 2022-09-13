@@ -1,0 +1,47 @@
+# Växelströmskretsar
+
+Hello World
+
+## Tidsintervall
+
+Frekvens är en storhet för antalet
+repeterande händelser inom ett givet
+tidsintervall[1]. För att beräkna
+frekvensen fixerar man ett
+tidsintervall, räknar antalet
+förekomster av händelsen och
+dividerar detta antal med längden av
+tidsintervallet. Resultatet anges i
+enheten hertz (Hz) efter den tyske
+fysikern Heinrich Rudolf Hertz, där
+1 Hz är en händelse som inträffar en
+gång per sekund. Alternativt kan man
+mäta tiden mellan två förekomster av
+händelsen ((tids)perioden) och
+därefter beräkna frekvensens
+reciproka värde.
+
+### Frekvens
+
+Formel 
+$$ Frekvens = \frac{1}{Tid} $$
+
+Exemple
+
+$$ Frekvens = \frac{1}{Tid} = \frac{1}{38} \times 10^{3} = 26,3 \ Hz $$
+Frekvens är således 
+$$ F = 26,3 \ Hz $$
+
+### Tid
+
+Formel
+
+$$ Tid = \frac{1}{Frekvens} $$
+
+Exemple
+
+$$ Tid = \frac{1}{Frekvens} = \frac{1}{400} \times 10^{3} = 26,3 \ Hz $$ 
+
+Tid är således
+
+$$ T = 2,5 \ ms $$
