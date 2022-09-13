@@ -3,7 +3,7 @@
     "path": "~/Elektrikernas kokbok/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "2942792837",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1663074738973.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "20,0",
+        "cursorPosition": "20,4",
         "scrollLine": "16"
     },
     "folds": "",
-    "lastKnownWriteTime": 1663075246,
+    "lastKnownWriteTime": 1663075697,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1663075246270,
+    "last_content_update": 1663075697162,
     "read_only": false,
     "read_only_alternatives": []
 }
