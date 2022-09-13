@@ -24,3 +24,4 @@ tidsintervall
 thm:unlabeled-div-1
 frekvens
 tid
+arbetsförmedlingen
