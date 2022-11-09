@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-]{book}
+  landscape]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -33,46 +33,7 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage[margin=5cm]{geometry}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -117,25 +78,8 @@
 
 \title{Elektrikernas kokbok}
 \author{Björn Ögren}
-\date{2022-09-13}
+\date{2022-11-09}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -156,205 +100,798 @@ Hello World
 \hypertarget{vuxe4xelstruxf6mskretsar}{%
 \chapter{Växelströmskretsar}\label{vuxe4xelstruxf6mskretsar}}
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
+Hello World
 
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
+\hypertarget{tidsintervall}{%
+\section{Tidsintervall}\label{tidsintervall}}
 
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+Frekvens är en storhet för antalet
+repeterande händelser inom ett givet
+tidsintervall{[}1{]}. För att beräkna
+frekvensen fixerar man ett
+tidsintervall, räknar antalet
+förekomster av händelsen och
+dividerar detta antal med längden av
+tidsintervallet. Resultatet anges i
+enheten hertz (Hz) efter den tyske
+fysikern Heinrich Rudolf Hertz, där
+1 Hz är en händelse som inträffar en
+gång per sekund. Alternativt kan man
+mäta tiden mellan två förekomster av
+händelsen ((tids)perioden) och
+därefter beräkna frekvensens
+reciproka värde.
 
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
+\hypertarget{frekvens}{%
+\subsection{Frekvens}\label{frekvens}}
 
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
+Formel
+\[ Frekvens = \frac{1}{Tid} \]
 
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
+Exemple
 
-Cross-references make it easier for your readers to find and link to elements in your book.
+\[ Frekvens = \frac{1}{Tid} = \frac{1}{38} \times 10^{3} = 26,3 \ Hz \]
+Frekvens är således
+\[ F = 26,3 \ Hz \]
 
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
+\hypertarget{tid}{%
+\subsection{Tid}\label{tid}}
 
-There are two steps to cross-reference any heading:
+Formel
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
+\[ Tid = \frac{1}{Frekvens} \]
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
-  \end{itemize}
-\item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
+Exemple
 
-  \begin{itemize}
-  \tightlist
-  \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
-  \end{itemize}
-\end{enumerate}
+\[ Tid = \frac{1}{Frekvens} = \frac{1}{400} \times 10^{3} = 26,3 \ Hz \]
 
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
+Tid är således
 
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
+\[ T = 2,5 \ ms \]
 
-See Figure \ref{fig:nice-fig}.
+\hypertarget{toppvuxe4rden}{%
+\section{Toppvärden}\label{toppvuxe4rden}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{toppvuxe4rde-av-spuxe4nning}{%
+\subsection{Toppvärde av spänning}\label{toppvuxe4rde-av-spuxe4nning}}
 
-\begin{figure}
+Formel
 
-{\centering \includegraphics[width=0.8\linewidth]{_main_files/figure-latex/nice-fig-1} 
+\[ \widehat{u} = U_{eff} \times \sqrt{2} \]
 
-}
+Exemple
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+\[ \widehat{u} = U_{eff} \times \sqrt{2} = 415 \times \sqrt{2} \approx 587 \ V \]
 
-Don't miss Table \ref{tab:nice-tab}.
+Toppvärdet är således
+\[ \hat{u} \approx 587 \ V \]
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{toppvuxe4rde-av-struxf6m}{%
+\subsection{Toppvärde av ström}\label{toppvuxe4rde-av-struxf6m}}
 
-\begin{table}
+Formel
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
-\toprule
-temperature & pressure\\
-\midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
-\bottomrule
-\end{tabular}
-\end{table}
+\[ \hat{I} = I_{eff} \times \sqrt{2} \]
 
-\hypertarget{parts}{%
-\chapter{Parts}\label{parts}}
+Exemple
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+\[ \hat{I} = I_{eff} \times \sqrt{2} = 20 \times \sqrt{2} \approx 28,3 \ A \]
 
-Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+Toppvärdet är således
+\[ \hat{I} \approx 28,3 \ A \]
 
-Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\hypertarget{topp-till-toppvuxe4rde-av-spuxe4nning}{%
+\subsection{Topp till toppvärde av spänning}\label{topp-till-toppvuxe4rde-av-spuxe4nning}}
 
-Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
+Formel
 
-\hypertarget{footnotes-and-citations}{%
-\chapter{Footnotes and citations}\label{footnotes-and-citations}}
+\[ \widehat{\breve{u}} = \hat{u} \times 2 \]
 
-\hypertarget{footnotes}{%
-\section{Footnotes}\label{footnotes}}
+Exemple
 
-Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
+\[ \widehat{\breve{u}} = \hat{u} \times 2 = 587 \times 2 = 1174 \ V \]
 
-\hypertarget{citations}{%
-\section{Citations}\label{citations}}
+Topp till toppvärd är således
+\[ \widehat{\breve{u}} = 1174 \ V \]
 
-Reference items in your bibliography file(s) using \texttt{@key}.
+\hypertarget{topp-till-toppvuxe4rde-av-struxf6m}{%
+\subsection{Topp till toppvärde av ström}\label{topp-till-toppvuxe4rde-av-struxf6m}}
 
-For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
-Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
+\[ \hat{\breve{I}} = \hat{I} \times 2 \]
 
-The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
+Exemple
 
-\hypertarget{blocks}{%
-\chapter{Blocks}\label{blocks}}
+\[ \hat{\breve{I}} = \hat{I} \times 2 \approx 28,3 \times 2 = 56 \ A \]
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+Topp till toppvärd är således
+\[ \hat{\breve{I}} \approx 56 \ A \]
 
-Here is an equation.
+\hypertarget{yd-koppling}{%
+\section{Y/D-Koppling}\label{yd-koppling}}
 
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
+\hypertarget{y-koppling}{%
+\subsection{Y-Koppling}\label{y-koppling}}
 
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+\hypertarget{linjespuxe4nning}{%
+\subsubsection{Linjespänning}\label{linjespuxe4nning}}
 
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
+Formel
 
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+\[ U_L = U_f \times \sqrt{3} \]
 
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
+Exemple
 
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+\[ U_L = U_f \times \sqrt{3}
+= 230 \times \sqrt{3} = 400V \]
 
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
+Linjespänningen är således
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+\[ U_L = 400V \]
 
-\hypertarget{sharing-your-book}{%
-\chapter{Sharing your book}\label{sharing-your-book}}
+\hypertarget{fasspuxe4nning}{%
+\subsubsection{Fasspänning}\label{fasspuxe4nning}}
 
-\hypertarget{publishing}{%
-\section{Publishing}\label{publishing}}
+\[ U_f = \frac{U_L}{\sqrt{3}} \]
 
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+Exemple
 
-\hypertarget{pages}{%
-\section{404 pages}\label{pages}}
+\[
+U_f = \frac{U_L}{\sqrt{3}} 
+= \frac{400}{\sqrt{3}} =
+230V
+\]
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+Fasspänningen är således
+\[ U_f = 230V \]
 
-\hypertarget{metadata-for-sharing}{%
-\section{Metadata for sharing}\label{metadata-for-sharing}}
+\hypertarget{fasstruxf6m}{%
+\subsubsection{Fasström}\label{fasstruxf6m}}
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+Formel
 
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+\[ I_f = \frac{U_f}{R} \]
 
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+Exemple
 
-Read more about the features of this output format here:
+\[ I_f = \frac{U_f}{R}
+= \frac{230}{100} = 2,3 \ A
+\]
 
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+Fasströmen är således
+\[ I_f = 2,3 \ A \]
 
-Or use:
+\hypertarget{linjestruxf6m}{%
+\subsubsection{Linjeström}\label{linjestruxf6m}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
+Formel
 
+\[ I_L = I_f = 9,58 A \]
+
+Linjesströmen är således
+
+\[ I_{L}= 2,3 A \]
+
+\hypertarget{d-koppling}{%
+\subsection{D-koppling}\label{d-koppling}}
+
+\hypertarget{fasspuxe4nning-1}{%
+\subsubsection{Fasspänning}\label{fasspuxe4nning-1}}
+
+Formel
+
+\[ U_f = U_L = 400V \]
+
+Fasspänning är således
+
+\[ U_f = 400V \]
+
+\hypertarget{fasstruxf6m-1}{%
+\subsubsection{Fasström}\label{fasstruxf6m-1}}
+
+Formel
+
+\[ I_f = \frac{U_f}{R} \]
+
+Exemple
+
+\[ I_f = \frac{U_f}{R}
+= \frac{400}{2,88} = 5 \ A
+\]
+
+Fasströmen är således
+
+\$ I\_f = 2,3 ~A \$
+
+\hypertarget{linjestruxf6m-1}{%
+\subsubsection{Linjeström}\label{linjestruxf6m-1}}
+
+Formel
+
+\[ I_L = I_f \times \sqrt{3} \]
+
+Exemple
+
+\[ I_L = I_f \times \sqrt{3} = 90 \times \sqrt{3}\]
+
+Linjeström är således '
+
+\[ I_L = 2,3 \ A \]
+
+\hypertarget{effekt}{%
+\chapter{Effekt}\label{effekt}}
+
+\hypertarget{trefaskretsar}{%
+\section{Trefaskretsar}\label{trefaskretsar}}
+
+Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudströ . Men i en D-koppling är det fasströmmarna genom brlastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: \[ \sqrt{3} \] som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med \[ cos \phi \].
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( P_{trefas}= \sqrt{3} \times U \times I \) & \( P \) & Aktiv effekt & Watt & \( W \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning trefas effekt \\
+\midrule()
+\endhead
+\( P_{trefas}= \sqrt{3} \times U \times I \) \\
+\( P_{trefas}= \sqrt{3} \times U \times I \) \\
+\( P= ? \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{reaktiva-kretsar}{%
+\section{Reaktiva kretsar}\label{reaktiva-kretsar}}
+
+\hypertarget{aktiv}{%
+\subsection{Aktiv}\label{aktiv}}
+
+Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik rörelse. Aktiva effekten har enheten watt och betecknas med P i effektriangeln.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( P= U \times I \times cos  \phi \) & \( P \) & Aktiv effekt & Watt & \( W \) \\
+\( P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi \) & \( P \) & Aktiv effekt & Watt & \( W \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning aktiv effekt \\
+\midrule()
+\endhead
+\( P=U \times I \times cos  \phi \) \\
+\( P=230 \times 0,78 \times 0,78 \) \\
+\( P=1640 \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning aktiv effekt trefas \\
+\midrule()
+\endhead
+\( P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi \) \\
+\( P_{trefas}= \sqrt{3} \times ? \times ? \times ? \) \\
+\( P_{trefas}= \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{skenbar}{%
+\subsection{Skenbar}\label{skenbar}}
+
+Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenbar effekt har enheten voltampere (VA).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( S=U \times I = \sqrt{P^2 + Q^2} \) & \( S \) & Skenbar effekt & Voltampere & \( VA \) \\
+\( S_{trefas}= \sqrt{3} \times U \times I \) & \( S \) & Skenbar effekt & Voltampere & \( VA \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning skenbar effekt (1) \\
+\midrule()
+\endhead
+\( S=U \times I \) \\
+\( S=230 \times 9,05 \) \\
+\( S=2081 \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning skenbar effekt (2) \\
+\midrule()
+\endhead
+\( S= \sqrt{P^2 + Q^2} \) \\
+\( S= \sqrt{2000^2 + 1000^2} \) \\
+\( S=2,2 \ kVA \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning skenbar effekt trefas \\
+\midrule()
+\endhead
+\( S_{trefas}= \sqrt{3} \times U \times I \) \\
+\( S_{trefas}= \sqrt{3} \times 230 \times 9,05 \) \\
+\( S_{trefas}=2081 \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{reaktiv}{%
+\subsection{Reaktiv}\label{reaktiv}}
+
+Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva motståndet åstakomer. Den reaktiva effekten har enheten voltampere, VAr. Tillläget r står för reaktiv.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( Q=U \times I \times sin  \phi = \sqrt{S^{2}-P^{2}} \) & \( Q \) & Reaktiv effekt & Voltampere reakt & \( VAr \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning reaktiv effekt (1) \\
+\midrule()
+\endhead
+\( Q=U \times I \times sin  \phi \) \\
+\( Q=U \times I \times sin  \phi \) \\
+\( Q=  \ VAr \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning reaktiv effekt (2) \\
+\midrule()
+\endhead
+\( Q= \sqrt{S^{2}-P^{2}} \) \\
+\( Q= \sqrt{1000^{2}-607^{2}} \) \\
+\( Q= 795 \ VAr \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{vuxe4xelstuxf6rmsmoststuxe5nd}{%
+\chapter{Växelstörmsmoststånd}\label{vuxe4xelstuxf6rmsmoststuxe5nd}}
+
+\hypertarget{impedans}{%
+\section{Impedans}\label{impedans}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( Z=\sqrt{R^2 + (X_{L} - X_{L})^2} \) & \( Z \) & Impedans & Ohm & \(  \Omega \) \\
+\( R = \frac{U}{I}  \) & \( R \) & Resistans & Ohm & \(  \Omega \) \\
+\( X_L = 2 \pi fL \) & \( X_L \) & Induktiv reaktans & Ohm & \(  \Omega \) \\
+\( X_C =\frac{1} {2 \pi f C}  \) & \( X_C \) & kapacitiv reaktans & Ohm & \(  \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning impedans Z \\
+\midrule()
+\endhead
+\( Z=\sqrt{R^2 + (X_{L})^2} \) \\
+\( Z=\sqrt{20^2 + (15,7)^2} \) \\
+\( Z= 25,4 \  \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kondensatorer}{%
+\section{Kondensatorer}\label{kondensatorer}}
+
+Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule()
+Prefixer & Förkortning & Tiopotens \\
+\midrule()
+\endhead
+\( 1 \ mikrofarad  \) & \(  \mu F \) & \( 10^{-6} \) \\
+\( 1 \ nanofarad  \) & \( nF \) & \( 10^{-9} \) \\
+\( 1 \ picofarad  \) & \( pF \) & \( 10^{-12} \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kapacitans}{%
+\subsection{Kapacitans}\label{kapacitans}}
+
+Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss spänning.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( C=\frac{1}{(2 \pi f  X_c)} \) & \( C \) & Kapacitans & Farad & \( F^{As/V} \) \\
+\( f = \frac{1}{T}   \) & \( f \) & Hertz & \( Hz \) & \\
+\( 2 \times \pi = 3.14  \) & \( Pi \) & Omkrets & Radies & \( \pi \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Exempel uträkning kapacitans
+\end{minipage} \\
+\midrule()
+\endhead
+\( L=\frac{X_L} {2 \pi f} \) \\
+\( L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \) \\
+\( L= 0.16 \ H \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kapacitiv-reaktans}{%
+\subsection{Kapacitiv reaktans}\label{kapacitiv-reaktans}}
+
+Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då kommer ekvationen att minska när frekvesen ökar.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( X_C =\frac{1} {2 \pi f C}  \) & \( X_C \) & kapacitiv reaktans & Ohm & \(  \Omega \) \\
+\( f = \frac{1}{T}   \) & \( f \) & Hertz & \( Hz \) & \\
+\( 2 \times \pi = 3.14  \) & \( Pi \) & Omkrets & Radies & \( \pi \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning kapacitiv reaktans \\
+\midrule()
+\endhead
+\( X_C =\frac{1} {2 \pi f C} \) \\
+\( X_C = \frac{1}{2 \times \pi \times 50 \times 0,0002} \) \\
+\( X_C = 15,91 \  \Omega  \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{seriekopplade}{%
+\subsection{Seriekopplade}\label{seriekopplade}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( C_{tot}=C_{1} + C_{2}... \) & \( C \) & Kapacitans & Farad & \( F^{As/V} \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning kapacitiv reaktans \\
+\midrule()
+\endhead
+\( C_{tot}=C_{1} + C_{2} \) \\
+\( C_{tot}=12_{1} + 12_{2} \) \\
+\( C_{tot}=24 \  \mu F \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{parallellkopplade}{%
+\subsection{Parallellkopplade}\label{parallellkopplade}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( 
+\frac{1}{C_{tot}} =
+\frac{1}{C_{1}} +
+\frac{1}{C_{2}} +
+\frac{1}{C_{3}}
+...
+\) & \( C \) & Kapacitans & Farad & \( F^{As/V} \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Exempel uträkning kapacitiv reaktans
+\end{minipage} \\
+\midrule()
+\endhead
+\( 
+\frac{1}{C_{tot}} =
+\frac{1}{C_{1}} +
+\frac{1}{C_{2}} +
+\frac{1}{C_{3}}
+...
+\) \\
+\( 
+\frac{1}{C_{tot}} =
+\frac{1}{1,8_{1}} +
+\frac{1}{16_{2}} +
+\frac{1}{32_{3}}
+\) \\
+\( C_{tot}=4.5 \ nF \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{spolar}{%
+\section{Spolar}\label{spolar}}
+
+Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten Henry (H).
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule()
+Prefixer & Enhet & Förkostning \\
+\midrule()
+\endhead
+\( 1 \ millihenry  \) & \( mH \) & \( 10^{-3} \) \\
+\( 1 \ mikrohenry  \) & \(  \mu H \) & \( 10^{-6} \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{induktans}{%
+\subsection{Induktans}\label{induktans}}
+
+Induktansen beror på hur många varv spolen har, diametern, avståndet mellan ledarna och om spolen är försedd med järnkärna. Flera lindningsvarv och större diameter ger spolen större indutans.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( L=\frac{X_L} {2\pi f} \) & \( L \) & Induktans & Henry & \( H^{Vs/A} \) \\
+\( f = \frac{1}{T}   \) & \( f \) & Frekvens & Hertz & \( Hz \) \\
+\( 2 \times \pi = 3.14  \) & \( Pi \) & ? & ? & \( \pi \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Exempel uträkning induktians
+\end{minipage} \\
+\midrule()
+\endhead
+\( L=\frac{X_L} {2 \times \pi f} \) \\
+\( L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \) \\
+\( L= 0.16 \ H \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{induktiv-reaktans}{%
+\subsection{Induktiv reaktans}\label{induktiv-reaktans}}
+
+Växelströmsmotståndet är
+frekvensberoende och motståndet ökar när
+frekvensen ökar.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( X_L = 2 \pi fL \) & \( X_L \) & Induktiv reaktans & Ohm & \(  \Omega \) \\
+\( f = \frac{1}{T} \) & \( f \) & Frekvens & Hertz & \( Hz \) \\
+\( 2 \times \pi = 3.14  \) & \( Pi \) & ? & ? & \( \pi \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Test \\
+\midrule()
+\endhead
+\( X_L = 2 \pi fL \) \\
+\( X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  \) \\
+\( X_L=15,7 \  \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule()
+& Exempel uträkning induktians & \\
+\midrule()
+\endhead
+& \( X_L = 2 \pi fL \) & \\
+& \( X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  \) & \\
+& \( X_L=15,7 \  \Omega \) & \\
+\bottomrule()
+\end{longtable}
+
+This row needs to fit the table\\
+Software \textbar{} Price \textbar{} Advantages\\
+:----------- \textbar{} :----------- \textbar{} :-----------\\
+R \textbar{} Free \textbar{} Open source\\
+SPSS \textbar{} I don't know \textbar{} Advantage 1
 
   \bibliography{book.bib,packages.bib}
 

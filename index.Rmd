@@ -2,18 +2,20 @@
 title: "Elektrikernas kokbok"
 author: "Björn Ögren"
 date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
+output: pdf_document
+classoption: landscape
+geometry: margin=5cm
 documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
+bibliography:
+- book.bib
+- packages.bib
 description: |
   This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
   set in the _output.yml file.
+  The HTML output format for this example is bookdown::gitbook,
 link-citations: yes
-github-repo: rstudio/bookdown-demo
-
+github-repo: "rstudio/bookdown-demo"
+site: bookdown::bookdown_site
 ---
 
 
@@ -233,7 +235,7 @@ $$ I_L = 2,3 \ A $$
 # Effekt
 
 ## Trefaskretsar
-Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudströ . Men i en D-koppling är det fasströmmarna genom brlastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: $$ \sqrt{3} $$ som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med  cos φ.
+Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudströ . Men i en D-koppling är det fasströmmarna genom brlastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: $$ \sqrt{3} $$ som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med $$ cos \phi $$.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
@@ -252,18 +254,18 @@ Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik r
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ P= U \times I \times cos φ $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
-| $$ P_{trefas}= \sqrt{3} \times U \times I \times cos φ $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+| $$ P= U \times I \times cos  \phi $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+| $$ P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
 
 | Exempel uträkning aktiv effekt |
 |:-------------:|
-| $$ P=U \times I \times cos φ $$ |
+| $$ P=U \times I \times cos  \phi $$ |
 | $$ P=230 \times 0,78 \times 0,78 $$ |
 | $$ P=1640 \ W $$ |
 
 | Exempel uträkning aktiv effekt trefas|
 |:-------------:|
-| $$ P_{trefas}= \sqrt{3} \times U \times I \times cos φ $$ |
+| $$ P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi $$ |
 | $$ P_{trefas}= \sqrt{3} \times ? \times ? \times ? $$ |
 | $$ P_{trefas}= \ W $$ |
 
@@ -298,12 +300,12 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ Q=U \times I \times sin φ = \sqrt{S^{2}-P^{2}} $$ | $$ Q $$ | Reaktiv effekt | Voltampere reakt | $$ VAr $$|
+| $$ Q=U \times I \times sin  \phi = \sqrt{S^{2}-P^{2}} $$ | $$ Q $$ | Reaktiv effekt | Voltampere reakt | $$ VAr $$|
 
 | Exempel uträkning reaktiv effekt (1) |
 |:-------------:|
-| $$ Q=U \times I \times sin φ $$ |
-| $$ Q=U \times I \times sin φ $$ |
+| $$ Q=U \times I \times sin  \phi $$ |
+| $$ Q=U \times I \times sin  \phi $$ |
 | $$ Q=  \ VAr $$ |
 
 | Exempel uträkning reaktiv effekt (2) |
@@ -319,16 +321,16 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ Z=\sqrt{R^2 + (X_{L} - X_{L})^2} $$ | $$ Z $$ | Impedans | Ohm | $$ Ω $$ |
-| $$ R = \frac{U}{I}  $$ | $$ R $$ | Resistans | Ohm | $$ Ω $$ |
-$$ X_L = 2 \pi fL $$ | $$ X_L $$ | Induktiv reaktans | Ohm | $$ Ω $$ |
-| $$ X_C =\frac{1} {2 \pi f C}  $$ | $$ X_C $$ | kapacitiv reaktans | Ohm | $$ Ω $$ |
+| $$ Z=\sqrt{R^2 + (X_{L} - X_{L})^2} $$ | $$ Z $$ | Impedans | Ohm | $$  \Omega $$ |
+| $$ R = \frac{U}{I}  $$ | $$ R $$ | Resistans | Ohm | $$  \Omega $$ |
+$$ X_L = 2 \pi fL $$ | $$ X_L $$ | Induktiv reaktans | Ohm | $$  \Omega $$ |
+| $$ X_C =\frac{1} {2 \pi f C}  $$ | $$ X_C $$ | kapacitiv reaktans | Ohm | $$  \Omega $$ |
 
 | Exempel uträkning impedans Z |
 |:-------------:|
 | $$ Z=\sqrt{R^2 + (X_{L})^2} $$ |
 | $$ Z=\sqrt{20^2 + (15,7)^2} $$ |
-| $$ Z= 25,4 \ Ω $$ |
+| $$ Z= 25,4 \  \Omega $$ |
 
 
 ## Kondensatorer
@@ -336,7 +338,7 @@ Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och bete
 
 |Prefixer | Förkortning| Tiopotens |
 |----------|:-------------:|:-------------:|
-| $$ 1 \ mikrofarad  $$ | $$ μF $$ | $$ 10^{-6} $$ |
+| $$ 1 \ mikrofarad  $$ | $$  \mu F $$ | $$ 10^{-6} $$ |
 | $$ 1 \ nanofarad  $$ | $$ nF $$ | $$ 10^{-9} $$ |
 | $$ 1 \ picofarad  $$ | $$ pF $$ | $$ 10^{-12} $$ |
 
@@ -360,7 +362,7 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ X_C =\frac{1} {2 \pi f C}  $$ | $$ X_C $$ | kapacitiv reaktans | Ohm | $$ Ω $$ |
+| $$ X_C =\frac{1} {2 \pi f C}  $$ | $$ X_C $$ | kapacitiv reaktans | Ohm | $$  \Omega $$ |
 | $$ f = \frac{1}{T}   $$ | $$ f $$ | Hertz | $$ Hz $$ |
 | $$ 2 \times \pi = 3.14  $$ | $$ Pi $$ | Omkrets | Radies | $$ \pi $$ |
 
@@ -368,7 +370,7 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 |:-------------:|
 | $$ X_C =\frac{1} {2 \pi f C} $$ |
 | $$ X_C = \frac{1}{2 \times \pi \times 50 \times 0,0002} $$ |
-| $$ X_C = 15,91 \ Ω  $$ |
+| $$ X_C = 15,91 \  \Omega  $$ |
 
 ### Seriekopplade
 
@@ -380,7 +382,7 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 |:-------------:|
 | $$ C_{tot}=C_{1} + C_{2} $$ |
 | $$ C_{tot}=12_{1} + 12_{2} $$ |
-| $$ C_{tot}=24 \ μF $$ |
+| $$ C_{tot}=24 \  \mu F $$ |
 
 ### Parallellkopplade
 
@@ -417,7 +419,7 @@ Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten H
 |Prefixer | Enhet | Förkostning| 
 |----------|:-------------:|:-------------:|
 | $$ 1 \ millihenry  $$ | $$ mH $$ | $$ 10^{-3} $$ |
-| $$ 1 \ mikrohenry  $$ | $$ μH $$  | $$ 10^{-6} $$ |
+| $$ 1 \ mikrohenry  $$ | $$  \mu H $$  | $$ 10^{-6} $$ |
 
 ### Induktans
 Induktansen beror på hur många varv spolen har, diametern, avståndet mellan ledarna och om spolen är försedd med järnkärna. Flera lindningsvarv och större diameter ger spolen större indutans.
@@ -441,12 +443,12 @@ frekvensen ökar.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ X_L = 2 \pi fL $$ | $$ X_L $$ | Induktiv reaktans | Ohm | $$ Ω $$ |
+| $$ X_L = 2 \pi fL $$ | $$ X_L $$ | Induktiv reaktans | Ohm | $$  \Omega $$ |
 | $$ f = \frac{1}{T} $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$ |
 | $$ 2 \times \pi = 3.14  $$ | $$ Pi $$ | ? | ? | $$ \pi $$ |
 
-| Exempel uträkning induktiv reaktans vid 50 Hz |
+| Test |
 |:-------------:|
 | $$ X_L = 2 \pi fL $$ |
 | $$ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  $$ |
-| $$ X_L=15,7 \ Ω $$ |
+| $$ X_L=15,7 \  \Omega $$ |

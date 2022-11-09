@@ -1,3 +1,38 @@
 h1:likströmskretsar Likströmskretsar
 h2:uri URI
+h1:växelströmskretsar Växelströmskretsar
+h2:tidsintervall Tidsintervall
+h3:frekvens Frekvens
+h3:tid Tid
+h2:toppvärden Toppvärden
+h3:toppvärde-av-spänning Toppvärde av spänning
+h3:toppvärde-av-ström Toppvärde av ström
+h3:topp-till-toppvärde-av-spänning Topp till toppvärde av spänning
+h3:topp-till-toppvärde-av-ström Topp till toppvärde av ström
+h2:yd-koppling Y/D-Koppling
+h3:y-koppling Y-Koppling
+h4:linjespänning Linjespänning
+h4:fasspänning Fasspänning
+h4:fasström Fasström
+h4:linjeström Linjeström
+h3:d-koppling D-koppling
+h4:fasspänning-1 Fasspänning
+h4:fasström-1 Fasström
+h4:linjeström-1 Linjeström
+h1:effekt Effekt
+h2:trefaskretsar Trefaskretsar
+h2:reaktiva-kretsar Reaktiva kretsar
+h3:aktiv Aktiv
+h3:skenbar Skenbar
+h3:reaktiv Reaktiv
+h1:växelstörmsmoststånd Växelstörmsmoststånd
+h2:impedans Impedans
+h2:kondensatorer Kondensatorer
+h3:kapacitans Kapacitans
+h3:kapacitiv-reaktans Kapacitiv reaktans
+h3:seriekopplade Seriekopplade
+h3:parallellkopplade Parallellkopplade
+h2:spolar Spolar
+h3:induktans Induktans
+h3:induktiv-reaktans Induktiv reaktans
 

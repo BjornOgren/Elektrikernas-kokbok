@@ -6,30 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Växelströmskretsar | Elektrikernas kokbok</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Växelströmskretsar | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 2 Växelströmskretsar | Elektrikernas kokbok" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
   
 
 <meta name="author" content="Björn Ögren" />
 
 
-<meta name="date" content="2022-09-13" />
+<meta name="date" content="2022-11-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,7 +37,7 @@ set in the _output.yml file.</p>" />
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="cross.html"/>
+<link rel="next" href="effekt.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -61,28 +61,6 @@ set in the _output.yml file.</p>" />
 
 
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -97,7 +75,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Elektrikernas kokbok</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Likströmskretsar</a>
@@ -111,31 +89,45 @@ div.csl-indent {
 <li class="chapter" data-level="2.1.1" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#frekvens"><i class="fa fa-check"></i><b>2.1.1</b> Frekvens</a></li>
 <li class="chapter" data-level="2.1.2" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#tid"><i class="fa fa-check"></i><b>2.1.2</b> Tid</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>3</b> Cross-references</a>
+<li class="chapter" data-level="2.2" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#toppvärden"><i class="fa fa-check"></i><b>2.2</b> Toppvärden</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="cross.html"><a href="cross.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>3.1</b> Chapters and sub-chapters</a></li>
-<li class="chapter" data-level="3.2" data-path="cross.html"><a href="cross.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>3.2</b> Captioned figures and tables</a></li>
+<li class="chapter" data-level="2.2.1" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#toppvärde-av-spänning"><i class="fa fa-check"></i><b>2.2.1</b> Toppvärde av spänning</a></li>
+<li class="chapter" data-level="2.2.2" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#toppvärde-av-ström"><i class="fa fa-check"></i><b>2.2.2</b> Toppvärde av ström</a></li>
+<li class="chapter" data-level="2.2.3" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#topp-till-toppvärde-av-spänning"><i class="fa fa-check"></i><b>2.2.3</b> Topp till toppvärde av spänning</a></li>
+<li class="chapter" data-level="2.2.4" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#topp-till-toppvärde-av-ström"><i class="fa fa-check"></i><b>2.2.4</b> Topp till toppvärde av ström</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="parts.html"><a href="parts.html"><i class="fa fa-check"></i><b>4</b> Parts</a></li>
-<li class="chapter" data-level="5" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html"><i class="fa fa-check"></i><b>5</b> Footnotes and citations</a>
+<li class="chapter" data-level="2.3" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#yd-koppling"><i class="fa fa-check"></i><b>2.3</b> Y/D-Koppling</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#footnotes"><i class="fa fa-check"></i><b>5.1</b> Footnotes</a></li>
-<li class="chapter" data-level="5.2" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#citations"><i class="fa fa-check"></i><b>5.2</b> Citations</a></li>
+<li class="chapter" data-level="2.3.1" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#y-koppling"><i class="fa fa-check"></i><b>2.3.1</b> Y-Koppling</a></li>
+<li class="chapter" data-level="2.3.2" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#d-koppling"><i class="fa fa-check"></i><b>2.3.2</b> D-koppling</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>6</b> Blocks</a>
+</ul></li>
+<li class="chapter" data-level="3" data-path="effekt.html"><a href="effekt.html"><i class="fa fa-check"></i><b>3</b> Effekt</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>6.1</b> Equations</a></li>
-<li class="chapter" data-level="6.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.2</b> Theorems and proofs</a></li>
-<li class="chapter" data-level="6.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>6.3</b> Callout blocks</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>7</b> Sharing your book</a>
+<li class="chapter" data-level="3.1" data-path="effekt.html"><a href="effekt.html#trefaskretsar"><i class="fa fa-check"></i><b>3.1</b> Trefaskretsar</a></li>
+<li class="chapter" data-level="3.2" data-path="effekt.html"><a href="effekt.html#reaktiva-kretsar"><i class="fa fa-check"></i><b>3.2</b> Reaktiva kretsar</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>7.1</b> Publishing</a></li>
-<li class="chapter" data-level="7.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>7.2</b> 404 pages</a></li>
-<li class="chapter" data-level="7.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>7.3</b> Metadata for sharing</a></li>
+<li class="chapter" data-level="3.2.1" data-path="effekt.html"><a href="effekt.html#aktiv"><i class="fa fa-check"></i><b>3.2.1</b> Aktiv</a></li>
+<li class="chapter" data-level="3.2.2" data-path="effekt.html"><a href="effekt.html#skenbar"><i class="fa fa-check"></i><b>3.2.2</b> Skenbar</a></li>
+<li class="chapter" data-level="3.2.3" data-path="effekt.html"><a href="effekt.html#reaktiv"><i class="fa fa-check"></i><b>3.2.3</b> Reaktiv</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html"><i class="fa fa-check"></i><b>4</b> Växelstörmsmoststånd</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#impedans"><i class="fa fa-check"></i><b>4.1</b> Impedans</a></li>
+<li class="chapter" data-level="4.2" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#kondensatorer"><i class="fa fa-check"></i><b>4.2</b> Kondensatorer</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#kapacitans"><i class="fa fa-check"></i><b>4.2.1</b> Kapacitans</a></li>
+<li class="chapter" data-level="4.2.2" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#kapacitiv-reaktans"><i class="fa fa-check"></i><b>4.2.2</b> Kapacitiv reaktans</a></li>
+<li class="chapter" data-level="4.2.3" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#seriekopplade"><i class="fa fa-check"></i><b>4.2.3</b> Seriekopplade</a></li>
+<li class="chapter" data-level="4.2.4" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#parallellkopplade"><i class="fa fa-check"></i><b>4.2.4</b> Parallellkopplade</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#spolar"><i class="fa fa-check"></i><b>4.3</b> Spolar</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#induktans"><i class="fa fa-check"></i><b>4.3.1</b> Induktans</a></li>
+<li class="chapter" data-level="4.3.2" data-path="växelstörmsmoststånd.html"><a href="växelstörmsmoststånd.html#induktiv-reaktans"><i class="fa fa-check"></i><b>4.3.2</b> Induktiv reaktans</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -194,7 +186,120 @@ Frekvens är således
 <p><span class="math display">\[ Tid = \frac{1}{Frekvens} = \frac{1}{400} \times 10^{3} = 26,3 \ Hz \]</span></p>
 <p>Tid är således</p>
 <p><span class="math display">\[ T = 2,5 \ ms \]</span></p>
-
+</div>
+</div>
+<div id="toppvärden" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Toppvärden<a href="växelströmskretsar.html#toppvärden" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="toppvärde-av-spänning" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Toppvärde av spänning<a href="växelströmskretsar.html#toppvärde-av-spänning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Formel</p>
+<p><span class="math display">\[ \widehat{u} = U_{eff} \times \sqrt{2} \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ \widehat{u} = U_{eff} \times \sqrt{2} = 415 \times \sqrt{2} \approx 587 \ V \]</span></p>
+<p>Toppvärdet är således
+<span class="math display">\[ \hat{u} \approx 587 \ V \]</span></p>
+</div>
+<div id="toppvärde-av-ström" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Toppvärde av ström<a href="växelströmskretsar.html#toppvärde-av-ström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Formel</p>
+<p><span class="math display">\[ \hat{I} = I_{eff} \times \sqrt{2} \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ \hat{I} = I_{eff} \times \sqrt{2} = 20 \times \sqrt{2} \approx 28,3 \ A \]</span></p>
+<p>Toppvärdet är således
+<span class="math display">\[ \hat{I} \approx 28,3 \ A \]</span></p>
+</div>
+<div id="topp-till-toppvärde-av-spänning" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Topp till toppvärde av spänning<a href="växelströmskretsar.html#topp-till-toppvärde-av-spänning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Formel</p>
+<p><span class="math display">\[ \widehat{\breve{u}} = \hat{u} \times 2 \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ \widehat{\breve{u}} = \hat{u} \times 2 = 587 \times 2 = 1174 \ V \]</span></p>
+<p>Topp till toppvärd är således
+<span class="math display">\[ \widehat{\breve{u}} = 1174 \ V \]</span></p>
+</div>
+<div id="topp-till-toppvärde-av-ström" class="section level3 hasAnchor" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> Topp till toppvärde av ström<a href="växelströmskretsar.html#topp-till-toppvärde-av-ström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math display">\[ \hat{\breve{I}} = \hat{I} \times 2 \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ \hat{\breve{I}} = \hat{I} \times 2 \approx 28,3 \times 2 = 56 \ A \]</span></p>
+<p>Topp till toppvärd är således
+<span class="math display">\[ \hat{\breve{I}} \approx 56 \ A \]</span></p>
+</div>
+</div>
+<div id="yd-koppling" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Y/D-Koppling<a href="växelströmskretsar.html#yd-koppling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="y-koppling" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Y-Koppling<a href="växelströmskretsar.html#y-koppling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="linjespänning" class="section level4 hasAnchor" number="2.3.1.1">
+<h4><span class="header-section-number">2.3.1.1</span> Linjespänning<a href="växelströmskretsar.html#linjespänning" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Formel</p>
+<p><span class="math display">\[ U_L = U_f \times \sqrt{3} \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ U_L = U_f \times \sqrt{3}
+= 230 \times \sqrt{3} = 400V \]</span></p>
+<p>Linjespänningen är således</p>
+<p><span class="math display">\[ U_L = 400V \]</span></p>
+</div>
+<div id="fasspänning" class="section level4 hasAnchor" number="2.3.1.2">
+<h4><span class="header-section-number">2.3.1.2</span> Fasspänning<a href="växelströmskretsar.html#fasspänning" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[ U_f = \frac{U_L}{\sqrt{3}} \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[
+U_f = \frac{U_L}{\sqrt{3}}
+= \frac{400}{\sqrt{3}} =
+230V
+\]</span></p>
+<p>Fasspänningen är således
+<span class="math display">\[ U_f = 230V \]</span></p>
+</div>
+<div id="fasström" class="section level4 hasAnchor" number="2.3.1.3">
+<h4><span class="header-section-number">2.3.1.3</span> Fasström<a href="växelströmskretsar.html#fasström" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Formel</p>
+<p><span class="math display">\[ I_f = \frac{U_f}{R} \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ I_f = \frac{U_f}{R}
+= \frac{230}{100} = 2,3 \ A
+\]</span></p>
+<p>Fasströmen är således
+<span class="math display">\[ I_f = 2,3 \ A \]</span></p>
+</div>
+<div id="linjeström" class="section level4 hasAnchor" number="2.3.1.4">
+<h4><span class="header-section-number">2.3.1.4</span> Linjeström<a href="växelströmskretsar.html#linjeström" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Formel</p>
+<p><span class="math display">\[ I_L = I_f = 9,58 A \]</span></p>
+<p>Linjesströmen är således</p>
+<p><span class="math display">\[ I_{L}= 2,3 A \]</span></p>
+</div>
+</div>
+<div id="d-koppling" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> D-koppling<a href="växelströmskretsar.html#d-koppling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="fasspänning-1" class="section level4 hasAnchor" number="2.3.2.1">
+<h4><span class="header-section-number">2.3.2.1</span> Fasspänning<a href="växelströmskretsar.html#fasspänning-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Formel</p>
+<p><span class="math display">\[ U_f = U_L = 400V \]</span></p>
+<p>Fasspänning är således</p>
+<p><span class="math display">\[ U_f = 400V \]</span></p>
+</div>
+<div id="fasström-1" class="section level4 hasAnchor" number="2.3.2.2">
+<h4><span class="header-section-number">2.3.2.2</span> Fasström<a href="växelströmskretsar.html#fasström-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Formel</p>
+<p><span class="math display">\[ I_f = \frac{U_f}{R} \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ I_f = \frac{U_f}{R}
+= \frac{400}{2,88} = 5 \ A
+\]</span></p>
+<p>Fasströmen är således</p>
+<p>$ I_f = 2,3  A $</p>
+</div>
+<div id="linjeström-1" class="section level4 hasAnchor" number="2.3.2.3">
+<h4><span class="header-section-number">2.3.2.3</span> Linjeström<a href="växelströmskretsar.html#linjeström-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Formel</p>
+<p><span class="math display">\[ I_L = I_f \times \sqrt{3} \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ I_L = I_f \times \sqrt{3} = 90 \times \sqrt{3}\]</span></p>
+<p>Linjeström är således ’</p>
+<p><span class="math display">\[ I_L = 2,3 \ A \]</span></p>
+</div>
 </div>
 </div>
 </div>
@@ -204,7 +309,7 @@ Frekvens är således
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="cross.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="effekt.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -235,7 +340,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-ac.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
 "text": "Edit"
 },
 "history": {
