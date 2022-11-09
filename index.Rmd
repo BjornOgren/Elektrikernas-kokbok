@@ -16,6 +16,7 @@ github-repo: rstudio/bookdown-demo
 
 ---
 
+
 # Likströmskretsar
 
 Test
@@ -24,3 +25,428 @@ Test
 
 Hello World
 
+# Växelströmskretsar
+
+Hello World
+
+## Tidsintervall
+
+Frekvens är en storhet för antalet
+repeterande händelser inom ett givet
+tidsintervall[1]. För att beräkna
+frekvensen fixerar man ett
+tidsintervall, räknar antalet
+förekomster av händelsen och
+dividerar detta antal med längden av
+tidsintervallet. Resultatet anges i
+enheten hertz (Hz) efter den tyske
+fysikern Heinrich Rudolf Hertz, där
+1 Hz är en händelse som inträffar en
+gång per sekund. Alternativt kan man
+mäta tiden mellan två förekomster av
+händelsen ((tids)perioden) och
+därefter beräkna frekvensens
+reciproka värde.
+
+### Frekvens
+
+Formel 
+$$ Frekvens = \frac{1}{Tid} $$
+
+Exemple
+
+$$ Frekvens = \frac{1}{Tid} = \frac{1}{38} \times 10^{3} = 26,3 \ Hz $$
+Frekvens är således 
+$$ F = 26,3 \ Hz $$
+
+### Tid
+
+Formel
+
+$$ Tid = \frac{1}{Frekvens} $$
+
+Exemple
+
+$$ Tid = \frac{1}{Frekvens} = \frac{1}{400} \times 10^{3} = 26,3 \ Hz $$ 
+
+Tid är således
+
+$$ T = 2,5 \ ms $$
+
+## Toppvärden
+
+### Toppvärde av spänning
+
+Formel
+
+$$ \widehat{u} = U_{eff} \times \sqrt{2} $$
+
+Exemple
+
+$$ \widehat{u} = U_{eff} \times \sqrt{2} = 415 \times \sqrt{2} \approx 587 \ V $$
+
+Toppvärdet är således
+$$ \hat{u} \approx 587 \ V $$
+
+### Toppvärde av ström
+
+Formel
+
+$$ \hat{I} = I_{eff} \times \sqrt{2} $$
+
+Exemple
+
+$$ \hat{I} = I_{eff} \times \sqrt{2} = 20 \times \sqrt{2} \approx 28,3 \ A $$
+
+Toppvärdet är således
+$$ \hat{I} \approx 28,3 \ A $$
+
+### Topp till toppvärde av spänning
+
+Formel
+
+$$ \widehat{\breve{u}} = \hat{u} \times 2 $$
+
+Exemple
+
+$$ \widehat{\breve{u}} = \hat{u} \times 2 = 587 \times 2 = 1174 \ V $$
+
+Topp till toppvärd är således
+$$ \widehat{\breve{u}} = 1174 \ V $$
+
+### Topp till toppvärde av ström
+
+$$ \hat{\breve{I}} = \hat{I} \times 2 $$
+
+Exemple
+
+$$ \hat{\breve{I}} = \hat{I} \times 2 \approx 28,3 \times 2 = 56 \ A $$
+
+Topp till toppvärd är således
+$$ \hat{\breve{I}} \approx 56 \ A $$
+
+## Y/D-Koppling
+
+### Y-Koppling
+
+#### Linjespänning
+
+Formel
+
+$$ U_L = U_f \times \sqrt{3} $$
+
+Exemple
+
+$$ U_L = U_f \times \sqrt{3}
+= 230 \times \sqrt{3} = 400V $$
+
+Linjespänningen är således
+
+$$ U_L = 400V $$
+
+#### Fasspänning
+
+
+$$ U_f = \frac{U_L}{\sqrt{3}} $$
+
+Exemple
+
+$$
+U_f = \frac{U_L}{\sqrt{3}} 
+= \frac{400}{\sqrt{3}} =
+230V
+$$
+
+Fasspänningen är således
+$$ U_f = 230V $$
+
+#### Fasström
+
+Formel
+
+$$ I_f = \frac{U_f}{R} $$
+
+Exemple
+
+$$ I_f = \frac{U_f}{R}
+= \frac{230}{100} = 2,3 \ A
+$$
+
+Fasströmen är således 
+$$ I_f = 2,3 \ A $$
+
+#### Linjeström
+
+Formel
+
+$$ I_L = I_f = 9,58 A $$
+
+Linjesströmen är således
+
+$$ I_{L}= 2,3 A $$
+
+### D-koppling
+
+#### Fasspänning
+
+Formel
+
+$$ U_f = U_L = 400V $$
+
+Fasspänning är således
+
+$$ U_f = 400V $$
+
+#### Fasström
+
+Formel
+
+$$ I_f = \frac{U_f}{R} $$
+
+Exemple
+
+$$ I_f = \frac{U_f}{R}
+= \frac{400}{2,88} = 5 \ A
+$$
+
+
+Fasströmen är således
+
+$ I_f = 2,3 \ A $
+
+
+#### Linjeström
+
+Formel
+
+$$ I_L = I_f \times \sqrt{3} $$
+
+Exemple
+
+$$ I_L = I_f \times \sqrt{3} = 90 \times \sqrt{3}$$
+
+
+Linjeström är således '
+
+$$ I_L = 2,3 \ A $$
+
+# Effekt
+
+## Trefaskretsar
+Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudströ . Men i en D-koppling är det fasströmmarna genom brlastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: $$ \sqrt{3} $$ som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med  cos φ.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ P_{trefas}= \sqrt{3} \times U \times I $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+
+| Exempel uträkning trefas effekt |
+|:-------------:|
+| $$ P_{trefas}= \sqrt{3} \times U \times I $$ |
+| $$ P_{trefas}= \sqrt{3} \times U \times I $$ |
+| $$ P= ? \ W $$ |
+
+## Reaktiva kretsar
+
+### Aktiv
+Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik rörelse. Aktiva effekten har enheten watt och betecknas med P i effektriangeln.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ P= U \times I \times cos φ $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+| $$ P_{trefas}= \sqrt{3} \times U \times I \times cos φ $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+
+| Exempel uträkning aktiv effekt |
+|:-------------:|
+| $$ P=U \times I \times cos φ $$ |
+| $$ P=230 \times 0,78 \times 0,78 $$ |
+| $$ P=1640 \ W $$ |
+
+| Exempel uträkning aktiv effekt trefas|
+|:-------------:|
+| $$ P_{trefas}= \sqrt{3} \times U \times I \times cos φ $$ |
+| $$ P_{trefas}= \sqrt{3} \times ? \times ? \times ? $$ |
+| $$ P_{trefas}= \ W $$ |
+
+### Skenbar
+Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenbar effekt har enheten voltampere (VA).
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ S=U \times I = \sqrt{P^2 + Q^2} $$ | $$ S $$ | Skenbar effekt | Voltampere | $$ VA $$|
+| $$ S_{trefas}= \sqrt{3} \times U \times I $$ | $$ S $$ | Skenbar effekt | Voltampere | $$ VA $$|
+
+| Exempel uträkning skenbar effekt (1) |
+|:-------------:|
+| $$ S=U \times I $$ |
+| $$ S=230 \times 9,05 $$ |
+| $$ S=2081 \ W $$ |
+
+| Exempel uträkning skenbar effekt (2) |
+|:-------------:|
+| $$ S= \sqrt{P^2 + Q^2} $$ |
+| $$ S= \sqrt{2000^2 + 1000^2} $$ |
+| $$ S=2,2 \ kVA $$ |
+
+| Exempel uträkning skenbar effekt trefas |
+|:-------------:|
+| $$ S_{trefas}= \sqrt{3} \times U \times I $$ |
+| $$ S_{trefas}= \sqrt{3} \times 230 \times 9,05 $$ |
+| $$ S_{trefas}=2081 \ W $$ |
+
+### Reaktiv
+Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva motståndet åstakomer. Den reaktiva effekten har enheten voltampere, VAr. Tillläget r står för reaktiv.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ Q=U \times I \times sin φ = \sqrt{S^{2}-P^{2}} $$ | $$ Q $$ | Reaktiv effekt | Voltampere reakt | $$ VAr $$|
+
+| Exempel uträkning reaktiv effekt (1) |
+|:-------------:|
+| $$ Q=U \times I \times sin φ $$ |
+| $$ Q=U \times I \times sin φ $$ |
+| $$ Q=  \ VAr $$ |
+
+| Exempel uträkning reaktiv effekt (2) |
+|:-------------:|
+| $$ Q= \sqrt{S^{2}-P^{2}} $$ |
+| $$ Q= \sqrt{1000^{2}-607^{2}} $$ |
+| $$ Q= 795 \ VAr $$ |
+
+
+# Växelstörmsmoststånd
+
+## Impedans
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ Z=\sqrt{R^2 + (X_{L} - X_{L})^2} $$ | $$ Z $$ | Impedans | Ohm | $$ Ω $$ |
+| $$ R = \frac{U}{I}  $$ | $$ R $$ | Resistans | Ohm | $$ Ω $$ |
+$$ X_L = 2 \pi fL $$ | $$ X_L $$ | Induktiv reaktans | Ohm | $$ Ω $$ |
+| $$ X_C =\frac{1} {2 \pi f C}  $$ | $$ X_C $$ | kapacitiv reaktans | Ohm | $$ Ω $$ |
+
+| Exempel uträkning impedans Z |
+|:-------------:|
+| $$ Z=\sqrt{R^2 + (X_{L})^2} $$ |
+| $$ Z=\sqrt{20^2 + (15,7)^2} $$ |
+| $$ Z= 25,4 \ Ω $$ |
+
+
+## Kondensatorer
+Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.
+
+|Prefixer | Förkortning| Tiopotens |
+|----------|:-------------:|:-------------:|
+| $$ 1 \ mikrofarad  $$ | $$ μF $$ | $$ 10^{-6} $$ |
+| $$ 1 \ nanofarad  $$ | $$ nF $$ | $$ 10^{-9} $$ |
+| $$ 1 \ picofarad  $$ | $$ pF $$ | $$ 10^{-12} $$ |
+
+### Kapacitans
+Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss spänning.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ C=\frac{1}{(2 \pi f  X_c)} $$ | $$ C $$ | Kapacitans | Farad | $$ F^{As/V} $$ |
+| $$ f = \frac{1}{T}   $$ | $$ f $$ | Hertz | $$ Hz $$ |
+| $$ 2 \times \pi = 3.14  $$ | $$ Pi $$ | Omkrets | Radies | $$ \pi $$ |
+
+| Exempel uträkning kapacitans |
+|:-------------:|
+| $$ L=\frac{X_L} {2 \pi f} $$ |
+| $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ |
+| $$ L= 0.16 \ H $$ |
+
+### Kapacitiv reaktans
+Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då kommer ekvationen att minska när frekvesen ökar.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ X_C =\frac{1} {2 \pi f C}  $$ | $$ X_C $$ | kapacitiv reaktans | Ohm | $$ Ω $$ |
+| $$ f = \frac{1}{T}   $$ | $$ f $$ | Hertz | $$ Hz $$ |
+| $$ 2 \times \pi = 3.14  $$ | $$ Pi $$ | Omkrets | Radies | $$ \pi $$ |
+
+| Exempel uträkning kapacitiv reaktans |
+|:-------------:|
+| $$ X_C =\frac{1} {2 \pi f C} $$ |
+| $$ X_C = \frac{1}{2 \times \pi \times 50 \times 0,0002} $$ |
+| $$ X_C = 15,91 \ Ω  $$ |
+
+### Seriekopplade
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ C_{tot}=C_{1} + C_{2}... $$ | $$ C $$ | Kapacitans | Farad | $$ F^{As/V} $$ |
+
+| Exempel uträkning kapacitiv reaktans |
+|:-------------:|
+| $$ C_{tot}=C_{1} + C_{2} $$ |
+| $$ C_{tot}=12_{1} + 12_{2} $$ |
+| $$ C_{tot}=24 \ μF $$ |
+
+### Parallellkopplade
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ 
+\frac{1}{C_{tot}} =
+\frac{1}{C_{1}} +
+\frac{1}{C_{2}} +
+\frac{1}{C_{3}}
+...
+$$ | $$ C $$ | Kapacitans | Farad | $$ F^{As/V} $$ |
+
+| Exempel uträkning kapacitiv reaktans |
+|:-------------:|
+| $$ 
+\frac{1}{C_{tot}} =
+\frac{1}{C_{1}} +
+\frac{1}{C_{2}} +
+\frac{1}{C_{3}}
+...
+$$ |
+| $$ 
+\frac{1}{C_{tot}} =
+\frac{1}{1,8_{1}} +
+\frac{1}{16_{2}} +
+\frac{1}{32_{3}}
+$$ |
+| $$ C_{tot}=4.5 \ nF $$ |
+
+## Spolar
+Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten Henry (H).
+
+|Prefixer | Enhet | Förkostning| 
+|----------|:-------------:|:-------------:|
+| $$ 1 \ millihenry  $$ | $$ mH $$ | $$ 10^{-3} $$ |
+| $$ 1 \ mikrohenry  $$ | $$ μH $$  | $$ 10^{-6} $$ |
+
+### Induktans
+Induktansen beror på hur många varv spolen har, diametern, avståndet mellan ledarna och om spolen är försedd med järnkärna. Flera lindningsvarv och större diameter ger spolen större indutans.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ L=\frac{X_L} {2\pi f} $$ | $$ L $$ | Induktans | Henry | $$ H^{Vs/A} $$ |
+| $$ f = \frac{1}{T}   $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$ |
+| $$ 2 \times \pi = 3.14  $$ | $$ Pi $$ | ? | ? | $$ \pi $$ |
+
+| Exempel uträkning induktians |
+|:-------------:|
+| $$ L=\frac{X_L} {2 \times \pi f} $$ |
+| $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ |
+| $$ L= 0.16 \ H $$ |
+
+### Induktiv reaktans
+Växelströmsmotståndet är
+frekvensberoende och motståndet ökar när
+frekvensen ökar.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ X_L = 2 \pi fL $$ | $$ X_L $$ | Induktiv reaktans | Ohm | $$ Ω $$ |
+| $$ f = \frac{1}{T} $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$ |
+| $$ 2 \times \pi = 3.14  $$ | $$ Pi $$ | ? | ? | $$ \pi $$ |
+
+| Exempel uträkning induktiv reaktans vid 50 Hz |
+|:-------------:|
+| $$ X_L = 2 \pi fL $$ |
+| $$ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  $$ |
+| $$ X_L=15,7 \ Ω $$ |
