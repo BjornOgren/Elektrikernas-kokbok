@@ -213,9 +213,9 @@ $$ I_L = I_f = Faström $$
 | $$ I_L = \frac {6000}{ \sqrt{3} \times 400} $$ |
 | $$ I_L = 8,7 \ A $$ |
 
-## Effekt
+# Effekt
 
-### Trefaskretsar
+## Trefaskretsar
 Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudström. Men i en D-koppling är det fasströmmarna genom belastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: $$ \sqrt{3} $$ som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med $$ cos \phi $$.
 
 
