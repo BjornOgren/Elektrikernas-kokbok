@@ -33,7 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage[margin=5cm]{geometry}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -90,7 +89,9 @@
 \hypertarget{likstruxf6mskretsar}{%
 \chapter{Likströmskretsar}\label{likstruxf6mskretsar}}
 
-Test
+\[ f = 26,3 \ Hz  \]
+\[ f = 26,3 \ Hz  \]
+\[ f = 26,3 \ Hz  \]
 
 \hypertarget{uri}{%
 \section{URI}\label{uri}}
@@ -1083,19 +1084,9 @@ Förkortning
 \bottomrule()
 \end{longtable}
 
-\begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
-\toprule()
-\begin{minipage}[b]{\linewidth}\centering
-Exempel uträkning induktians
-\end{minipage} \\
-\midrule()
-\endhead
-\( L=\frac{X_L} {2 \times \pi f} \) \\
-\( L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \) \\
-\( L= 0.16 \ H \) \\
-\bottomrule()
-\end{longtable}
+\[ L=\frac{X_L} {2 \times \pi f} \]
+\[ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \]
+\[ L= 0.16 \ H \]
 
 \hypertarget{induktiv-reaktans}{%
 \subsection{Induktiv reaktans}\label{induktiv-reaktans}}
@@ -1130,16 +1121,9 @@ Förkortning
 \bottomrule()
 \end{longtable}
 
-\begin{longtable}[]{@{}c@{}}
-\toprule()
-Test \\
-\midrule()
-\endhead
-\( X_L = 2 \pi fL \) \\
-\( X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  \) \\
-\( X_L=15,7 \  \Omega \) \\
-\bottomrule()
-\end{longtable}
+\[ X_L = 2 \pi fL \]
+\[ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  \]
+\[ X_L=15,7 \  \Omega \]
 
   \bibliography{book.bib,packages.bib}
 

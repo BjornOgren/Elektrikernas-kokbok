@@ -3,7 +3,7 @@ title: "Elektrikernas kokbok"
 author: "Björn Ögren"
 date: "`r Sys.Date()`"
 output: pdf_document
-geometry: margin=5cm
+
 documentclass: book
 bibliography:
 - book.bib
@@ -15,12 +15,18 @@ description: |
 link-citations: yes
 github-repo: "rstudio/bookdown-demo"
 site: bookdown::bookdown_site
+extra_dependencies: awesomebox
 ---
 
 
 # Likströmskretsar
 
-Test
+::: {.rmdcomment}
+
+  $$ f = 26,3 \ Hz  $$
+  $$ f = 26,3 \ Hz  $$
+  $$ f = 26,3 \ Hz  $$
+:::
 
 ## URI 
 
@@ -412,11 +418,11 @@ Induktansen beror på hur många varv spolen har, diametern, avståndet mellan l
 | $$ f = \frac{1}{T}   $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$ |
 | $$ 2 \times \pi = 3.14  $$ | $$ Pi $$ | ? | ? | $$ \pi $$ |
 
-| Exempel uträkning induktians |
-|:-------------:|
-| $$ L=\frac{X_L} {2 \times \pi f} $$ |
-| $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ |
-| $$ L= 0.16 \ H $$ |
+::: {.latex}
+$$ L=\frac{X_L} {2 \times \pi f} $$ 
+$$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ 
+$$ L= 0.16 \ H $$ 
+:::
 
 ### Induktiv reaktans
 Växelströmsmotståndet är
@@ -429,8 +435,9 @@ frekvensen ökar.
 | $$ f = \frac{1}{T} $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$ |
 | $$ 2 \times \pi = 3.14  $$ | $$ Pi $$ | ? | ? | $$ \pi $$ |
 
-| Test |
-|:-------------:|
-| $$ X_L = 2 \pi fL $$ |
-| $$ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  $$ |
-| $$ X_L=15,7 \  \Omega $$ |
+::: {.latex}
+
+$$ X_L = 2 \pi fL $$
+$$ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  $$
+$$ X_L=15,7 \  \Omega $$
+:::
