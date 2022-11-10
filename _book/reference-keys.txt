@@ -35,3 +35,13 @@ parallellkopplade
 spolar
 induktans
 induktiv-reaktans
+y-koppling-1
+d-koppling-1
+ström
+spänning
+linjespänning-1
+fasspänning-2
+växelströmsmotstånd
+toppspänning
+toppström
+topp-till-toppspänning

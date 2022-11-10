@@ -5,27 +5,31 @@ h2:tidsintervall Tidsintervall
 h3:frekvens Frekvens
 h3:tid Tid
 h2:toppvärden Toppvärden
-h3:toppvärde-av-spänning Toppvärde av spänning
-h3:toppvärde-av-ström Toppvärde av ström
-h3:topp-till-toppvärde-av-spänning Topp till toppvärde av spänning
+h3:toppspänning Toppspänning
+h3:toppström Toppström
+h3:topp-till-toppspänning Topp till toppspänning
 h3:topp-till-toppvärde-av-ström Topp till toppvärde av ström
-h2:yd-koppling Y/D-Koppling
-h3:y-koppling Y-Koppling
-h4:linjespänning Linjespänning
-h4:fasspänning Fasspänning
-h4:fasström Fasström
-h4:linjeström Linjeström
-h3:d-koppling D-koppling
-h4:fasspänning-1 Fasspänning
-h4:fasström-1 Fasström
-h4:linjeström-1 Linjeström
-h1:effekt Effekt
-h2:trefaskretsar Trefaskretsar
+h1:spänning Spänning
+h2:y-koppling Y-Koppling
+h3:linjespänning Linjespänning
+h3:fasspänning Fasspänning
+h2:d-koppling D-koppling
+h3:linjespänning-1 Linjespänning
+h3:fasspänning-1 Fasspänning
+h1:ström Ström
+h2:y-koppling-1 Y-Koppling
+h3:fasström Fasström
+h3:linjeström Linjeström
+h2:d-koppling-1 D-koppling
+h3:fasström-1 Fasström
+h3:linjeström-1 Linjeström
+h2:effekt Effekt
+h3:trefaskretsar Trefaskretsar
 h2:reaktiva-kretsar Reaktiva kretsar
 h3:aktiv Aktiv
 h3:skenbar Skenbar
 h3:reaktiv Reaktiv
-h1:växelstörmsmoststånd Växelstörmsmoststånd
+h1:växelströmsmotstånd Växelströmsmotstånd
 h2:impedans Impedans
 h2:kondensatorer Kondensatorer
 h3:kapacitans Kapacitans

@@ -3,7 +3,6 @@ title: "Elektrikernas kokbok"
 author: "Björn Ögren"
 date: "`r Sys.Date()`"
 output: pdf_document
-classoption: landscape
 geometry: margin=5cm
 documentclass: book
 bibliography:
@@ -52,200 +51,183 @@ reciproka värde.
 
 ### Frekvens
 
-Formel 
-$$ Frekvens = \frac{1}{Tid} $$
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ Frekvens = \frac{1}{Tid} $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$|
 
-Exemple
-
-$$ Frekvens = \frac{1}{Tid} = \frac{1}{38} \times 10^{3} = 26,3 \ Hz $$
-Frekvens är således 
-$$ F = 26,3 \ Hz $$
+| Exempel uträkning frekvens (1) |
+|:-------------:|
+| $$ Frekvens = \frac{1}{Tid} $$ |
+| $$ f =\frac{1}{38} \times 10^{3} $$ |
+| $$ f = 26,3 \ Hz  $$ |
 
 ### Tid
 
-Formel
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ Tid = \frac{1}{Frekvens} $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$|
 
-$$ Tid = \frac{1}{Frekvens} $$
-
-Exemple
-
-$$ Tid = \frac{1}{Frekvens} = \frac{1}{400} \times 10^{3} = 26,3 \ Hz $$ 
-
-Tid är således
-
-$$ T = 2,5 \ ms $$
+| Exempel uträkning tid (1) |
+|:-------------:|
+| $$ Tid = \frac{1}{Frekvens} $$ |
+| $$ Tid = \frac{1}{400} \times 10^{3} $$ |
+| $$ T = 2,5 \ ms  $$ |
 
 ## Toppvärden
 
-### Toppvärde av spänning
-
-Formel
-
-$$ \widehat{u} = U_{eff} \times \sqrt{2} $$
-
-Exemple
-
-$$ \widehat{u} = U_{eff} \times \sqrt{2} = 415 \times \sqrt{2} \approx 587 \ V $$
-
-Toppvärdet är således
-$$ \hat{u} \approx 587 \ V $$
-
-### Toppvärde av ström
-
-Formel
-
-$$ \hat{I} = I_{eff} \times \sqrt{2} $$
-
-Exemple
-
-$$ \hat{I} = I_{eff} \times \sqrt{2} = 20 \times \sqrt{2} \approx 28,3 \ A $$
-
-Toppvärdet är således
-$$ \hat{I} \approx 28,3 \ A $$
-
-### Topp till toppvärde av spänning
-
-Formel
-
-$$ \widehat{\breve{u}} = \hat{u} \times 2 $$
-
-Exemple
-
-$$ \widehat{\breve{u}} = \hat{u} \times 2 = 587 \times 2 = 1174 \ V $$
-
-Topp till toppvärd är således
-$$ \widehat{\breve{u}} = 1174 \ V $$
-
-### Topp till toppvärde av ström
-
-$$ \hat{\breve{I}} = \hat{I} \times 2 $$
-
-Exemple
-
-$$ \hat{\breve{I}} = \hat{I} \times 2 \approx 28,3 \times 2 = 56 \ A $$
-
-Topp till toppvärd är således
-$$ \hat{\breve{I}} \approx 56 \ A $$
-
-## Y/D-Koppling
-
-### Y-Koppling
-
-#### Linjespänning
-
-Formel
-
-$$ U_L = U_f \times \sqrt{3} $$
-
-Exemple
-
-$$ U_L = U_f \times \sqrt{3}
-= 230 \times \sqrt{3} = 400V $$
-
-Linjespänningen är således
-
-$$ U_L = 400V $$
-
-#### Fasspänning
-
-
-$$ U_f = \frac{U_L}{\sqrt{3}} $$
-
-Exemple
-
-$$
-U_f = \frac{U_L}{\sqrt{3}} 
-= \frac{400}{\sqrt{3}} =
-230V
-$$
-
-Fasspänningen är således
-$$ U_f = 230V $$
-
-#### Fasström
-
-Formel
-
-$$ I_f = \frac{U_f}{R} $$
-
-Exemple
-
-$$ I_f = \frac{U_f}{R}
-= \frac{230}{100} = 2,3 \ A
-$$
-
-Fasströmen är således 
-$$ I_f = 2,3 \ A $$
-
-#### Linjeström
-
-Formel
-
-$$ I_L = I_f = 9,58 A $$
-
-Linjesströmen är således
-
-$$ I_{L}= 2,3 A $$
-
-### D-koppling
-
-#### Fasspänning
-
-Formel
-
-$$ U_f = U_L = 400V $$
-
-Fasspänning är således
-
-$$ U_f = 400V $$
-
-#### Fasström
-
-Formel
-
-$$ I_f = \frac{U_f}{R} $$
-
-Exemple
-
-$$ I_f = \frac{U_f}{R}
-= \frac{400}{2,88} = 5 \ A
-$$
-
-
-Fasströmen är således
-
-$ I_f = 2,3 \ A $
-
-
-#### Linjeström
-
-Formel
-
-$$ I_L = I_f \times \sqrt{3} $$
-
-Exemple
-
-$$ I_L = I_f \times \sqrt{3} = 90 \times \sqrt{3}$$
-
-
-Linjeström är således '
-
-$$ I_L = 2,3 \ A $$
-
-# Effekt
-
-## Trefaskretsar
-Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudströ . Men i en D-koppling är det fasströmmarna genom brlastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: $$ \sqrt{3} $$ som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med $$ cos \phi $$.
+### Toppspänning
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ P_{trefas}= \sqrt{3} \times U \times I $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+| $$ \widehat{u} = U_{eff} \times \sqrt{2} $$ | $$ \widehat{u} $$ | Toppspänning | Volt | $$ V $$|
 
-| Exempel uträkning trefas effekt |
+| Exempel uträkning toppspänning |
 |:-------------:|
-| $$ P_{trefas}= \sqrt{3} \times U \times I $$ |
-| $$ P_{trefas}= \sqrt{3} \times U \times I $$ |
-| $$ P= ? \ W $$ |
+| $$ \widehat{u} = U_{eff} \times \sqrt{2} $$ |
+| $$ \widehat{u} = 415 \times \sqrt{2} $$ |
+| $$ \widehat{u} \approx 587 \ V $$ |
+
+### Toppström
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ \widehat{I} = I_{eff} \times \sqrt{2} $$ | $$ \widehat{I} $$ | Toppström | Amper | $$ A $$|
+
+| Exempel uträkning toppström |
+|:-------------:|
+| $$ \widehat{I} = I_{eff} \times \sqrt{2} $$ |
+| $$ \widehat{I} = 20 \times \sqrt{2} $$ |
+| $$ \widehat{I} \approx 28,3 \ A  $$ |
+
+### Topp till toppspänning
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ \widehat{\breve{u}} = \widehat{u} \times 2  $$ | $$ \widehat{\breve{u}} $$ | Toppspänning | Volt | $$ V $$|
+
+| Exempel uträkning topp till toppspänning |
+|:-------------:|
+| $$ \widehat{\breve{u}} $$ |
+| $$ \widehat{\breve{u}} = 587 \times 2 $$ |
+| $$ \widehat{\breve{u}} = 1174 \ V $$ |
+
+### Topp till toppvärde av ström
+
+$$ \widehat{\breve{I}} = \widehat{I} \times 2 $$
+
+Exemple
+
+$$ \widehat{\breve{I}} = \widehat{I} \times 2 \approx 28,3 \times 2 = 56 \ A $$
+
+Topp till toppvärd är således
+$$ \widehat{\breve{I}} \approx 56 \ A $$
+
+# Spänning
+
+## Y-Koppling
+
+### Linjespänning
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ U_L = U_f \times \sqrt{3} $$ | $$ U_l $$ | Spänning | Volt | $$ V $$|
+
+| Exempel uträkning fasspänning |
+|:-------------:|
+| $$ U_L = U_f \times \sqrt{3}  $$ |
+| $$ U_L = 230 \times \sqrt{3} $$ |
+| $$ U_L = 400 \ V $$ |
+
+### Fasspänning
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ U_f = \frac{U_L}{\sqrt{3}} $$ | $$ U_l $$ | Spänning | Volt | $$ V $$|
+
+| Exempel uträkning fasspänning |
+|:-------------:|
+| $$ U_f = \frac{U_L}{\sqrt{3}}  $$ |
+| $$ U_f = \frac{400}{\sqrt{3}} $$ |
+| $$ U_f = 230 \ V $$ |
+
+## D-koppling
+
+### Linjespänning
+
+### Fasspänning
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ U_f = U_L = 400V  $$ | $$ U_L $$ | Spänning | Volt | $$ V $$|
+
+# Ström
+
+## Y-Koppling
+
+### Fasström
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ I_f = \frac{U_f}{R} $$ | $$ I_f $$ | Ström | Ampere | $$ A $$|
+
+| Exempel uträkning fasström |
+|:-------------:|
+| $$ I_f = \frac{U_f}{R} $$ |
+| $$ I_f \frac{400}{100} $$ |
+| $$ I_f = 4 \ A $$ |
+
+### Linjeström
+
+$$ I_L = I_f = Faström $$
+
+## D-koppling
+
+### Fasström
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ I_f = \frac{U_h}{R} $$ | $$ I_f $$ | Ström | Ampere | $$ A $$|
+
+| Exempel uträkning fasström |
+|:-------------:|
+| $$ I_f = \frac{U_h}{R} $$ |
+| $$ I_f \frac{400}{100} $$ |
+| $$ I_f = 4 \ A $$ |
+
+### Linjeström
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ I_L = I_f \times \sqrt{3} $$ | $$ I_L $$ | Ström | Ampere | $$ A $$|
+| $$ I_L = \frac {P}{ \sqrt{3} \times U_h } $$ | $$ I_L $$ | Ström | Ampere | $$ A $$|
+
+| Exempel uträkning linjeström (1) |
+|:-------------:|
+| $$ I_L = I_f \times \sqrt{3} $$ |
+| $$ I_L = 90 \times \sqrt{3} $$ |
+| $$ I_L = 2,3 \ A $$ |
+
+| Exempel uträkning linjeström (2) |
+|:-------------:|
+| $$ I_L = \frac {P}{ \sqrt{3} \times U_h} $$ |
+| $$ I_L = \frac {6000}{ \sqrt{3} \times 400} $$ |
+| $$ I_L = 8,7 \ A $$ |
+
+## Effekt
+
+### Trefaskretsar
+Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudström. Men i en D-koppling är det fasströmmarna genom belastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: $$ \sqrt{3} $$ som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med $$ cos \phi $$.
+
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ P_{trefas}= \sqrt{3} \times U \times I_f $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+
+| Effekt i tre D-kopplade resistorer |
+|:-------------:|
+| $$ P_{trefas}= \sqrt{3} \times U \times I_f $$ |
+| $$ P_{trefas}= \sqrt{3} \times U \times I_f $$ |
+| $$ P= 4800 \ W $$ |
 
 ## Reaktiva kretsar
 
@@ -315,7 +297,7 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 | $$ Q= 795 \ VAr $$ |
 
 
-# Växelstörmsmoststånd
+# Växelströmsmotstånd
 
 ## Impedans
 
