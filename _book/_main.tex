@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  landscape]{book}
+]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -78,7 +78,7 @@
 
 \title{Elektrikernas kokbok}
 \author{Björn Ögren}
-\date{2022-11-09}
+\date{2022-11-10}
 
 \begin{document}
 \maketitle
@@ -125,205 +125,43 @@ reciproka värde.
 \hypertarget{frekvens}{%
 \subsection{Frekvens}\label{frekvens}}
 
-Formel
-\[ Frekvens = \frac{1}{Tid} \]
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( Frekvens = \frac{1}{Tid} \) & \( f \) & Frekvens & Hertz & \( Hz \) \\
+\bottomrule()
+\end{longtable}
 
-Exemple
-
-\[ Frekvens = \frac{1}{Tid} = \frac{1}{38} \times 10^{3} = 26,3 \ Hz \]
-Frekvens är således
-\[ F = 26,3 \ Hz \]
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning frekvens (1) \\
+\midrule()
+\endhead
+\( Frekvens = \frac{1}{Tid} \) \\
+\( f =\frac{1}{38} \times 10^{3} \) \\
+\( f = 26,3 \ Hz  \) \\
+\bottomrule()
+\end{longtable}
 
 \hypertarget{tid}{%
 \subsection{Tid}\label{tid}}
-
-Formel
-
-\[ Tid = \frac{1}{Frekvens} \]
-
-Exemple
-
-\[ Tid = \frac{1}{Frekvens} = \frac{1}{400} \times 10^{3} = 26,3 \ Hz \]
-
-Tid är således
-
-\[ T = 2,5 \ ms \]
-
-\hypertarget{toppvuxe4rden}{%
-\section{Toppvärden}\label{toppvuxe4rden}}
-
-\hypertarget{toppvuxe4rde-av-spuxe4nning}{%
-\subsection{Toppvärde av spänning}\label{toppvuxe4rde-av-spuxe4nning}}
-
-Formel
-
-\[ \widehat{u} = U_{eff} \times \sqrt{2} \]
-
-Exemple
-
-\[ \widehat{u} = U_{eff} \times \sqrt{2} = 415 \times \sqrt{2} \approx 587 \ V \]
-
-Toppvärdet är således
-\[ \hat{u} \approx 587 \ V \]
-
-\hypertarget{toppvuxe4rde-av-struxf6m}{%
-\subsection{Toppvärde av ström}\label{toppvuxe4rde-av-struxf6m}}
-
-Formel
-
-\[ \hat{I} = I_{eff} \times \sqrt{2} \]
-
-Exemple
-
-\[ \hat{I} = I_{eff} \times \sqrt{2} = 20 \times \sqrt{2} \approx 28,3 \ A \]
-
-Toppvärdet är således
-\[ \hat{I} \approx 28,3 \ A \]
-
-\hypertarget{topp-till-toppvuxe4rde-av-spuxe4nning}{%
-\subsection{Topp till toppvärde av spänning}\label{topp-till-toppvuxe4rde-av-spuxe4nning}}
-
-Formel
-
-\[ \widehat{\breve{u}} = \hat{u} \times 2 \]
-
-Exemple
-
-\[ \widehat{\breve{u}} = \hat{u} \times 2 = 587 \times 2 = 1174 \ V \]
-
-Topp till toppvärd är således
-\[ \widehat{\breve{u}} = 1174 \ V \]
-
-\hypertarget{topp-till-toppvuxe4rde-av-struxf6m}{%
-\subsection{Topp till toppvärde av ström}\label{topp-till-toppvuxe4rde-av-struxf6m}}
-
-\[ \hat{\breve{I}} = \hat{I} \times 2 \]
-
-Exemple
-
-\[ \hat{\breve{I}} = \hat{I} \times 2 \approx 28,3 \times 2 = 56 \ A \]
-
-Topp till toppvärd är således
-\[ \hat{\breve{I}} \approx 56 \ A \]
-
-\hypertarget{yd-koppling}{%
-\section{Y/D-Koppling}\label{yd-koppling}}
-
-\hypertarget{y-koppling}{%
-\subsection{Y-Koppling}\label{y-koppling}}
-
-\hypertarget{linjespuxe4nning}{%
-\subsubsection{Linjespänning}\label{linjespuxe4nning}}
-
-Formel
-
-\[ U_L = U_f \times \sqrt{3} \]
-
-Exemple
-
-\[ U_L = U_f \times \sqrt{3}
-= 230 \times \sqrt{3} = 400V \]
-
-Linjespänningen är således
-
-\[ U_L = 400V \]
-
-\hypertarget{fasspuxe4nning}{%
-\subsubsection{Fasspänning}\label{fasspuxe4nning}}
-
-\[ U_f = \frac{U_L}{\sqrt{3}} \]
-
-Exemple
-
-\[
-U_f = \frac{U_L}{\sqrt{3}} 
-= \frac{400}{\sqrt{3}} =
-230V
-\]
-
-Fasspänningen är således
-\[ U_f = 230V \]
-
-\hypertarget{fasstruxf6m}{%
-\subsubsection{Fasström}\label{fasstruxf6m}}
-
-Formel
-
-\[ I_f = \frac{U_f}{R} \]
-
-Exemple
-
-\[ I_f = \frac{U_f}{R}
-= \frac{230}{100} = 2,3 \ A
-\]
-
-Fasströmen är således
-\[ I_f = 2,3 \ A \]
-
-\hypertarget{linjestruxf6m}{%
-\subsubsection{Linjeström}\label{linjestruxf6m}}
-
-Formel
-
-\[ I_L = I_f = 9,58 A \]
-
-Linjesströmen är således
-
-\[ I_{L}= 2,3 A \]
-
-\hypertarget{d-koppling}{%
-\subsection{D-koppling}\label{d-koppling}}
-
-\hypertarget{fasspuxe4nning-1}{%
-\subsubsection{Fasspänning}\label{fasspuxe4nning-1}}
-
-Formel
-
-\[ U_f = U_L = 400V \]
-
-Fasspänning är således
-
-\[ U_f = 400V \]
-
-\hypertarget{fasstruxf6m-1}{%
-\subsubsection{Fasström}\label{fasstruxf6m-1}}
-
-Formel
-
-\[ I_f = \frac{U_f}{R} \]
-
-Exemple
-
-\[ I_f = \frac{U_f}{R}
-= \frac{400}{2,88} = 5 \ A
-\]
-
-Fasströmen är således
-
-\$ I\_f = 2,3 ~A \$
-
-\hypertarget{linjestruxf6m-1}{%
-\subsubsection{Linjeström}\label{linjestruxf6m-1}}
-
-Formel
-
-\[ I_L = I_f \times \sqrt{3} \]
-
-Exemple
-
-\[ I_L = I_f \times \sqrt{3} = 90 \times \sqrt{3}\]
-
-Linjeström är således '
-
-\[ I_L = 2,3 \ A \]
-
-\hypertarget{effekt}{%
-\chapter{Effekt}\label{effekt}}
-
-\hypertarget{trefaskretsar}{%
-\section{Trefaskretsar}\label{trefaskretsar}}
-
-Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudströ . Men i en D-koppling är det fasströmmarna genom brlastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: \[ \sqrt{3} \] som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med \[ cos \phi \].
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
@@ -345,18 +183,445 @@ Förkortning
 \end{minipage} \\
 \midrule()
 \endhead
-\( P_{trefas}= \sqrt{3} \times U \times I \) & \( P \) & Aktiv effekt & Watt & \( W \) \\
+\( Tid = \frac{1}{Frekvens} \) & \( f \) & Frekvens & Hertz & \( Hz \) \\
 \bottomrule()
 \end{longtable}
 
 \begin{longtable}[]{@{}c@{}}
 \toprule()
-Exempel uträkning trefas effekt \\
+Exempel uträkning tid (1) \\
 \midrule()
 \endhead
-\( P_{trefas}= \sqrt{3} \times U \times I \) \\
-\( P_{trefas}= \sqrt{3} \times U \times I \) \\
-\( P= ? \ W \) \\
+\( Tid = \frac{1}{Frekvens} \) \\
+\( Tid = \frac{1}{400} \times 10^{3} \) \\
+\( T = 2,5 \ ms  \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{toppvuxe4rden}{%
+\section{Toppvärden}\label{toppvuxe4rden}}
+
+\hypertarget{toppspuxe4nning}{%
+\subsection{Toppspänning}\label{toppspuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( \widehat{u} = U_{eff} \times \sqrt{2} \) & \( \widehat{u} \) & Toppspänning & Volt & \( V \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning toppspänning \\
+\midrule()
+\endhead
+\( \widehat{u} = U_{eff} \times \sqrt{2} \) \\
+\( \widehat{u} = 415 \times \sqrt{2} \) \\
+\( \widehat{u} \approx 587 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{toppstruxf6m}{%
+\subsection{Toppström}\label{toppstruxf6m}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( \widehat{I} = I_{eff} \times \sqrt{2} \) & \( \widehat{I} \) & Toppström & Amper & \( A \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning toppström \\
+\midrule()
+\endhead
+\( \widehat{I} = I_{eff} \times \sqrt{2} \) \\
+\( \widehat{I} = 20 \times \sqrt{2} \) \\
+\( \widehat{I} \approx 28,3 \ A  \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{topp-till-toppspuxe4nning}{%
+\subsection{Topp till toppspänning}\label{topp-till-toppspuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( \widehat{\breve{u}} = \widehat{u} \times 2  \) & \( \widehat{\breve{u}} \) & Toppspänning & Volt & \( V \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning topp till toppspänning \\
+\midrule()
+\endhead
+\( \widehat{\breve{u}} \) \\
+\( \widehat{\breve{u}} = 587 \times 2 \) \\
+\( \widehat{\breve{u}} = 1174 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{topp-till-toppvuxe4rde-av-struxf6m}{%
+\subsection{Topp till toppvärde av ström}\label{topp-till-toppvuxe4rde-av-struxf6m}}
+
+\[ \widehat{\breve{I}} = \widehat{I} \times 2 \]
+
+Exemple
+
+\[ \widehat{\breve{I}} = \widehat{I} \times 2 \approx 28,3 \times 2 = 56 \ A \]
+
+Topp till toppvärd är således
+\[ \widehat{\breve{I}} \approx 56 \ A \]
+
+\hypertarget{spuxe4nning}{%
+\chapter{Spänning}\label{spuxe4nning}}
+
+\hypertarget{y-koppling}{%
+\section{Y-Koppling}\label{y-koppling}}
+
+\hypertarget{linjespuxe4nning}{%
+\subsection{Linjespänning}\label{linjespuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( U_L = U_f \times \sqrt{3} \) & \( U_l \) & Spänning & Volt & \( V \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning fasspänning \\
+\midrule()
+\endhead
+\( U_L = U_f \times \sqrt{3}  \) \\
+\( U_L = 230 \times \sqrt{3} \) \\
+\( U_L = 400 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{fasspuxe4nning}{%
+\subsection{Fasspänning}\label{fasspuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( U_f = \frac{U_L}{\sqrt{3}} \) & \( U_l \) & Spänning & Volt & \( V \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning fasspänning \\
+\midrule()
+\endhead
+\( U_f = \frac{U_L}{\sqrt{3}}  \) \\
+\( U_f = \frac{400}{\sqrt{3}} \) \\
+\( U_f = 230 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{d-koppling}{%
+\section{D-koppling}\label{d-koppling}}
+
+\hypertarget{linjespuxe4nning-1}{%
+\subsection{Linjespänning}\label{linjespuxe4nning-1}}
+
+\hypertarget{fasspuxe4nning-1}{%
+\subsection{Fasspänning}\label{fasspuxe4nning-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( U_f = U_L = 400V  \) & \( U_L \) & Spänning & Volt & \( V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{struxf6m}{%
+\chapter{Ström}\label{struxf6m}}
+
+\hypertarget{y-koppling-1}{%
+\section{Y-Koppling}\label{y-koppling-1}}
+
+\hypertarget{fasstruxf6m}{%
+\subsection{Fasström}\label{fasstruxf6m}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( I_f = \frac{U_f}{R} \) & \( I_f \) & Ström & Ampere & \( A \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning fasström \\
+\midrule()
+\endhead
+\( I_f = \frac{U_f}{R} \) \\
+\( I_f \frac{400}{100} \) \\
+\( I_f = 4 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{linjestruxf6m}{%
+\subsection{Linjeström}\label{linjestruxf6m}}
+
+\[ I_L = I_f = Faström \]
+
+\hypertarget{d-koppling-1}{%
+\section{D-koppling}\label{d-koppling-1}}
+
+\hypertarget{fasstruxf6m-1}{%
+\subsection{Fasström}\label{fasstruxf6m-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( I_f = \frac{U_h}{R} \) & \( I_f \) & Ström & Ampere & \( A \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning fasström \\
+\midrule()
+\endhead
+\( I_f = \frac{U_h}{R} \) \\
+\( I_f \frac{400}{100} \) \\
+\( I_f = 4 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{linjestruxf6m-1}{%
+\subsection{Linjeström}\label{linjestruxf6m-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( I_L = I_f \times \sqrt{3} \) & \( I_L \) & Ström & Ampere & \( A \) \\
+\( I_L = \frac {P}{ \sqrt{3} \times U_h } \) & \( I_L \) & Ström & Ampere & \( A \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning linjeström (1) \\
+\midrule()
+\endhead
+\( I_L = I_f \times \sqrt{3} \) \\
+\( I_L = 90 \times \sqrt{3} \) \\
+\( I_L = 2,3 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning linjeström (2) \\
+\midrule()
+\endhead
+\( I_L = \frac {P}{ \sqrt{3} \times U_h} \) \\
+\( I_L = \frac {6000}{ \sqrt{3} \times 400} \) \\
+\( I_L = 8,7 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{effekt}{%
+\chapter{Effekt}\label{effekt}}
+
+\hypertarget{trefaskretsar}{%
+\section{Trefaskretsar}\label{trefaskretsar}}
+
+Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudström. Men i en D-koppling är det fasströmmarna genom belastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: \[ \sqrt{3} \] som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med \[ cos \phi \].
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( P_{trefas}= \sqrt{3} \times U \times I_f \) & \( P \) & Aktiv effekt & Watt & \( W \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Effekt i tre D-kopplade resistorer \\
+\midrule()
+\endhead
+\( P_{trefas}= \sqrt{3} \times U \times I_f \) \\
+\( P_{trefas}= \sqrt{3} \times U \times I_f \) \\
+\( P= 4800 \ W \) \\
 \bottomrule()
 \end{longtable}
 
@@ -529,8 +794,8 @@ Exempel uträkning reaktiv effekt (2) \\
 \bottomrule()
 \end{longtable}
 
-\hypertarget{vuxe4xelstuxf6rmsmoststuxe5nd}{%
-\chapter{Växelstörmsmoststånd}\label{vuxe4xelstuxf6rmsmoststuxe5nd}}
+\hypertarget{vuxe4xelstruxf6msmotstuxe5nd}{%
+\chapter{Växelströmsmotstånd}\label{vuxe4xelstruxf6msmotstuxe5nd}}
 
 \hypertarget{impedans}{%
 \section{Impedans}\label{impedans}}
@@ -875,23 +1140,6 @@ Test \\
 \( X_L=15,7 \  \Omega \) \\
 \bottomrule()
 \end{longtable}
-
-\begin{longtable}[]{@{}lll@{}}
-\toprule()
-& Exempel uträkning induktians & \\
-\midrule()
-\endhead
-& \( X_L = 2 \pi fL \) & \\
-& \( X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  \) & \\
-& \( X_L=15,7 \  \Omega \) & \\
-\bottomrule()
-\end{longtable}
-
-This row needs to fit the table\\
-Software \textbar{} Price \textbar{} Advantages\\
-:----------- \textbar{} :----------- \textbar{} :-----------\\
-R \textbar{} Free \textbar{} Open source\\
-SPSS \textbar{} I don't know \textbar{} Advantage 1
 
   \bibliography{book.bib,packages.bib}
 
