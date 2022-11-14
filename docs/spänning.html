@@ -29,14 +29,14 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <meta name="author" content="Björn Ögren" />
 
 
-<meta name="date" content="2022-11-10" />
+<meta name="date" content="2022-11-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="växelströmskretsar.html"/>
+<link rel="prev" href="frekvenz.html"/>
 <link rel="next" href="ström.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -61,6 +61,28 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -78,23 +100,26 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li><a href="./">Elektrikernas kokbok</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Likströmskretsar</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="likströmskretsar.html"><a href="likströmskretsar.html"><i class="fa fa-check"></i>Likströmskretsar</a></li>
+<li class="chapter" data-level="1" data-path="likströmskretsar-1.html"><a href="likströmskretsar-1.html"><i class="fa fa-check"></i><b>1</b> Likströmskretsar</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#uri"><i class="fa fa-check"></i><b>1.1</b> URI</a></li>
+<li class="chapter" data-level="1.1" data-path="likströmskretsar-1.html"><a href="likströmskretsar-1.html#uri"><i class="fa fa-check"></i><b>1.1</b> URI</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html"><i class="fa fa-check"></i><b>2</b> Växelströmskretsar</a>
+<li class="chapter" data-level="" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html"><i class="fa fa-check"></i>Växelströmskretsar</a></li>
+<li class="chapter" data-level="2" data-path="frekvenz.html"><a href="frekvenz.html"><i class="fa fa-check"></i><b>2</b> Frekvenz</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#tidsintervall"><i class="fa fa-check"></i><b>2.1</b> Tidsintervall</a>
+<li class="chapter" data-level="2.1" data-path="frekvenz.html"><a href="frekvenz.html#tidsintervall"><i class="fa fa-check"></i><b>2.1</b> Tidsintervall</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#frekvens"><i class="fa fa-check"></i><b>2.1.1</b> Frekvens</a></li>
-<li class="chapter" data-level="2.1.2" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#tid"><i class="fa fa-check"></i><b>2.1.2</b> Tid</a></li>
+<li class="chapter" data-level="2.1.1" data-path="frekvenz.html"><a href="frekvenz.html#frekvens"><i class="fa fa-check"></i><b>2.1.1</b> Frekvens</a></li>
+<li class="chapter" data-level="2.1.2" data-path="frekvenz.html"><a href="frekvenz.html#tid"><i class="fa fa-check"></i><b>2.1.2</b> Tid</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#toppvärden"><i class="fa fa-check"></i><b>2.2</b> Toppvärden</a>
+<li class="chapter" data-level="2.2" data-path="frekvenz.html"><a href="frekvenz.html#toppvärden"><i class="fa fa-check"></i><b>2.2</b> Toppvärden</a>
 <ul>
-<li class="chapter" data-level="2.2.1" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#toppspänning"><i class="fa fa-check"></i><b>2.2.1</b> Toppspänning</a></li>
-<li class="chapter" data-level="2.2.2" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#toppström"><i class="fa fa-check"></i><b>2.2.2</b> Toppström</a></li>
-<li class="chapter" data-level="2.2.3" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#topp-till-toppspänning"><i class="fa fa-check"></i><b>2.2.3</b> Topp till toppspänning</a></li>
-<li class="chapter" data-level="2.2.4" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html#topp-till-toppvärde-av-ström"><i class="fa fa-check"></i><b>2.2.4</b> Topp till toppvärde av ström</a></li>
+<li class="chapter" data-level="2.2.1" data-path="frekvenz.html"><a href="frekvenz.html#toppspänning"><i class="fa fa-check"></i><b>2.2.1</b> Toppspänning</a></li>
+<li class="chapter" data-level="2.2.2" data-path="frekvenz.html"><a href="frekvenz.html#toppström"><i class="fa fa-check"></i><b>2.2.2</b> Toppström</a></li>
+<li class="chapter" data-level="2.2.3" data-path="frekvenz.html"><a href="frekvenz.html#topp-till-toppspänning"><i class="fa fa-check"></i><b>2.2.3</b> Topp till toppspänning</a></li>
+<li class="chapter" data-level="2.2.4" data-path="frekvenz.html"><a href="frekvenz.html#topp-till-toppvärde-av-ström"><i class="fa fa-check"></i><b>2.2.4</b> Topp till toppvärde av ström</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="spänning.html"><a href="spänning.html"><i class="fa fa-check"></i><b>3</b> Spänning</a>
@@ -312,7 +337,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
           </div>
         </div>
       </div>
-<a href="växelströmskretsar.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="frekvenz.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="ström.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

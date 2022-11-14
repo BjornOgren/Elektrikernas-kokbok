@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Kapitel 5 Effekt | Elektrikernas kokbok</title>
+  <title>Kapitel 2 Frekvenz | Elektrikernas kokbok</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Kapitel 5 Effekt | Elektrikernas kokbok" />
+  <meta property="og:title" content="Kapitel 2 Frekvenz | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kapitel 5 Effekt | Elektrikernas kokbok" />
+  <meta name="twitter:title" content="Kapitel 2 Frekvenz | Elektrikernas kokbok" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -36,8 +36,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ström.html"/>
-<link rel="next" href="växelströmsmotstånd.html"/>
+<link rel="prev" href="växelströmskretsar.html"/>
+<link rel="next" href="spänning.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -194,11 +194,29 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="effekt" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">Kapitel 5</span> Effekt<a href="effekt.html#effekt" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="trefaskretsar" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> Trefaskretsar<a href="effekt.html#trefaskretsar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudström. Men i en D-koppling är det fasströmmarna genom belastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: <span class="math display">\[ \sqrt{3} \]</span> som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med <span class="math display">\[ cos \phi \]</span>.</p>
+<div id="frekvenz" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Kapitel 2</span> Frekvenz<a href="frekvenz.html#frekvenz" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Hello World</p>
+<div id="tidsintervall" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Tidsintervall<a href="frekvenz.html#tidsintervall" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Frekvens är en storhet för antalet
+repeterande händelser inom ett givet
+tidsintervall[1]. För att beräkna
+frekvensen fixerar man ett
+tidsintervall, räknar antalet
+förekomster av händelsen och
+dividerar detta antal med längden av
+tidsintervallet. Resultatet anges i
+enheten hertz (Hz) efter den tyske
+fysikern Heinrich Rudolf Hertz, där
+1 Hz är en händelse som inträffar en
+gång per sekund. Alternativt kan man
+mäta tiden mellan två förekomster av
+händelsen ((tids)perioden) och
+därefter beräkna frekvensens
+reciproka värde.</p>
+<div id="frekvens" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Frekvens<a href="frekvenz.html#frekvens" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -218,38 +236,35 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ P_{trefas}= \sqrt{3} \times U \times I_f \]</span></td>
-<td align="center"><span class="math display">\[ P \]</span></td>
-<td align="center">Aktiv effekt</td>
-<td align="center">Watt</td>
-<td align="center"><span class="math display">\[ W \]</span></td>
+<td><span class="math display">\[ Frekvens = \frac{1}{Tid} \]</span></td>
+<td align="center"><span class="math display">\[ f \]</span></td>
+<td align="center">Frekvens</td>
+<td align="center">Hertz</td>
+<td align="center"><span class="math display">\[ Hz \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Effekt i tre D-kopplade resistorer</th>
+<th align="center">Exempel uträkning frekvens (1)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P_{trefas}= \sqrt{3} \times U \times I_f \]</span></td>
+<td align="center"><span class="math display">\[ Frekvens = \frac{1}{Tid} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ P_{trefas}= \sqrt{3} \times U \times I_f \]</span></td>
+<td align="center"><span class="math display">\[ f =\frac{1}{38} \times 10^{3} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P= 4800 \ W \]</span></td>
+<td align="center"><span class="math display">\[ f = 26,3 \ Hz  \]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="reaktiva-kretsar" class="section level2 hasAnchor" number="5.2">
-<h2><span class="header-section-number">5.2</span> Reaktiva kretsar<a href="effekt.html#reaktiva-kretsar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="aktiv" class="section level3 hasAnchor" number="5.2.1">
-<h3><span class="header-section-number">5.2.1</span> Aktiv<a href="effekt.html#aktiv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik rörelse. Aktiva effekten har enheten watt och betecknas med P i effektriangeln.</p>
+<div id="tid" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Tid<a href="frekvenz.html#tid" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -269,61 +284,38 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ P= U \times I \times cos  \phi \]</span></td>
-<td align="center"><span class="math display">\[ P \]</span></td>
-<td align="center">Aktiv effekt</td>
-<td align="center">Watt</td>
-<td align="center"><span class="math display">\[ W \]</span></td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi \]</span></td>
-<td align="center"><span class="math display">\[ P \]</span></td>
-<td align="center">Aktiv effekt</td>
-<td align="center">Watt</td>
-<td align="center"><span class="math display">\[ W \]</span></td>
+<td><span class="math display">\[ Tid = \frac{1}{Frekvens} \]</span></td>
+<td align="center"><span class="math display">\[ f \]</span></td>
+<td align="center">Frekvens</td>
+<td align="center">Hertz</td>
+<td align="center"><span class="math display">\[ Hz \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning aktiv effekt</th>
+<th align="center">Exempel uträkning tid (1)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P=U \times I \times cos  \phi \]</span></td>
+<td align="center"><span class="math display">\[ Tid = \frac{1}{Frekvens} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ P=230 \times 0,78 \times 0,78 \]</span></td>
+<td align="center"><span class="math display">\[ Tid = \frac{1}{400} \times 10^{3} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P=1640 \ W \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning aktiv effekt trefas</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ P_{trefas}= \sqrt{3} \times ? \times ? \times ? \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ P_{trefas}= \ W \]</span></td>
+<td align="center"><span class="math display">\[ T = 2,5 \ ms  \]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="skenbar" class="section level3 hasAnchor" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Skenbar<a href="effekt.html#skenbar" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenbar effekt har enheten voltampere (VA).</p>
+</div>
+<div id="toppvärden" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Toppvärden<a href="frekvenz.html#toppvärden" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="toppspänning" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Toppspänning<a href="frekvenz.html#toppspänning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -343,79 +335,35 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ S=U \times I = \sqrt{P^2 + Q^2} \]</span></td>
-<td align="center"><span class="math display">\[ S \]</span></td>
-<td align="center">Skenbar effekt</td>
-<td align="center">Voltampere</td>
-<td align="center"><span class="math display">\[ VA \]</span></td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ S_{trefas}= \sqrt{3} \times U \times I \]</span></td>
-<td align="center"><span class="math display">\[ S \]</span></td>
-<td align="center">Skenbar effekt</td>
-<td align="center">Voltampere</td>
-<td align="center"><span class="math display">\[ VA \]</span></td>
+<td><span class="math display">\[ \widehat{u} = U_{eff} \times \sqrt{2} \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{u} \]</span></td>
+<td align="center">Toppspänning</td>
+<td align="center">Volt</td>
+<td align="center"><span class="math display">\[ V \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning skenbar effekt (1)</th>
+<th align="center">Exempel uträkning toppspänning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ S=U \times I \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{u} = U_{eff} \times \sqrt{2} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ S=230 \times 9,05 \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{u} = 415 \times \sqrt{2} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ S=2081 \ W \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning skenbar effekt (2)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S= \sqrt{P^2 + Q^2} \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ S= \sqrt{2000^2 + 1000^2} \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S=2,2 \ kVA \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning skenbar effekt trefas</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S_{trefas}= \sqrt{3} \times U \times I \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ S_{trefas}= \sqrt{3} \times 230 \times 9,05 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S_{trefas}=2081 \ W \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{u} \approx 587 \ V \]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="reaktiv" class="section level3 hasAnchor" number="5.2.3">
-<h3><span class="header-section-number">5.2.3</span> Reaktiv<a href="effekt.html#reaktiv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva motståndet åstakomer. Den reaktiva effekten har enheten voltampere, VAr. Tillläget r står för reaktiv.</p>
+<div id="toppström" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Toppström<a href="frekvenz.html#toppström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -435,50 +383,88 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ Q=U \times I \times sin  \phi = \sqrt{S^{2}-P^{2}} \]</span></td>
-<td align="center"><span class="math display">\[ Q \]</span></td>
-<td align="center">Reaktiv effekt</td>
-<td align="center">Voltampere reakt</td>
-<td align="center"><span class="math display">\[ VAr \]</span></td>
+<td><span class="math display">\[ \widehat{I} = I_{eff} \times \sqrt{2} \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{I} \]</span></td>
+<td align="center">Toppström</td>
+<td align="center">Amper</td>
+<td align="center"><span class="math display">\[ A \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning reaktiv effekt (1)</th>
+<th align="center">Exempel uträkning toppström</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ Q=U \times I \times sin  \phi \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{I} = I_{eff} \times \sqrt{2} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ Q=U \times I \times sin  \phi \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{I} = 20 \times \sqrt{2} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ Q=  \ VAr \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{I} \approx 28,3 \ A  \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="topp-till-toppspänning" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Topp till toppspänning<a href="frekvenz.html#topp-till-toppspänning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ \widehat{\breve{u}} = \widehat{u} \times 2  \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{\breve{u}} \]</span></td>
+<td align="center">Toppspänning</td>
+<td align="center">Volt</td>
+<td align="center"><span class="math display">\[ V \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning reaktiv effekt (2)</th>
+<th align="center">Exempel uträkning topp till toppspänning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ Q= \sqrt{S^{2}-P^{2}} \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{\breve{u}} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ Q= \sqrt{1000^{2}-607^{2}} \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{\breve{u}} = 587 \times 2 \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ Q= 795 \ VAr \]</span></td>
+<td align="center"><span class="math display">\[ \widehat{\breve{u}} = 1174 \ V \]</span></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div id="topp-till-toppvärde-av-ström" class="section level3 hasAnchor" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> Topp till toppvärde av ström<a href="frekvenz.html#topp-till-toppvärde-av-ström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math display">\[ \widehat{\breve{I}} = \widehat{I} \times 2 \]</span></p>
+<p>Exemple</p>
+<p><span class="math display">\[ \widehat{\breve{I}} = \widehat{I} \times 2 \approx 28,3 \times 2 = 56 \ A \]</span></p>
+<p>Topp till toppvärd är således
+<span class="math display">\[ \widehat{\breve{I}} \approx 56 \ A \]</span></p>
 </div>
 </div>
 </div>
@@ -487,8 +473,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="ström.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="växelströmsmotstånd.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="växelströmskretsar.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="spänning.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

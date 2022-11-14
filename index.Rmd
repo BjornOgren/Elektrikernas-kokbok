@@ -18,6 +18,17 @@ site: bookdown::bookdown_site
 extra_dependencies: awesomebox
 ---
 
+# Introduction {-}
+
+This book is a guide to authoring books and technical documents with R Markdown [@R-rmarkdown] and the R package **bookdown** [@R-bookdown]. It focuses on the features specific to writing books, long-form articles, or reports, such as:
+
+- how to typeset equations, theorems, figures and tables, and cross-reference them;
+- how to generate multiple output formats such as HTML, PDF, and e-books for a single book;
+- how to customize the book templates and style different elements in a book;
+- editor support (in particular, the RStudio IDE); and
+- how to publish a book.
+
+# Likströmskretsar {-}
 
 # Likströmskretsar
 
@@ -32,7 +43,9 @@ extra_dependencies: awesomebox
 
 Hello World
 
-# Växelströmskretsar
+# Växelströmskretsar  {-}
+
+# Frekvenz
 
 Hello World
 
@@ -423,6 +436,7 @@ $$ L=\frac{X_L} {2 \times \pi f} $$
 $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ 
 $$ L= 0.16 \ H $$ 
 :::
+|
 
 ### Induktiv reaktans
 Växelströmsmotståndet är
