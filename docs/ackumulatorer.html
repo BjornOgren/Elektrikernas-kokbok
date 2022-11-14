@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Elektrikernas kokbok</title>
+  <title>Kapitel 4 Ackumulatorer | Elektrikernas kokbok</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Elektrikernas kokbok" />
+  <meta property="og:title" content="Kapitel 4 Ackumulatorer | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Elektrikernas kokbok" />
+  <meta name="twitter:title" content="Kapitel 4 Ackumulatorer | Elektrikernas kokbok" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -36,8 +36,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="likströmskretsar.html"/>
+<link rel="prev" href="ström.html"/>
+<link rel="next" href="växelströmskretsar.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -221,29 +221,316 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Elektrikernas kokbok</h1>
-<p class="author"><em>Björn Ögren</em></p>
-<p class="date"><em>2022-11-14</em></p>
+<div id="ackumulatorer" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Kapitel 4</span> Ackumulatorer<a href="ackumulatorer.html#ackumulatorer" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="total-resistans" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Total resistans<a href="ackumulatorer.html#total-resistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ R_{tot} = R_y + R_i \]</span></td>
+<td align="center"><span class="math display">\[ R_{tot} \]</span></td>
+<td align="center">Resistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning total resistans</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_{tot} = R_y + R_i \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ R_{tot} = 22 + 1,2 \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_{tot} = 23,2 \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="introduction" class="section level1 unnumbered hasAnchor">
-<h1>Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This book is a guide to authoring books and technical documents with R Markdown <span class="citation">(<a href="#ref-R-rmarkdown" role="doc-biblioref">Allaire et al. 2022</a>)</span> and the R package <strong>bookdown</strong> <span class="citation">(<a href="#ref-R-bookdown" role="doc-biblioref">Xie 2022</a>)</span>. It focuses on the features specific to writing books, long-form articles, or reports, such as:</p>
-<ul>
-<li>how to typeset equations, theorems, figures and tables, and cross-reference them;</li>
-<li>how to generate multiple output formats such as HTML, PDF, and e-books for a single book;</li>
-<li>how to customize the book templates and style different elements in a book;</li>
-<li>editor support (in particular, the RStudio IDE); and</li>
-<li>how to publish a book.</li>
-</ul>
+<div id="yttre-resistans" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Yttre resistans<a href="ackumulatorer.html#yttre-resistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ R_y = R_{tot} - R_i \]</span></td>
+<td align="center"><span class="math display">\[ R_{y} \]</span></td>
+<td align="center">Resistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning yttre resistans</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_y = R_{tot} - R_i \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ R_y = 5 - 0,4 \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_y = 4,6 \ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
 </div>
-<h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-R-rmarkdown" class="csl-entry">
-Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2022. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>.
+<div id="seriekoppling" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Seriekoppling<a href="ackumulatorer.html#seriekoppling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="inre-resistans" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Inre resistans<a href="ackumulatorer.html#inre-resistans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} \]</span></td>
+<td align="center"><span class="math display">\[ R_{i} \]</span></td>
+<td align="center">Resistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning inre resistans i strömkällan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ R_{i \ tot} = 3 \times  0,3 \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_i = 0,9 \ \Omega \]</span></td>
+</tr>
+<tr class="even">
+<td align="center">Vid seriekoppling adderas reistanserna sig</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="ref-R-bookdown" class="csl-entry">
-Xie, Yihui. 2022. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.
+<div id="kortslutningsström" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Kortslutningsström<a href="ackumulatorer.html#kortslutningsström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ I = I_{max} \]</span></td>
+<td align="center"><span class="math display">\[ I_{max} \]</span></td>
+<td align="center">Ström</td>
+<td align="center">Ampere</td>
+<td align="center"><span class="math display">\[ A \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning kortslutningsström</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ I = I_{max} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ I = I_{max} = 0,5 \ A \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ I_f = 0,5 \ A \]</span></td>
+</tr>
+<tr class="even">
+<td align="center">Eftersom det vid seriekoppling är samma ström genom hela kretsen</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="pararellkoppling" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Pararellkoppling<a href="ackumulatorer.html#pararellkoppling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="inre-resistans-1" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Inre resistans<a href="ackumulatorer.html#inre-resistans-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ R_{i \ tot} = \frac {R_{i Batt}}{Batt_{Antal}} \]</span></td>
+<td align="center"><span class="math display">\[ R_{i \ tot} \]</span></td>
+<td align="center">Resistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning inre resistans i strömkällan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_{i \ tot} = \frac {R_{i / Batt}}{Batt_{Antal}} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ R_{i \ tot} = \frac {0,3}{3} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_{i \ tot} = 0,1 \ \Omega \]</span></td>
+</tr>
+<tr class="even">
+<td align="center">Vid parallelkoppling delas resistansen sig</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="kortslutningsström-1" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Kortslutningsström<a href="ackumulatorer.html#kortslutningsström-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="20%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ I_{max} = Batt \ antal \times I_i \]</span></td>
+<td align="center"><span class="math display">\[ I_{max} \]</span></td>
+<td align="center">Ström</td>
+<td align="center">Ampere</td>
+<td align="center"><span class="math display">\[ A \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning kortslutningsström</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ I_{max} = Batt \ antal \times I_i \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ I_{max} = 3 \times 0,5 A \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ I_{max} = 1,5 \ A \]</span></td>
+</tr>
+<tr class="even">
+<td align="center">Eftersomm totalströmmen vid pararellkoppling blir summan av delströmmarna</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
             </section>
@@ -251,8 +538,8 @@ Xie, Yihui. 2022. <em>Bookdown: Authoring Books and Technical Documents with r M
           </div>
         </div>
       </div>
-
-<a href="likströmskretsar.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ström.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="växelströmskretsar.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

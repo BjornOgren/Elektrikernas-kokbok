@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Elektrikernas kokbok</title>
+  <title>Kapitel 2 Resistans | Elektrikernas kokbok</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Elektrikernas kokbok" />
+  <meta property="og:title" content="Kapitel 2 Resistans | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Elektrikernas kokbok" />
+  <meta name="twitter:title" content="Kapitel 2 Resistans | Elektrikernas kokbok" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -36,8 +36,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="likströmskretsar.html"/>
+<link rel="prev" href="spänning.html"/>
+<link rel="next" href="ström.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -221,29 +221,64 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Elektrikernas kokbok</h1>
-<p class="author"><em>Björn Ögren</em></p>
-<p class="date"><em>2022-11-14</em></p>
+<div id="resistans" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Kapitel 2</span> Resistans<a href="resistans.html#resistans" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ledarrresistans" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Ledarrresistans<a href="resistans.html#ledarrresistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ R = \frac {p \times ^L }{A} \]</span></td>
+<td align="center"><span class="math display">\[ R \]</span></td>
+<td align="center">Ledarrresistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning ledarresistans</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R = \frac {p \times ^L }{A} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ R = \frac {0,0175 \times 10 }{1} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R = 0,0175 \ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<div id="area" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Area<a href="resistans.html#area" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="introduction" class="section level1 unnumbered hasAnchor">
-<h1>Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This book is a guide to authoring books and technical documents with R Markdown <span class="citation">(<a href="#ref-R-rmarkdown" role="doc-biblioref">Allaire et al. 2022</a>)</span> and the R package <strong>bookdown</strong> <span class="citation">(<a href="#ref-R-bookdown" role="doc-biblioref">Xie 2022</a>)</span>. It focuses on the features specific to writing books, long-form articles, or reports, such as:</p>
-<ul>
-<li>how to typeset equations, theorems, figures and tables, and cross-reference them;</li>
-<li>how to generate multiple output formats such as HTML, PDF, and e-books for a single book;</li>
-<li>how to customize the book templates and style different elements in a book;</li>
-<li>editor support (in particular, the RStudio IDE); and</li>
-<li>how to publish a book.</li>
-</ul>
+<div id="ledarlängd" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Ledarlängd<a href="resistans.html#ledarlängd" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-R-rmarkdown" class="csl-entry">
-Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2022. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>.
+<div id="ledarresistivitet" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Ledarresistivitet<a href="resistans.html#ledarresistivitet" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="ref-R-bookdown" class="csl-entry">
-Xie, Yihui. 2022. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.
 </div>
 </div>
             </section>
@@ -251,8 +286,8 @@ Xie, Yihui. 2022. <em>Bookdown: Authoring Books and Technical Documents with r M
           </div>
         </div>
       </div>
-
-<a href="likströmskretsar.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="spänning.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ström.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

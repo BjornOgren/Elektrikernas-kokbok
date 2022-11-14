@@ -30,18 +30,141 @@ This book is a guide to authoring books and technical documents with R Markdown 
 
 # Likströmskretsar {-}
 
-# Likströmskretsar
+# Spänning
 
-::: {.rmdcomment}
+## Polspänning
 
-  $$ f = 26,3 \ Hz  $$
-  $$ f = 26,3 \ Hz  $$
-  $$ f = 26,3 \ Hz  $$
-:::
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ U = E - {R_{i}} \times I $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$|
 
-## URI 
+| Exempel uträkning tid (1) |
+|:-------------:|
+| $$ U = E - {R_{i}} \times I $$ |
+| $$ U = E - 1,5 \times 0,9 $$ |
+| $$ U = 1,14 \ V $$ |
 
-Hello World
+## Spänningsfall 
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ U_dropp = R_i \times I $$ | $$ U $$ | Spänning | Volt | $$ V $$|
+
+| Exempel uträkning spänningsfall |
+|:-------------:|
+| $$ U_{dropp} = R_i \times I $$ |
+| $$ U_{dropp} = 0,6 \times 2,2 $$ |
+| $$ U_{dropp} = 1,32 \ V $$ |
+
+## EMK Total
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie $$ | $$ U $$ | Spänning | Volt | $$ V $$|
+
+| Exempel uträkning EMK Total |
+|:-------------:|
+| $$ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie $$  |
+| $$ E_{tot} = E_{batt} \times 3 $$  |
+| $$ EMK = 13,5 \ V $$ |
+
+# Resistans
+
+## Ledarrresistans
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ R = \frac {p \times ^L }{A} $$ | $$ R $$ | Ledarrresistans | Omega | $$ \Omega $$ |
+
+| Exempel uträkning ledarresistans |
+|:-------------:|
+| $$ R = \frac {p \times ^L }{A} $$ |
+| $$ R = \frac {0,0175 \times 10 }{1} $$ |
+| $$ R = 0,0175 \ \Omega $$ |
+
+### Area
+
+### Ledarlängd
+
+### Ledarresistivitet
+
+# Ström
+
+# Ackumulatorer
+
+## Total resistans
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ R_{tot} = R_y + R_i $$ | $$ R_{tot} $$ | Resistans | Omega | $$ \Omega $$ |
+
+| Exempel uträkning total resistans |
+|:-------------:|
+| $$ R_{tot} = R_y + R_i $$ |
+| $$ R_{tot} = 22 + 1,2 $$ |
+| $$ R_{tot} = 23,2 \Omega $$ |
+
+## Yttre resistans
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ R_y = R_{tot} - R_i $$ | $$ R_{y} $$ | Resistans | Omega | $$ \Omega $$ |
+
+| Exempel uträkning yttre resistans |
+|:-------------:|
+| $$ R_y = R_{tot} - R_i $$ |
+| $$ R_y = 5 - 0,4 $$ |
+| $$ R_y = 4,6 \ \Omega $$ |
+
+## Seriekoppling
+
+### Inre resistans
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} $$ | $$ R_{i} $$ | Resistans | Omega | $$ \Omega $$ |
+
+| Exempel uträkning inre resistans i strömkällan |
+|:-------------:|
+|  $$ R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} $$ |
+|  $$ R_{i \ tot} = 3 \times  0,3 $$  |
+| $$ R_i = 0,9 \ \Omega $$ |
+| Vid seriekoppling adderas reistanserna sig |
+
+### Kortslutningsström
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ I = I_{max} $$ | $$ I_{max} $$ | Ström | Ampere | $$ A $$|
+
+| Exempel uträkning kortslutningsström |
+|:-------------:|
+|  $$ I = I_{max} $$ |
+|  $$ I = I_{max} = 0,5 \ A $$ |
+| $$ I_f = 0,5 \ A $$ |
+| Eftersom det vid seriekoppling är samma ström genom hela kretsen |
+
+## Pararellkoppling
+
+### Inre resistans
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$ R_{i \ tot} = \frac {R_{i Batt}}{Batt_{Antal}} $$ | $$ R_{i \ tot} $$ | Resistans | Omega | $$ \Omega $$ |
+
+| Exempel uträkning inre resistans i strömkällan |
+|:-------------:|
+| $$ R_{i \ tot} = \frac {R_{i / Batt}}{Batt_{Antal}} $$ |
+| $$ R_{i \ tot} = \frac {0,3}{3} $$ |
+| $$ R_{i \ tot} = 0,1 \ \Omega $$ |
+| Vid parallelkoppling delas resistansen sig |
+
+### Kortslutningsström 
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:------------:|:-------------:|:-------------:|
+| $$ I_{max} = Batt \ antal \times I_i $$ | $$ I_{max} $$ | Ström | Ampere | $$ A $$|
+
+| Exempel uträkning kortslutningsström |
+|:-------------:|
+| $$ I_{max} = Batt \ antal \times I_i $$ |
+| $$ I_{max} = 3 \times 0,5 A $$ |
+| $$ I_{max} = 1,5 \ A $$ |
+| Eftersomm totalströmmen vid pararellkoppling blir summan av delströmmarna |
 
 # Växelströmskretsar  {-}
 
