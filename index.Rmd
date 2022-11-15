@@ -22,7 +22,7 @@ extra_dependencies: awesomebox
 
 Elbjörnen, det är jag det :).
 
-EDu hittar mig på: \
+Du hittar mig på: \
 Twitter: https://twitter.com/elbjornen \
 Unsplash: https://unsplash.com/@elbjornen
 GitHub: https://github.com/elbjornen
