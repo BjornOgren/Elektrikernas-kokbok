@@ -1,7 +1,7 @@
 --- 
 title: "Elektrikernas kokbok"
 author: "Björn Ögren"
-date: "`r Sys.Date()`"
+date: "2022-11-15"
 output: pdf_document
 
 documentclass: book
@@ -761,3 +761,6 @@ $$ X_L = 2 \pi fL $$
 $$ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  $$
 $$ X_L=15,7 \  \Omega $$
 :::
+
+<!--chapter:end:index.Rmd-->
+

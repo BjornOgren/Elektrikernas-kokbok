@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Kapitel 10 Växelströmsmotstånd | Elektrikernas kokbok</title>
+  <title>Kapitel 1 Seriekoppling | Elektrikernas kokbok</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Kapitel 10 Växelströmsmotstånd | Elektrikernas kokbok" />
+  <meta property="og:title" content="Kapitel 1 Seriekoppling | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kapitel 10 Växelströmsmotstånd | Elektrikernas kokbok" />
+  <meta name="twitter:title" content="Kapitel 1 Seriekoppling | Elektrikernas kokbok" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -36,8 +36,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="effekt-1.html"/>
-
+<link rel="prev" href="likströmskretsar.html"/>
+<link rel="next" href="pararellkoppling.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -235,10 +235,15 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="växelströmsmotstånd" class="section level1 hasAnchor" number="10">
-<h1><span class="header-section-number">Kapitel 10</span> Växelströmsmotstånd<a href="växelströmsmotstånd.html#växelströmsmotstånd" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="impedans" class="section level2 hasAnchor" number="10.1">
-<h2><span class="header-section-number">10.1</span> Impedans<a href="växelströmsmotstånd.html#impedans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="seriekoppling" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Kapitel 1</span> Seriekoppling<a href="seriekoppling.html#seriekoppling" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Seriekoppling innebär att alla komponenter genomlöps av hela den strömstyrka som flyter genom ledningen, medan den elektriska spänningen över seriekopplingen fördelas över komponenterna i förhållande till deras resistans.</p>
+<p>Kirchhoffs första strömlag beskriver hur strömmar förgrenar sig i en pararellkrets.
+Den andra beskriver hur spänningar fördelas i en seriekrets.</p>
+<div id="spänningsdelning" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Spänningsdelning<a href="seriekoppling.html#spänningsdelning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Kirchhoff andra lag
+Summan av delspäningarna är lika med den totala spänningen.</p>
 <table>
 <colgroup>
 <col width="14%" />
@@ -258,86 +263,151 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ Z=\sqrt{R^2 + (X_{L} - X_{L})^2} \]</span></td>
-<td align="center"><span class="math display">\[ Z \]</span></td>
-<td align="center">Impedans</td>
-<td align="center">Ohm</td>
-<td align="center"><span class="math display">\[  \Omega \]</span></td>
+<td><span class="math display">\[ U_{tot} = U_{1} + U_{2} + U_{3} \]</span></td>
+<td align="center"><span class="math display">\[ U \]</span></td>
+<td align="center">Spänning</td>
+<td align="center">Volt</td>
+<td align="center"><span class="math display">\[ V \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning spänningsdelning (1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ U_{tot} = U_{1} + U_{2} + U_{3} \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[ R = \frac{U}{I}  \]</span></td>
+<td align="center"><span class="math display">\[ U_{tot} = 4 + 4 + 4 \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ U_{tot} = 12 \ V \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="okänd-delspäning" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Okänd delspäning<a href="seriekoppling.html#okänd-delspäning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ U_{tot} = U_{tot} - U_{3} - U_{2} \]</span></td>
+<td align="center"><span class="math display">\[ U \]</span></td>
+<td align="center">Spänning</td>
+<td align="center">Volt</td>
+<td align="center"><span class="math display">\[ V \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning okänd delspäning (1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ U_{tot} = U_{1} + U_{2} + U_{3} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ U_{3} = 12 - 4 - 6  \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ U_{3} = 3 \ V \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="delresistans" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Delresistans<a href="seriekoppling.html#delresistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ {R}_{//}\frac{R_{tot}} {R} \]</span></td>
 <td align="center"><span class="math display">\[ R \]</span></td>
-<td align="center">Resistans</td>
-<td align="center">Ohm</td>
-<td align="center"><span class="math display">\[  \Omega \]</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math display">\[ X_L = 2 \pi fL \]</span></td>
-<td align="center"><span class="math display">\[ X_L \]</span></td>
-<td align="center">Induktiv reaktans</td>
-<td align="center">Ohm</td>
-<td align="center"><span class="math display">\[  \Omega \]</span></td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ X_C =\frac{1} {2 \pi f C}  \]</span></td>
-<td align="center"><span class="math display">\[ X_C \]</span></td>
-<td align="center">kapacitiv reaktans</td>
-<td align="center">Ohm</td>
-<td align="center"><span class="math display">\[  \Omega \]</span></td>
+<td align="center">Delresistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning impedans Z</th>
+<th align="center">Om alla delresistanser är lika</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ Z=\sqrt{R^2 + (X_{L})^2} \]</span></td>
+<td align="center"><span class="math display">\[ {R}_{//}\frac{R_{tot}} {R} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ Z=\sqrt{20^2 + (15,7)^2} \]</span></td>
+<td align="center"><span class="math display">\[ R_{//} = \frac{100} {10} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ Z= 25,4 \  \Omega \]</span></td>
+<td align="center"><span class="math display">\[ R_{//} = 4,2  \ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Om delresestanerna är olika</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_1 = R_{tot} - R_1 \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ R_1 = 10 - 6 \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_1 = 6 \ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="kondensatorer" class="section level2 hasAnchor" number="10.2">
-<h2><span class="header-section-number">10.2</span> Kondensatorer<a href="växelströmsmotstånd.html#kondensatorer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.</p>
-<table>
-<thead>
-<tr class="header">
-<th>Prefixer</th>
-<th align="center">Förkortning</th>
-<th align="center">Tiopotens</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ 1 \ mikrofarad  \]</span></td>
-<td align="center"><span class="math display">\[  \mu F \]</span></td>
-<td align="center"><span class="math display">\[ 10^{-6} \]</span></td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ 1 \ nanofarad  \]</span></td>
-<td align="center"><span class="math display">\[ nF \]</span></td>
-<td align="center"><span class="math display">\[ 10^{-9} \]</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math display">\[ 1 \ picofarad  \]</span></td>
-<td align="center"><span class="math display">\[ pF \]</span></td>
-<td align="center"><span class="math display">\[ 10^{-12} \]</span></td>
-</tr>
-</tbody>
-</table>
-<div id="kapacitans" class="section level3 hasAnchor" number="10.2.1">
-<h3><span class="header-section-number">10.2.1</span> Kapacitans<a href="växelströmsmotstånd.html#kapacitans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss spänning.</p>
+<div id="ersättningsresistans" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Ersättningsresistans<a href="seriekoppling.html#ersättningsresistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Ersättningsresistans är den resistans vilken man kan ersätta två eller flera resistorer i en krets med.
+För seriekopplingar är den totala resistansen $ R_T $ helt enkelt summan av de olika resistorernas resistans.</p>
 <table>
 <colgroup>
 <col width="14%" />
@@ -357,25 +427,29 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ C=\frac{1}{(2 \pi f  X_c)} \]</span></td>
-<td align="center"><span class="math display">\[ C \]</span></td>
-<td align="center">Kapacitans</td>
-<td align="center">Farad</td>
-<td align="center"><span class="math display">\[ F^{As/V} \]</span></td>
+<td><span class="math display">\[ R_{ers} = R_{1} + R_{2} + R_{3} ... \]</span></td>
+<td align="center"><span class="math display">\[ R \]</span></td>
+<td align="center">Ersättningsresistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning ersättningsresistans</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_{ers} = R_{1} + R_{2} + R_{3} \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math display">\[ f = \frac{1}{T}   \]</span></td>
-<td align="center"><span class="math display">\[ f \]</span></td>
-<td align="center">Hertz</td>
-<td align="center"><span class="math display">\[ Hz \]</span></td>
-<td align="center"></td>
+<td align="center"><span class="math display">\[ R_{ers} = 10 + 12 + 18 \]</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math display">\[ 2 \times \pi = 3.14  \]</span></td>
-<td align="center"><span class="math display">\[ Pi \]</span></td>
-<td align="center">Omkrets</td>
-<td align="center">Radies</td>
-<td align="center"><span class="math display">\[ \pi \]</span></td>
+<td align="center"><span class="math display">\[ R_{ers} = 40 \ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
@@ -385,338 +459,21 @@ div.csl-indent {
 </colgroup>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning kapacitans</th>
+<th align="center">Ersättningsresistansen går även att räkna ut från spänning totalt delat med strömen</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ L=\frac{X_L} {2 \pi f} \]</span></td>
+<td align="center"><span class="math display">\[ R_{ers} = \frac{U_{tot}} {I} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \]</span></td>
+<td align="center"><span class="math display">\[ R_{ers} = \frac{U_{tot}} {I} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ L= 0.16 \ H \]</span></td>
+<td align="center"><span class="math display">\[ R_{ers} = 4,2 \ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="kapacitiv-reaktans" class="section level3 hasAnchor" number="10.2.2">
-<h3><span class="header-section-number">10.2.2</span> Kapacitiv reaktans<a href="växelströmsmotstånd.html#kapacitiv-reaktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då kommer ekvationen att minska när frekvesen ökar.</p>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ X_C =\frac{1} {2 \pi f C}  \]</span></td>
-<td align="center"><span class="math display">\[ X_C \]</span></td>
-<td align="center">kapacitiv reaktans</td>
-<td align="center">Ohm</td>
-<td align="center"><span class="math display">\[  \Omega \]</span></td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ f = \frac{1}{T}   \]</span></td>
-<td align="center"><span class="math display">\[ f \]</span></td>
-<td align="center">Hertz</td>
-<td align="center"><span class="math display">\[ Hz \]</span></td>
-<td align="center"></td>
-</tr>
-<tr class="odd">
-<td><span class="math display">\[ 2 \times \pi = 3.14  \]</span></td>
-<td align="center"><span class="math display">\[ Pi \]</span></td>
-<td align="center">Omkrets</td>
-<td align="center">Radies</td>
-<td align="center"><span class="math display">\[ \pi \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning kapacitiv reaktans</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ X_C =\frac{1} {2 \pi f C} \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ X_C = \frac{1}{2 \times \pi \times 50 \times 0,0002} \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ X_C = 15,91 \  \Omega  \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="seriekopplade" class="section level3 hasAnchor" number="10.2.3">
-<h3><span class="header-section-number">10.2.3</span> Seriekopplade<a href="växelströmsmotstånd.html#seriekopplade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ C_{tot}=C_{1} + C_{2}... \]</span></td>
-<td align="center"><span class="math display">\[ C \]</span></td>
-<td align="center">Kapacitans</td>
-<td align="center">Farad</td>
-<td align="center"><span class="math display">\[ F^{As/V} \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning kapacitiv reaktans</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ C_{tot}=C_{1} + C_{2} \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ C_{tot}=12_{1} + 12_{2} \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ C_{tot}=24 \  \mu F \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="parallellkopplade" class="section level3 hasAnchor" number="10.2.4">
-<h3><span class="header-section-number">10.2.4</span> Parallellkopplade<a href="växelströmsmotstånd.html#parallellkopplade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[
-\frac{1}{C_{tot}} =
-\frac{1}{C_{1}} +
-\frac{1}{C_{2}} +
-\frac{1}{C_{3}}
-...
-\]</span></td>
-<td align="center"><span class="math display">\[ C \]</span></td>
-<td align="center">Kapacitans</td>
-<td align="center">Farad</td>
-<td align="center"><span class="math display">\[ F^{As/V} \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning kapacitiv reaktans</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[
-\frac{1}{C_{tot}} =
-\frac{1}{C_{1}} +
-\frac{1}{C_{2}} +
-\frac{1}{C_{3}}
-...
-\]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[
-\frac{1}{C_{tot}} =
-\frac{1}{1,8_{1}} +
-\frac{1}{16_{2}} +
-\frac{1}{32_{3}}
-\]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ C_{tot}=4.5 \ nF \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div id="spolar" class="section level2 hasAnchor" number="10.3">
-<h2><span class="header-section-number">10.3</span> Spolar<a href="växelströmsmotstånd.html#spolar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten Henry (H).</p>
-<table>
-<thead>
-<tr class="header">
-<th>Prefixer</th>
-<th align="center">Enhet</th>
-<th align="center">Förkostning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ 1 \ millihenry  \]</span></td>
-<td align="center"><span class="math display">\[ mH \]</span></td>
-<td align="center"><span class="math display">\[ 10^{-3} \]</span></td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ 1 \ mikrohenry  \]</span></td>
-<td align="center"><span class="math display">\[  \mu H \]</span></td>
-<td align="center"><span class="math display">\[ 10^{-6} \]</span></td>
-</tr>
-</tbody>
-</table>
-<div id="induktans" class="section level3 hasAnchor" number="10.3.1">
-<h3><span class="header-section-number">10.3.1</span> Induktans<a href="växelströmsmotstånd.html#induktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Induktansen beror på hur många varv spolen har, diametern, avståndet mellan ledarna och om spolen är försedd med järnkärna. Flera lindningsvarv och större diameter ger spolen större indutans.</p>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ L=\frac{X_L} {2\pi f} \]</span></td>
-<td align="center"><span class="math display">\[ L \]</span></td>
-<td align="center">Induktans</td>
-<td align="center">Henry</td>
-<td align="center"><span class="math display">\[ H^{Vs/A} \]</span></td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ f = \frac{1}{T}   \]</span></td>
-<td align="center"><span class="math display">\[ f \]</span></td>
-<td align="center">Frekvens</td>
-<td align="center">Hertz</td>
-<td align="center"><span class="math display">\[ Hz \]</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math display">\[ 2 \times \pi = 3.14  \]</span></td>
-<td align="center"><span class="math display">\[ Pi \]</span></td>
-<td align="center">?</td>
-<td align="center">?</td>
-<td align="center"><span class="math display">\[ \pi \]</span></td>
-</tr>
-</tbody>
-</table>
-<div class="latex">
-<p><span class="math display">\[ L=\frac{X_L} {2 \times \pi f} \]</span>
-<span class="math display">\[ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \]</span>
-<span class="math display">\[ L= 0.16 \ H \]</span></p>
-</div>
-<div class="line-block"></div>
-</div>
-<div id="induktiv-reaktans" class="section level3 hasAnchor" number="10.3.2">
-<h3><span class="header-section-number">10.3.2</span> Induktiv reaktans<a href="växelströmsmotstånd.html#induktiv-reaktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Växelströmsmotståndet är
-frekvensberoende och motståndet ökar när
-frekvensen ökar.</p>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ X_L = 2 \pi fL \]</span></td>
-<td align="center"><span class="math display">\[ X_L \]</span></td>
-<td align="center">Induktiv reaktans</td>
-<td align="center">Ohm</td>
-<td align="center"><span class="math display">\[  \Omega \]</span></td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ f = \frac{1}{T} \]</span></td>
-<td align="center"><span class="math display">\[ f \]</span></td>
-<td align="center">Frekvens</td>
-<td align="center">Hertz</td>
-<td align="center"><span class="math display">\[ Hz \]</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math display">\[ 2 \times \pi = 3.14  \]</span></td>
-<td align="center"><span class="math display">\[ Pi \]</span></td>
-<td align="center">?</td>
-<td align="center">?</td>
-<td align="center"><span class="math display">\[ \pi \]</span></td>
-</tr>
-</tbody>
-</table>
-<div class="latex">
-<p><span class="math display">\[ X_L = 2 \pi fL \]</span>
-<span class="math display">\[ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  \]</span>
-<span class="math display">\[ X_L=15,7 \  \Omega \]</span></p>
-</div>
-
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div class="csl-entry">
-Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2022. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>.
-</div>
-<div class="csl-entry">
-Xie, Yihui. 2022. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.
-</div>
-</div>
-</div>
 </div>
 </div>
             </section>
@@ -724,8 +481,8 @@ Xie, Yihui. 2022. <em>Bookdown: Authoring Books and Technical Documents with r M
           </div>
         </div>
       </div>
-<a href="effekt-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="likströmskretsar.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pararellkoppling.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

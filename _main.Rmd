@@ -761,3 +761,6 @@ $$ X_L = 2 \pi fL $$
 $$ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  $$
 $$ X_L=15,7 \  \Omega $$
 :::
+
+<!--chapter:end:index.Rmd-->
+

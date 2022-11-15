@@ -1,24 +1,34 @@
 h1:introduction Introduction
 h1:likströmskretsar Likströmskretsar
-h1:spänning Spänning
-h2:polspänning Polspänning
-h2:spänningsfall Spänningsfall
-h2:emk-total EMK Total
-h1:resistans Resistans
+h1:seriekoppling Seriekoppling
+h2:spänningsdelning Spänningsdelning
+h2:okänd-delspäning Okänd delspäning
+h2:delresistans Delresistans
+h2:ersättningsresistans Ersättningsresistans
+h1:pararellkoppling Pararellkoppling
+h2:huvudström Huvudström
+h2:okänd-grenström Okänd grenström
+h2:ersättningsresistans-1 Ersättningsresistans
+h1:ledare Ledare
 h2:ledarrresistans Ledarrresistans
 h3:area Area
 h3:ledarlängd Ledarlängd
 h3:ledarresistivitet Ledarresistivitet
-h1:ström Ström
 h1:ackumulatorer Ackumulatorer
-h2:total-resistans Total resistans
+h2:polspänning Polspänning
+h2:spänningsfall Spänningsfall
+h2:emk-total EMK Total
+h2:resistans-total Resistans total
 h2:yttre-resistans Yttre resistans
-h2:seriekoppling Seriekoppling
+h2:seriekoppling-1 Seriekoppling
 h3:inre-resistans Inre resistans
 h3:kortslutningsström Kortslutningsström
-h2:pararellkoppling Pararellkoppling
+h2:pararellkoppling-1 Pararellkoppling
 h3:inre-resistans-1 Inre resistans
 h3:kortslutningsström-1 Kortslutningsström
+h1:effekt Effekt
+h2:watt-tid Watt tid
+h2:kostnadsberäkning Kostnadsberäkning
 h1:växelströmskretsar Växelströmskretsar
 h1:frekvenz Frekvenz
 h2:tidsintervall Tidsintervall
@@ -29,21 +39,21 @@ h3:toppspänning Toppspänning
 h3:toppström Toppström
 h3:topp-till-toppspänning Topp till toppspänning
 h3:topp-till-toppvärde-av-ström Topp till toppvärde av ström
-h1:spänning-1 Spänning
+h1:spänning Spänning
 h2:y-koppling Y-Koppling
 h3:linjespänning Linjespänning
 h3:fasspänning Fasspänning
 h2:d-koppling D-koppling
 h3:linjespänning-1 Linjespänning
 h3:fasspänning-1 Fasspänning
-h1:ström-1 Ström
+h1:ström Ström
 h2:y-koppling-1 Y-Koppling
 h3:fasström Fasström
 h3:linjeström Linjeström
 h2:d-koppling-1 D-koppling
 h3:fasström-1 Fasström
 h3:linjeström-1 Linjeström
-h1:effekt Effekt
+h1:effekt-1 Effekt
 h2:trefaskretsar Trefaskretsar
 h2:reaktiva-kretsar Reaktiva kretsar
 h3:aktiv Aktiv

@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Kapitel 5 Frekvenz | Elektrikernas kokbok</title>
+  <title>Kapitel 6 Frekvenz | Elektrikernas kokbok</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Kapitel 5 Frekvenz | Elektrikernas kokbok" />
+  <meta property="og:title" content="Kapitel 6 Frekvenz | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kapitel 5 Frekvenz | Elektrikernas kokbok" />
+  <meta name="twitter:title" content="Kapitel 6 Frekvenz | Elektrikernas kokbok" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -29,7 +29,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <meta name="author" content="Björn Ögren" />
 
 
-<meta name="date" content="2022-11-14" />
+<meta name="date" content="2022-11-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,7 +37,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   
   
 <link rel="prev" href="växelströmskretsar.html"/>
-<link rel="next" href="spänning-1.html"/>
+<link rel="next" href="spänning.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -102,103 +102,117 @@ div.csl-indent {
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
 <li class="chapter" data-level="" data-path="likströmskretsar.html"><a href="likströmskretsar.html"><i class="fa fa-check"></i>Likströmskretsar</a></li>
-<li class="chapter" data-level="1" data-path="spänning.html"><a href="spänning.html"><i class="fa fa-check"></i><b>1</b> Spänning</a>
+<li class="chapter" data-level="1" data-path="seriekoppling.html"><a href="seriekoppling.html"><i class="fa fa-check"></i><b>1</b> Seriekoppling</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="spänning.html"><a href="spänning.html#polspänning"><i class="fa fa-check"></i><b>1.1</b> Polspänning</a></li>
-<li class="chapter" data-level="1.2" data-path="spänning.html"><a href="spänning.html#spänningsfall"><i class="fa fa-check"></i><b>1.2</b> Spänningsfall</a></li>
-<li class="chapter" data-level="1.3" data-path="spänning.html"><a href="spänning.html#emk-total"><i class="fa fa-check"></i><b>1.3</b> EMK Total</a></li>
+<li class="chapter" data-level="1.1" data-path="seriekoppling.html"><a href="seriekoppling.html#spänningsdelning"><i class="fa fa-check"></i><b>1.1</b> Spänningsdelning</a></li>
+<li class="chapter" data-level="1.2" data-path="seriekoppling.html"><a href="seriekoppling.html#okänd-delspäning"><i class="fa fa-check"></i><b>1.2</b> Okänd delspäning</a></li>
+<li class="chapter" data-level="1.3" data-path="seriekoppling.html"><a href="seriekoppling.html#delresistans"><i class="fa fa-check"></i><b>1.3</b> Delresistans</a></li>
+<li class="chapter" data-level="1.4" data-path="seriekoppling.html"><a href="seriekoppling.html#ersättningsresistans"><i class="fa fa-check"></i><b>1.4</b> Ersättningsresistans</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="resistans.html"><a href="resistans.html"><i class="fa fa-check"></i><b>2</b> Resistans</a>
+<li class="chapter" data-level="2" data-path="pararellkoppling.html"><a href="pararellkoppling.html"><i class="fa fa-check"></i><b>2</b> Pararellkoppling</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="resistans.html"><a href="resistans.html#ledarrresistans"><i class="fa fa-check"></i><b>2.1</b> Ledarrresistans</a>
+<li class="chapter" data-level="2.1" data-path="pararellkoppling.html"><a href="pararellkoppling.html#huvudström"><i class="fa fa-check"></i><b>2.1</b> Huvudström</a></li>
+<li class="chapter" data-level="2.2" data-path="pararellkoppling.html"><a href="pararellkoppling.html#okänd-grenström"><i class="fa fa-check"></i><b>2.2</b> Okänd grenström</a></li>
+<li class="chapter" data-level="2.3" data-path="pararellkoppling.html"><a href="pararellkoppling.html#ersättningsresistans-1"><i class="fa fa-check"></i><b>2.3</b> Ersättningsresistans</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ledare.html"><a href="ledare.html"><i class="fa fa-check"></i><b>3</b> Ledare</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="resistans.html"><a href="resistans.html#area"><i class="fa fa-check"></i><b>2.1.1</b> Area</a></li>
-<li class="chapter" data-level="2.1.2" data-path="resistans.html"><a href="resistans.html#ledarlängd"><i class="fa fa-check"></i><b>2.1.2</b> Ledarlängd</a></li>
-<li class="chapter" data-level="2.1.3" data-path="resistans.html"><a href="resistans.html#ledarresistivitet"><i class="fa fa-check"></i><b>2.1.3</b> Ledarresistivitet</a></li>
+<li class="chapter" data-level="3.1" data-path="ledare.html"><a href="ledare.html#ledarrresistans"><i class="fa fa-check"></i><b>3.1</b> Ledarrresistans</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="ledare.html"><a href="ledare.html#area"><i class="fa fa-check"></i><b>3.1.1</b> Area</a></li>
+<li class="chapter" data-level="3.1.2" data-path="ledare.html"><a href="ledare.html#ledarlängd"><i class="fa fa-check"></i><b>3.1.2</b> Ledarlängd</a></li>
+<li class="chapter" data-level="3.1.3" data-path="ledare.html"><a href="ledare.html#ledarresistivitet"><i class="fa fa-check"></i><b>3.1.3</b> Ledarresistivitet</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="ström.html"><a href="ström.html"><i class="fa fa-check"></i><b>3</b> Ström</a></li>
 <li class="chapter" data-level="4" data-path="ackumulatorer.html"><a href="ackumulatorer.html"><i class="fa fa-check"></i><b>4</b> Ackumulatorer</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="ackumulatorer.html"><a href="ackumulatorer.html#total-resistans"><i class="fa fa-check"></i><b>4.1</b> Total resistans</a></li>
-<li class="chapter" data-level="4.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#yttre-resistans"><i class="fa fa-check"></i><b>4.2</b> Yttre resistans</a></li>
-<li class="chapter" data-level="4.3" data-path="ackumulatorer.html"><a href="ackumulatorer.html#seriekoppling"><i class="fa fa-check"></i><b>4.3</b> Seriekoppling</a>
+<li class="chapter" data-level="4.1" data-path="ackumulatorer.html"><a href="ackumulatorer.html#polspänning"><i class="fa fa-check"></i><b>4.1</b> Polspänning</a></li>
+<li class="chapter" data-level="4.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#spänningsfall"><i class="fa fa-check"></i><b>4.2</b> Spänningsfall</a></li>
+<li class="chapter" data-level="4.3" data-path="ackumulatorer.html"><a href="ackumulatorer.html#emk-total"><i class="fa fa-check"></i><b>4.3</b> EMK Total</a></li>
+<li class="chapter" data-level="4.4" data-path="ackumulatorer.html"><a href="ackumulatorer.html#resistans-total"><i class="fa fa-check"></i><b>4.4</b> Resistans total</a></li>
+<li class="chapter" data-level="4.5" data-path="ackumulatorer.html"><a href="ackumulatorer.html#yttre-resistans"><i class="fa fa-check"></i><b>4.5</b> Yttre resistans</a></li>
+<li class="chapter" data-level="4.6" data-path="ackumulatorer.html"><a href="ackumulatorer.html#seriekoppling-1"><i class="fa fa-check"></i><b>4.6</b> Seriekoppling</a>
 <ul>
-<li class="chapter" data-level="4.3.1" data-path="ackumulatorer.html"><a href="ackumulatorer.html#inre-resistans"><i class="fa fa-check"></i><b>4.3.1</b> Inre resistans</a></li>
-<li class="chapter" data-level="4.3.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#kortslutningsström"><i class="fa fa-check"></i><b>4.3.2</b> Kortslutningsström</a></li>
+<li class="chapter" data-level="4.6.1" data-path="ackumulatorer.html"><a href="ackumulatorer.html#inre-resistans"><i class="fa fa-check"></i><b>4.6.1</b> Inre resistans</a></li>
+<li class="chapter" data-level="4.6.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#kortslutningsström"><i class="fa fa-check"></i><b>4.6.2</b> Kortslutningsström</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="ackumulatorer.html"><a href="ackumulatorer.html#pararellkoppling"><i class="fa fa-check"></i><b>4.4</b> Pararellkoppling</a>
+<li class="chapter" data-level="4.7" data-path="ackumulatorer.html"><a href="ackumulatorer.html#pararellkoppling-1"><i class="fa fa-check"></i><b>4.7</b> Pararellkoppling</a>
 <ul>
-<li class="chapter" data-level="4.4.1" data-path="ackumulatorer.html"><a href="ackumulatorer.html#inre-resistans-1"><i class="fa fa-check"></i><b>4.4.1</b> Inre resistans</a></li>
-<li class="chapter" data-level="4.4.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#kortslutningsström-1"><i class="fa fa-check"></i><b>4.4.2</b> Kortslutningsström</a></li>
+<li class="chapter" data-level="4.7.1" data-path="ackumulatorer.html"><a href="ackumulatorer.html#inre-resistans-1"><i class="fa fa-check"></i><b>4.7.1</b> Inre resistans</a></li>
+<li class="chapter" data-level="4.7.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#kortslutningsström-1"><i class="fa fa-check"></i><b>4.7.2</b> Kortslutningsström</a></li>
 </ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="effekt.html"><a href="effekt.html"><i class="fa fa-check"></i><b>5</b> Effekt</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="effekt.html"><a href="effekt.html#watt-tid"><i class="fa fa-check"></i><b>5.1</b> Watt tid</a></li>
+<li class="chapter" data-level="5.2" data-path="effekt.html"><a href="effekt.html#kostnadsberäkning"><i class="fa fa-check"></i><b>5.2</b> Kostnadsberäkning</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html"><i class="fa fa-check"></i>Växelströmskretsar</a></li>
-<li class="chapter" data-level="5" data-path="frekvenz.html"><a href="frekvenz.html"><i class="fa fa-check"></i><b>5</b> Frekvenz</a>
+<li class="chapter" data-level="6" data-path="frekvenz.html"><a href="frekvenz.html"><i class="fa fa-check"></i><b>6</b> Frekvenz</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="frekvenz.html"><a href="frekvenz.html#tidsintervall"><i class="fa fa-check"></i><b>5.1</b> Tidsintervall</a>
+<li class="chapter" data-level="6.1" data-path="frekvenz.html"><a href="frekvenz.html#tidsintervall"><i class="fa fa-check"></i><b>6.1</b> Tidsintervall</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="frekvenz.html"><a href="frekvenz.html#frekvens"><i class="fa fa-check"></i><b>5.1.1</b> Frekvens</a></li>
-<li class="chapter" data-level="5.1.2" data-path="frekvenz.html"><a href="frekvenz.html#tid"><i class="fa fa-check"></i><b>5.1.2</b> Tid</a></li>
+<li class="chapter" data-level="6.1.1" data-path="frekvenz.html"><a href="frekvenz.html#frekvens"><i class="fa fa-check"></i><b>6.1.1</b> Frekvens</a></li>
+<li class="chapter" data-level="6.1.2" data-path="frekvenz.html"><a href="frekvenz.html#tid"><i class="fa fa-check"></i><b>6.1.2</b> Tid</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="frekvenz.html"><a href="frekvenz.html#toppvärden"><i class="fa fa-check"></i><b>5.2</b> Toppvärden</a>
+<li class="chapter" data-level="6.2" data-path="frekvenz.html"><a href="frekvenz.html#toppvärden"><i class="fa fa-check"></i><b>6.2</b> Toppvärden</a>
 <ul>
-<li class="chapter" data-level="5.2.1" data-path="frekvenz.html"><a href="frekvenz.html#toppspänning"><i class="fa fa-check"></i><b>5.2.1</b> Toppspänning</a></li>
-<li class="chapter" data-level="5.2.2" data-path="frekvenz.html"><a href="frekvenz.html#toppström"><i class="fa fa-check"></i><b>5.2.2</b> Toppström</a></li>
-<li class="chapter" data-level="5.2.3" data-path="frekvenz.html"><a href="frekvenz.html#topp-till-toppspänning"><i class="fa fa-check"></i><b>5.2.3</b> Topp till toppspänning</a></li>
-<li class="chapter" data-level="5.2.4" data-path="frekvenz.html"><a href="frekvenz.html#topp-till-toppvärde-av-ström"><i class="fa fa-check"></i><b>5.2.4</b> Topp till toppvärde av ström</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="spänning-1.html"><a href="spänning-1.html"><i class="fa fa-check"></i><b>6</b> Spänning</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="spänning-1.html"><a href="spänning-1.html#y-koppling"><i class="fa fa-check"></i><b>6.1</b> Y-Koppling</a>
-<ul>
-<li class="chapter" data-level="6.1.1" data-path="spänning-1.html"><a href="spänning-1.html#linjespänning"><i class="fa fa-check"></i><b>6.1.1</b> Linjespänning</a></li>
-<li class="chapter" data-level="6.1.2" data-path="spänning-1.html"><a href="spänning-1.html#fasspänning"><i class="fa fa-check"></i><b>6.1.2</b> Fasspänning</a></li>
-</ul></li>
-<li class="chapter" data-level="6.2" data-path="spänning-1.html"><a href="spänning-1.html#d-koppling"><i class="fa fa-check"></i><b>6.2</b> D-koppling</a>
-<ul>
-<li class="chapter" data-level="6.2.1" data-path="spänning-1.html"><a href="spänning-1.html#linjespänning-1"><i class="fa fa-check"></i><b>6.2.1</b> Linjespänning</a></li>
-<li class="chapter" data-level="6.2.2" data-path="spänning-1.html"><a href="spänning-1.html#fasspänning-1"><i class="fa fa-check"></i><b>6.2.2</b> Fasspänning</a></li>
+<li class="chapter" data-level="6.2.1" data-path="frekvenz.html"><a href="frekvenz.html#toppspänning"><i class="fa fa-check"></i><b>6.2.1</b> Toppspänning</a></li>
+<li class="chapter" data-level="6.2.2" data-path="frekvenz.html"><a href="frekvenz.html#toppström"><i class="fa fa-check"></i><b>6.2.2</b> Toppström</a></li>
+<li class="chapter" data-level="6.2.3" data-path="frekvenz.html"><a href="frekvenz.html#topp-till-toppspänning"><i class="fa fa-check"></i><b>6.2.3</b> Topp till toppspänning</a></li>
+<li class="chapter" data-level="6.2.4" data-path="frekvenz.html"><a href="frekvenz.html#topp-till-toppvärde-av-ström"><i class="fa fa-check"></i><b>6.2.4</b> Topp till toppvärde av ström</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="ström-1.html"><a href="ström-1.html"><i class="fa fa-check"></i><b>7</b> Ström</a>
+<li class="chapter" data-level="7" data-path="spänning.html"><a href="spänning.html"><i class="fa fa-check"></i><b>7</b> Spänning</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="ström-1.html"><a href="ström-1.html#y-koppling-1"><i class="fa fa-check"></i><b>7.1</b> Y-Koppling</a>
+<li class="chapter" data-level="7.1" data-path="spänning.html"><a href="spänning.html#y-koppling"><i class="fa fa-check"></i><b>7.1</b> Y-Koppling</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="ström-1.html"><a href="ström-1.html#fasström"><i class="fa fa-check"></i><b>7.1.1</b> Fasström</a></li>
-<li class="chapter" data-level="7.1.2" data-path="ström-1.html"><a href="ström-1.html#linjeström"><i class="fa fa-check"></i><b>7.1.2</b> Linjeström</a></li>
+<li class="chapter" data-level="7.1.1" data-path="spänning.html"><a href="spänning.html#linjespänning"><i class="fa fa-check"></i><b>7.1.1</b> Linjespänning</a></li>
+<li class="chapter" data-level="7.1.2" data-path="spänning.html"><a href="spänning.html#fasspänning"><i class="fa fa-check"></i><b>7.1.2</b> Fasspänning</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="ström-1.html"><a href="ström-1.html#d-koppling-1"><i class="fa fa-check"></i><b>7.2</b> D-koppling</a>
+<li class="chapter" data-level="7.2" data-path="spänning.html"><a href="spänning.html#d-koppling"><i class="fa fa-check"></i><b>7.2</b> D-koppling</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="ström-1.html"><a href="ström-1.html#fasström-1"><i class="fa fa-check"></i><b>7.2.1</b> Fasström</a></li>
-<li class="chapter" data-level="7.2.2" data-path="ström-1.html"><a href="ström-1.html#linjeström-1"><i class="fa fa-check"></i><b>7.2.2</b> Linjeström</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="effekt.html"><a href="effekt.html"><i class="fa fa-check"></i><b>8</b> Effekt</a>
-<ul>
-<li class="chapter" data-level="8.1" data-path="effekt.html"><a href="effekt.html#trefaskretsar"><i class="fa fa-check"></i><b>8.1</b> Trefaskretsar</a></li>
-<li class="chapter" data-level="8.2" data-path="effekt.html"><a href="effekt.html#reaktiva-kretsar"><i class="fa fa-check"></i><b>8.2</b> Reaktiva kretsar</a>
-<ul>
-<li class="chapter" data-level="8.2.1" data-path="effekt.html"><a href="effekt.html#aktiv"><i class="fa fa-check"></i><b>8.2.1</b> Aktiv</a></li>
-<li class="chapter" data-level="8.2.2" data-path="effekt.html"><a href="effekt.html#skenbar"><i class="fa fa-check"></i><b>8.2.2</b> Skenbar</a></li>
-<li class="chapter" data-level="8.2.3" data-path="effekt.html"><a href="effekt.html#reaktiv"><i class="fa fa-check"></i><b>8.2.3</b> Reaktiv</a></li>
+<li class="chapter" data-level="7.2.1" data-path="spänning.html"><a href="spänning.html#linjespänning-1"><i class="fa fa-check"></i><b>7.2.1</b> Linjespänning</a></li>
+<li class="chapter" data-level="7.2.2" data-path="spänning.html"><a href="spänning.html#fasspänning-1"><i class="fa fa-check"></i><b>7.2.2</b> Fasspänning</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html"><i class="fa fa-check"></i><b>9</b> Växelströmsmotstånd</a>
+<li class="chapter" data-level="8" data-path="ström.html"><a href="ström.html"><i class="fa fa-check"></i><b>8</b> Ström</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#impedans"><i class="fa fa-check"></i><b>9.1</b> Impedans</a></li>
-<li class="chapter" data-level="9.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kondensatorer"><i class="fa fa-check"></i><b>9.2</b> Kondensatorer</a>
+<li class="chapter" data-level="8.1" data-path="ström.html"><a href="ström.html#y-koppling-1"><i class="fa fa-check"></i><b>8.1</b> Y-Koppling</a>
 <ul>
-<li class="chapter" data-level="9.2.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kapacitans"><i class="fa fa-check"></i><b>9.2.1</b> Kapacitans</a></li>
-<li class="chapter" data-level="9.2.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kapacitiv-reaktans"><i class="fa fa-check"></i><b>9.2.2</b> Kapacitiv reaktans</a></li>
-<li class="chapter" data-level="9.2.3" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#seriekopplade"><i class="fa fa-check"></i><b>9.2.3</b> Seriekopplade</a></li>
-<li class="chapter" data-level="9.2.4" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#parallellkopplade"><i class="fa fa-check"></i><b>9.2.4</b> Parallellkopplade</a></li>
+<li class="chapter" data-level="8.1.1" data-path="ström.html"><a href="ström.html#fasström"><i class="fa fa-check"></i><b>8.1.1</b> Fasström</a></li>
+<li class="chapter" data-level="8.1.2" data-path="ström.html"><a href="ström.html#linjeström"><i class="fa fa-check"></i><b>8.1.2</b> Linjeström</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#spolar"><i class="fa fa-check"></i><b>9.3</b> Spolar</a>
+<li class="chapter" data-level="8.2" data-path="ström.html"><a href="ström.html#d-koppling-1"><i class="fa fa-check"></i><b>8.2</b> D-koppling</a>
 <ul>
-<li class="chapter" data-level="9.3.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#induktans"><i class="fa fa-check"></i><b>9.3.1</b> Induktans</a></li>
-<li class="chapter" data-level="9.3.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#induktiv-reaktans"><i class="fa fa-check"></i><b>9.3.2</b> Induktiv reaktans</a></li>
+<li class="chapter" data-level="8.2.1" data-path="ström.html"><a href="ström.html#fasström-1"><i class="fa fa-check"></i><b>8.2.1</b> Fasström</a></li>
+<li class="chapter" data-level="8.2.2" data-path="ström.html"><a href="ström.html#linjeström-1"><i class="fa fa-check"></i><b>8.2.2</b> Linjeström</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="effekt-1.html"><a href="effekt-1.html"><i class="fa fa-check"></i><b>9</b> Effekt</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="effekt-1.html"><a href="effekt-1.html#trefaskretsar"><i class="fa fa-check"></i><b>9.1</b> Trefaskretsar</a></li>
+<li class="chapter" data-level="9.2" data-path="effekt-1.html"><a href="effekt-1.html#reaktiva-kretsar"><i class="fa fa-check"></i><b>9.2</b> Reaktiva kretsar</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="effekt-1.html"><a href="effekt-1.html#aktiv"><i class="fa fa-check"></i><b>9.2.1</b> Aktiv</a></li>
+<li class="chapter" data-level="9.2.2" data-path="effekt-1.html"><a href="effekt-1.html#skenbar"><i class="fa fa-check"></i><b>9.2.2</b> Skenbar</a></li>
+<li class="chapter" data-level="9.2.3" data-path="effekt-1.html"><a href="effekt-1.html#reaktiv"><i class="fa fa-check"></i><b>9.2.3</b> Reaktiv</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html"><i class="fa fa-check"></i><b>10</b> Växelströmsmotstånd</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#impedans"><i class="fa fa-check"></i><b>10.1</b> Impedans</a></li>
+<li class="chapter" data-level="10.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kondensatorer"><i class="fa fa-check"></i><b>10.2</b> Kondensatorer</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kapacitans"><i class="fa fa-check"></i><b>10.2.1</b> Kapacitans</a></li>
+<li class="chapter" data-level="10.2.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kapacitiv-reaktans"><i class="fa fa-check"></i><b>10.2.2</b> Kapacitiv reaktans</a></li>
+<li class="chapter" data-level="10.2.3" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#seriekopplade"><i class="fa fa-check"></i><b>10.2.3</b> Seriekopplade</a></li>
+<li class="chapter" data-level="10.2.4" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#parallellkopplade"><i class="fa fa-check"></i><b>10.2.4</b> Parallellkopplade</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#spolar"><i class="fa fa-check"></i><b>10.3</b> Spolar</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#induktans"><i class="fa fa-check"></i><b>10.3.1</b> Induktans</a></li>
+<li class="chapter" data-level="10.3.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#induktiv-reaktans"><i class="fa fa-check"></i><b>10.3.2</b> Induktiv reaktans</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -221,11 +235,10 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="frekvenz" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">Kapitel 5</span> Frekvenz<a href="frekvenz.html#frekvenz" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Hello World</p>
-<div id="tidsintervall" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> Tidsintervall<a href="frekvenz.html#tidsintervall" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="frekvenz" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Kapitel 6</span> Frekvenz<a href="frekvenz.html#frekvenz" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tidsintervall" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Tidsintervall<a href="frekvenz.html#tidsintervall" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Frekvens är en storhet för antalet
 repeterande händelser inom ett givet
 tidsintervall[1]. För att beräkna
@@ -242,8 +255,8 @@ mäta tiden mellan två förekomster av
 händelsen ((tids)perioden) och
 därefter beräkna frekvensens
 reciproka värde.</p>
-<div id="frekvens" class="section level3 hasAnchor" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> Frekvens<a href="frekvenz.html#frekvens" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="frekvens" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Frekvens<a href="frekvenz.html#frekvens" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -290,8 +303,8 @@ reciproka värde.</p>
 </tbody>
 </table>
 </div>
-<div id="tid" class="section level3 hasAnchor" number="5.1.2">
-<h3><span class="header-section-number">5.1.2</span> Tid<a href="frekvenz.html#tid" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="tid" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Tid<a href="frekvenz.html#tid" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -339,10 +352,10 @@ reciproka värde.</p>
 </table>
 </div>
 </div>
-<div id="toppvärden" class="section level2 hasAnchor" number="5.2">
-<h2><span class="header-section-number">5.2</span> Toppvärden<a href="frekvenz.html#toppvärden" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="toppspänning" class="section level3 hasAnchor" number="5.2.1">
-<h3><span class="header-section-number">5.2.1</span> Toppspänning<a href="frekvenz.html#toppspänning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="toppvärden" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Toppvärden<a href="frekvenz.html#toppvärden" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="toppspänning" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Toppspänning<a href="frekvenz.html#toppspänning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -389,8 +402,8 @@ reciproka värde.</p>
 </tbody>
 </table>
 </div>
-<div id="toppström" class="section level3 hasAnchor" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Toppström<a href="frekvenz.html#toppström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="toppström" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Toppström<a href="frekvenz.html#toppström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -437,8 +450,8 @@ reciproka värde.</p>
 </tbody>
 </table>
 </div>
-<div id="topp-till-toppspänning" class="section level3 hasAnchor" number="5.2.3">
-<h3><span class="header-section-number">5.2.3</span> Topp till toppspänning<a href="frekvenz.html#topp-till-toppspänning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="topp-till-toppspänning" class="section level3 hasAnchor" number="6.2.3">
+<h3><span class="header-section-number">6.2.3</span> Topp till toppspänning<a href="frekvenz.html#topp-till-toppspänning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -485,8 +498,8 @@ reciproka värde.</p>
 </tbody>
 </table>
 </div>
-<div id="topp-till-toppvärde-av-ström" class="section level3 hasAnchor" number="5.2.4">
-<h3><span class="header-section-number">5.2.4</span> Topp till toppvärde av ström<a href="frekvenz.html#topp-till-toppvärde-av-ström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="topp-till-toppvärde-av-ström" class="section level3 hasAnchor" number="6.2.4">
+<h3><span class="header-section-number">6.2.4</span> Topp till toppvärde av ström<a href="frekvenz.html#topp-till-toppvärde-av-ström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><span class="math display">\[ \widehat{\breve{I}} = \widehat{I} \times 2 \]</span></p>
 <p>Exemple</p>
 <p><span class="math display">\[ \widehat{\breve{I}} = \widehat{I} \times 2 \approx 28,3 \times 2 = 56 \ A \]</span></p>
@@ -501,7 +514,7 @@ reciproka värde.</p>
         </div>
       </div>
 <a href="växelströmskretsar.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="spänning-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="spänning.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
