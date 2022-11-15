@@ -20,11 +20,11 @@ extra_dependencies: awesomebox
 
 # Introduction {-}
 
-Elbjörnen, det är jag det :).
+Elbjörnen, det är jag det <3
 
 Du hittar mig på: \
 Twitter: https://twitter.com/elbjornen \
-Unsplash: https://unsplash.com/@elbjornen
+Unsplash: https://unsplash.com/@elbjornen \
 GitHub: https://github.com/elbjornen
 
 # Likströmskretsar {-}
