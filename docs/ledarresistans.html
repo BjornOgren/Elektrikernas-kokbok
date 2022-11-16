@@ -249,9 +249,9 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <tr class="odd">
 <td><span class="math inline">\(R = \frac {\rho \times L }{A}\)</span></td>
 <td align="center"><span class="math inline">\(R\)</span></td>
-<td align="center"><span class="math inline">\(Ledarresistans\)</span></td>
+<td align="center"><span class="math inline">\(Resistans\)</span></td>
 <td align="center"><span class="math inline">\(Omega\)</span></td>
-<td align="center">$ $</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -275,7 +275,29 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </table>
 <div id="ledarresistivitet" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Ledarresistivitet<a href="ledarresistans.html#ledarresistivitet" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Materialkonstanten <span class="math inline">\(\rho\)</span> i resistansformeln brukar anges i sorten <span class="math inline">\([\Omega mm2/m]\)</span>. Detta förenklar beräkningar av kabelresistanser, eftersom det är naturligt att tala om kabellängder i <span class="math inline">\(m\)</span> och tvärsnittsareor av storleksordningen <span class="math inline">\(mm2\)</span> - den som inte känner till detta kan dock bli mycket förbryllad!</p>
+<p>Materialkonstanten <span class="math inline">\(\rho\)</span> i resistansformeln brukar anges i sorten <span class="math inline">\([\Omega mm^2/m]\)</span>. Detta förenklar beräkningar av kabelresistanser, eftersom det är naturligt att tala om kabellängder i <span class="math inline">\(m\)</span> och tvärsnittsareor av storleksordningen <span class="math inline">\(mm^2\)</span> - den som inte känner till detta kan dock bli mycket förbryllad!</p>
+<table>
+<thead>
+<tr class="header">
+<th>Metall</th>
+<th align="center"><span class="math inline">\(Resistivitet\)</span> <span class="math inline">\(\rho\)</span> <span class="math inline">\([\Omega mm^2/m]\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(Aluminium\)</span></td>
+<td align="center"><span class="math inline">\(0,027\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(Järn\)</span></td>
+<td align="center"><span class="math inline">\(0,11\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Koppar\)</span></td>
+<td align="center"><span class="math inline">\(0,0175\)</span></td>
+</tr>
+</tbody>
+</table>
 <table>
 <colgroup>
 <col width="14%" />
@@ -297,8 +319,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <tr class="odd">
 <td><span class="math inline">\(\rho = \frac {R \times A}{L}\)</span></td>
 <td align="center"><span class="math inline">\(\rho\)</span></td>
-<td align="center"><span class="math inline">\(Ledarresistivitet\)</span></td>
-<td align="center"><span class="math inline">\(Omega \ mm^2/m\)</span></td>
+<td align="center"><span class="math inline">\(Materialkonstant\)</span></td>
+<td align="center"><span class="math inline">\(Omega \ milimeter / meter\)</span></td>
 <td align="center"><span class="math inline">\([\Omega mm^2/m]\)</span></td>
 </tr>
 </tbody>
@@ -317,7 +339,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <td align="center"><span class="math display">\[ \rho = \frac {2,67 \times 0,75}{20} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ \rho = 0,0090,1 \ \Omega \ mm^2/m \]</span></td>
+<td align="center"><span class="math display">\[ \rho = 0,0090,1 \ [\Omega mm^2/m] \]</span></td>
 </tr>
 </tbody>
 </table>
@@ -391,9 +413,9 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(L = \frac {R \times A }{\rho}\)</span></td>
+<td><span class="math inline">\(L = \frac {R \times A}{\rho}\)</span></td>
 <td align="center"><span class="math inline">\(L\)</span></td>
-<td align="center"><span class="math inline">\(Ledarlängd\)</span></td>
+<td align="center"><span class="math inline">\(Längd\)</span></td>
 <td align="center"><span class="math inline">\(Meter\)</span></td>
 <td align="center"><span class="math inline">\(m\)</span></td>
 </tr>

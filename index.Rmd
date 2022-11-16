@@ -118,7 +118,7 @@ En ledningstråds resistans beror på hur många fria ledningselektroner som fin
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $R = \frac {\rho \times L }{A}$ | $R$ | $Ledarresistans$ | $Omega$ | $ \Omega$ |
+| $R = \frac {\rho \times L }{A}$ | $R$ | $Resistans$ | $Omega$ | $\Omega$ |
 
 | Exempel uträkning |
 |:-------------:|
@@ -128,17 +128,23 @@ En ledningstråds resistans beror på hur många fria ledningselektroner som fin
 
 ## Ledarresistivitet
 
-Materialkonstanten $\rho$ i resistansformeln brukar anges i sorten $[\Omega mm2/m]$. Detta förenklar beräkningar av kabelresistanser, eftersom det är naturligt att tala om kabellängder i $m$ och tvärsnittsareor av storleksordningen $mm2$ - den som inte känner till detta kan dock bli mycket förbryllad!
+Materialkonstanten $\rho$ i resistansformeln brukar anges i sorten $[\Omega mm^2/m]$. Detta förenklar beräkningar av kabelresistanser, eftersom det är naturligt att tala om kabellängder i $m$ och tvärsnittsareor av storleksordningen $mm^2$ - den som inte känner till detta kan dock bli mycket förbryllad!
+
+| Metall | $Resistivitet$ $\rho$ $[\Omega mm^2/m]$ |
+|----------|:-------------:|
+| $Aluminium$ | $0,027$ |
+| $Järn$ | $0,11$ |
+| $Koppar$ | $0,0175$ |
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $\rho = \frac {R \times A}{L}$ | $\rho$ | $Ledarresistivitet$ | $Omega \ mm^2/m$ | $[\Omega mm^2/m]$ |
+| $\rho = \frac {R \times A}{L}$ | $\rho$ | $Materialkonstant$ | $Omega \ milimeter / meter$ | $[\Omega mm^2/m]$ |
 
 | Exempel uträkning |
 |:-------------:|
 | $$ \rho = \frac {R \times A}{L} $$ |
 | $$ \rho = \frac {2,67 \times 0,75}{20} $$ |
-| $$ \rho = 0,0090,1 \ \Omega \ mm^2/m $$ |
+| $$ \rho = 0,0090,1 \ [\Omega mm^2/m] $$ |
 
 ## Ledararea
 
@@ -156,7 +162,7 @@ Materialkonstanten $\rho$ i resistansformeln brukar anges i sorten $[\Omega mm2/
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $L = \frac {R \times A }{\rho}$ | $L$ | $Ledarlängd$ | $Meter$ | $m$ |
+| $L = \frac {R \times A}{\rho}$ | $L$ | $Längd$ | $Meter$ | $m$ |
 
 | Exempel uträkning ledarlängd |
 |:-------------:|
