@@ -1,19 +1,25 @@
 h1:introduction Introduction
 h1:likströmskretsar Likströmskretsar
+h1:uri URI
+h2:spänning Spänning
+h3:prefix Prefix
+h2:resistans Resistans
+h3:prefix-1 Prefix
+h2:ström Ström
+h3:prefix-2 Prefix
+h1:ledarresistans Ledarresistans
+h2:ledarresistivitet Ledarresistivitet
+h2:ledararea Ledararea
+h2:ledarlängd Ledarlängd
 h1:seriekoppling Seriekoppling
-h2:spänningsdelning Spänningsdelning
-h2:okänd-delspäning Okänd delspäning
+h3:spänningsdelning Spänningsdelning
+h3:okänd-spänningsdelning Okänd spänningsdelning
 h2:delresistans Delresistans
 h2:ersättningsresistans Ersättningsresistans
 h1:pararellkoppling Pararellkoppling
-h2:huvudström Huvudström
+h3:strömgrening Strömgrening
 h2:okänd-grenström Okänd grenström
 h2:ersättningsresistans-1 Ersättningsresistans
-h1:ledare Ledare
-h2:ledarrresistans Ledarrresistans
-h3:area Area
-h3:ledarlängd Ledarlängd
-h3:ledarresistivitet Ledarresistivitet
 h1:ackumulatorer Ackumulatorer
 h2:polspänning Polspänning
 h2:spänningsfall Spänningsfall
@@ -39,14 +45,14 @@ h3:toppspänning Toppspänning
 h3:toppström Toppström
 h3:topp-till-toppspänning Topp till toppspänning
 h3:topp-till-toppvärde-av-ström Topp till toppvärde av ström
-h1:spänning Spänning
+h1:spänning-1 Spänning
 h2:y-koppling Y-Koppling
 h3:linjespänning Linjespänning
 h3:fasspänning Fasspänning
 h2:d-koppling D-koppling
 h3:linjespänning-1 Linjespänning
 h3:fasspänning-1 Fasspänning
-h1:ström Ström
+h1:ström-1 Ström
 h2:y-koppling-1 Y-Koppling
 h3:fasström Fasström
 h3:linjeström Linjeström

@@ -29,34 +29,168 @@ GitHub: https://github.com/elbjornen
 
 # Likströmskretsar {-}
 
-# Seriekoppling
-Seriekoppling innebär att alla komponenter genomlöps av hela den strömstyrka som flyter genom ledningen, medan den elektriska spänningen över seriekopplingen fördelas över komponenterna i förhållande till deras resistans.
+# URI
 
-Kirchhoffs första strömlag beskriver hur strömmar förgrenar sig i en pararellkrets.
-Den andra beskriver hur spänningar fördelas i en seriekrets.
+Den tyske fysikern Simon Ohm uppställde år 1826 den regel som brukar kallas för Ohms lag. Om en ström $I$ passerar igenom en ledare med resistansen $R$ så faller spänningen  med $U = I×R$. Spänningsfallet blir proportionellt både mot strömmen och resistansen. Med en vätskeanalogi kan man säga at det blir ett **"tryckfall"** när vätskeflödet passerar ett motstånd.
 
-## Spänningsdelning
+## Spänning
 
-Kirchhoff andra lag
-Summan av delspäningarna är lika med den totala spänningen.
+Elektrisk spänning eller potentialskillnad, väsentligen samma sak som elektromotorisk kraft, är skillnaden i elektrisk potential mellan två punkter i en elektrisk krets.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ U_{tot} = U_{1} + U_{2} + U_{3} $$ | $$ U $$ | Spänning | Volt | $$ V $$ |
+| $U = R \times I$ | $U$ | $Spänning$ | $Volt$ | $V$|
 
-| Exempel uträkning spänningsdelning (1) |
+> #### Tip:
+>
+> - Om spänningen är lika stor men strömmen har 
+> ökat, då måste resistansen ha minskat.
+> - Om resistasen är oförändrad men strömmen minskat då måste även spänningen minskat.
+> - Om resistansen ökar kommer strömmen att minska.
+>
+>  Den typen av logiska resonemang är viktig vid **felsökning**.
+
+### Prefix
+
+| Vanliga prefix | Enhet | Förkostning | 
+|----------|:-------------:|:-------------:|
+| $1 \ kilovolt$ | $kV$ | $10^{3}$ |
+| $1 \ milivolt$ | $mV$  | $10^{-3}$ |
+| $1 \ mikrovolt$ | $\mu V$  | $10^{-6}$ |
+
+## Resistans
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $R = \frac {U}{I}$ | $I$ | $Resistans$ | $Ohm$ | $\Omega$ |
+
+> #### Tip:
+>
+> - Om spänningen är lika stor men strömmen har 
+> ökat, då måste resistansen ha minskat.
+> - Om resistasen är oförändrad men strömmen minskat då måste även spänningen minskat.
+> - Om resistansen ökar kommer strömmen att minska.
+>
+>  Den typen av logiska resonemang är viktig vid **felsökning**.
+
+### Prefix
+
+Resistans mäts i $ohm$ och som betecknas med den grekiska bokstaven $\Omega$ som uttalas (åmega).
+I formler används bokstaven $R$ för att beteckna resistans. För att utrycka små och stora resistanser använder vi prefix framför enheten $ohm$.
+
+| Vanliga prefix | Enhet | Förkostning| 
+|----------|:-------------:|:-------------:|
+| $1 \ megaohm$ | $M\Omega$ | $10^{6}$ |
+| $1 \ kiloohm$ | $k\Omega$ | $10^{3}$ |
+| $1 \ miliohm$ | $m\Omega$  | $10^{-3}$ |
+
+## Ström
+
+En elektrisk ström består av av laddningar i rörelse. En metalltråd innehåller fria elektroner men även om de hela tiden rör sig ( p.g.a. värmerörelsen ), så sker detta slumpmässigt utan att därför någon nettoström uppkommer.
+Om man tillför laddning, elektroner, till metalltrådens ena ände så stör man jämvikten och en utjämningsström av elektroner flyter kortvarigt i tråden. Om man dessutom kan bortföra elektronerna från metalltrådens andra ände så fortsätter strömmen att flyta genom tråden.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $I = \frac {U}{R}$ | $I$ | $Ström$ | $Ampere$ | $A$|
+
+> #### Tip:
+>
+> - Om spänningen är lika stor men strömmen har 
+> ökat, då måste resistansen ha minskat.
+> - Om resistasen är oförändrad men strömmen minskat då måste även spänningen minskat.
+> - Om resistansen ökar kommer strömmen att minska.
+>
+>  Den typen av logiska resonemang är viktig vid **felsökning**.
+
+### Prefix 
+
+Strömmen mäts i ampere och grundenheten är $1$  ampere. I formler betecknas strömmen med bokstaven $I$. Ampere förkortas $A$ i dokumentation. För att enklare kunna skriva värdet på små och stora strömmar används prefix framför enheten ampere.
+
+| Vanliga prefix | Enhet | Förkostning| 
+|----------|:-------------:|:-------------:|
+| $1 \ kiloampere$ | $kA$ | $10^{3}$ |
+| $1 \ miliampere$ | $mA$  | $10^{-3}$ |
+| $1 \ mikroampere$ | $\mu A$  | $10^{-6}$ |
+
+# Ledarresistans
+
+En ledningstråds resistans beror på hur många fria ledningselektroner som finns tillgängliga för laddningstransporten, det vill säga vilket material den är tillverkad av, men även på trådens area $A$. Eftersom ledningselektronerna stöter på motstånd längs tråden, så beror resistansen även på hur lång den är $l$.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $R = \frac {\rho \times L }{A}$ | $R$ | $Ledarresistans$ | $Omega$ | $ \Omega$ |
+
+| Exempel uträkning |
+|:-------------:|
+| $$ R = \frac {\rho \times L }{A} $$ |
+| $$ R = \frac {0,0175 \times 10 }{1} $$ |
+| $$ R = 0,0175 \ \Omega $$ |
+
+## Ledarresistivitet
+
+Materialkonstanten $\rho$ i resistansformeln brukar anges i sorten $[\Omega mm2/m]$. Detta förenklar beräkningar av kabelresistanser, eftersom det är naturligt att tala om kabellängder i $m$ och tvärsnittsareor av storleksordningen $mm2$ - den som inte känner till detta kan dock bli mycket förbryllad!
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $\rho = \frac {R \times A}{L}$ | $\rho$ | $Ledarresistivitet$ | $Omega \ mm^2/m$ | $[\Omega mm^2/m]$ |
+
+| Exempel uträkning |
+|:-------------:|
+| $$ \rho = \frac {R \times A}{L} $$ |
+| $$ \rho = \frac {2,67 \times 0,75}{20} $$ |
+| $$ \rho = 0,0090,1 \ \Omega \ mm^2/m $$ |
+
+## Ledararea
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $A = \frac {\rho \times L}{R}$ | $A$ | $Area$ | $Milimeter$ | $mm^2$ |
+
+| Exempel uträkning |
+|:-------------:|
+| $$ A = \frac {\rho \times L}{R} $$ |
+| $$ A = \frac {0,0175 \times 20}{0,466} $$ |
+| $$ A = 0,75 \ mm^2 $$ |
+
+## Ledarlängd
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $L = \frac {R \times A }{\rho}$ | $L$ | $Ledarlängd$ | $Meter$ | $m$ |
+
+| Exempel uträkning ledarlängd |
+|:-------------:|
+| $$ L = \frac {R \times A}{\rho} $$ |
+| $$ L = \frac {1,75 \times 1,0}{0,0175} $$ |
+| $$ L = 100 \ m $$ |
+
+# Seriekoppling
+Seriekoppling innebär att alla komponenter genomlöps av hela den strömstyrka som flyter genom ledningen, medan den elektriska spänningen över seriekopplingen fördelas över komponenterna i förhållande till deras resistans.
+
+### Spänningsdelning
+Seriekopplar vi sju likadana lampor, kommer spänningen att fördela sig jämt över dem. Det bildar vad det kallas en **spänningsdelarkedja**.
+
+> Kirchoffs andra lag: \
+> *Summan av delspäningarna är lika med den totala spänningen.*
+
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $U_{tot} = U_{1} + U_{2} + U_{3}$ | $U_{tot}$ | $Spänning$ | $Volt$ | $V$ |
+
+| Exempel uträkning |
 |:-------------:|
 | $$ U_{tot} = U_{1} + U_{2} + U_{3} $$ |
 | $$ U_{tot} = 4 + 4 + 4 $$ |
 | $$ U_{tot} = 12 \ V $$ |
 
-## Okänd delspäning
+### Okänd spänningsdelning
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ U_{tot} = U_{tot} - U_{3} - U_{2} $$ | $$ U $$ | Spänning | Volt | $$ V $$ |
+| $U_{tot} = U_{tot} - U_{3} - U_{2}$ | $U_{tot}$ | $Spänning$ | $Volt$ | $V$ |
 
-| Exempel uträkning okänd delspäning (1) |
+| Exempel uträkning |
 |:-------------:|
 | $$ U_{tot} = U_{1} + U_{2} + U_{3} $$ |
 | $$ U_{3} = 12 - 4 - 6  $$ |
@@ -104,18 +238,23 @@ För seriekopplingar är den totala resistansen $ R_T $ helt enkelt summan av de
 # Pararellkoppling
 Kirchhoffs första strömlag beskriver hur strömmar förgrenar sig i en pararellkrets. Den andra beskriver hur spänningar fördelas i en seriekrets.
 
-## Huvudström
-Huvudströmmen är lika med summan av grenströmmarna
+### Strömgrening
+
+Strömmen som flytter in till en punkt kallas ***"huvudström"*** och de som flyter därifrån kallas ***"grenströmmar"***.
+
+> Kirchoffs första lag: \
+> *Summan av alla strömmar som flyter till en punkt är lika med
+> summan av alla strömmar som flyter till punkten.*
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ I_{h} = I_{1} + I_{2} + I_{3} $$ | $$ I_h $$ | Ström | Ampere | $$ A $$|
+| $$ I = I_{1} + I_{2} + I_{3} ...osv $$ | $$ I $$ | Ström | Ampere | $$ A $$|
 
-| Exempel uträkning huvudström (1) |
+| Exempel uträkning |
 |:-------------:|
-| $$ I_{h} = I_{1} + I_{2} + I_{3} $$ |
-| $$ I_{h} = 2 + 2 + 2 $$ |
-| $$ I_{h} = 6 \ A $$ |
+| $$ I = I_{1} + I_{2} + I_{3} $$ |
+| $$ I = 2 + 2 + 2 $$ |
+| $$ I = 9 \ A $$ |
 
 ## Okänd grenström
 
@@ -147,56 +286,6 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 | $$ R_{ers} = \frac{U_{tot}} {I} $$ |
 | $$ R_{ers} = \frac{U_{tot}} {I} $$ |
 | $$ R_{ers} = 4,2 \ \Omega $$ |
-
-# Ledare
-
-## Ledarrresistans
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning | 
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ R = \frac {p \times ^L }{A} $$ | $$ R $$ | Ledarresistans | Omega | $$ \Omega $$ |
-
-| Exempel uträkning ledarresistans |
-|:-------------:|
-| $$ R = \frac {p \times ^L }{A} $$ |
-| $$ R = \frac {0,0175 \times 10 }{1} $$ |
-| $$ R = 0,0175 \ \Omega $$ |
-
-### Area
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning | 
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ A = \frac {p \times ^L }{R} $$ | $$ A $$ | Cirkel | Area | $$ mm^2 $$ |
-
-| Exempel uträkning ledararea |
-|:-------------:|
-| $$ A = \frac {p \times ^L }{R} $$ |
-| $$ A = \frac {0,0175 \times 20 }{0,466} $$ |
-| $$ A = 0,75 \ mm^2 $$ |
-
-### Ledarlängd
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning | 
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ L = \frac {R \times ^A }{P} $$ | $$ L $$ | Ledarlängd | Längd | $$ m $$ |
-
-| Exempel uträkning ledarlängd |
-|:-------------:|
-| $$ L = \frac {R \times ^A }{P} $$ |
-| $$ L = \frac {1,75 \times 1,0 }{0,0175} $$ |
-| $$ L = 100 \ m $$ |
-
-### Ledarresistivitet
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning | 
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ p = \frac {R \times ^A }{L} $$ | $$ p $$ | Ledarresistivitet | Omega | $$ \Omega $$ |
-
-| Exempel uträkning ledarresistivitet |
-|:-------------:|
-| $$ p = \frac {R \times ^A }{L} $$ |
-| $$ p = \frac {2,67 \times 0,75 }{20} $$ |
-| $$ p = 0,0090,1 \ \Omega \ mm^2/m $$ |
 
 # Ackumulatorer
 

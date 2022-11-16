@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Kapitel 3 Ström | Elektrikernas kokbok</title>
+  <title>Kapitel 5 Seriekoppling | Elektrikernas kokbok</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Kapitel 3 Ström | Elektrikernas kokbok" />
+  <meta property="og:title" content="Kapitel 5 Seriekoppling | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kapitel 3 Ström | Elektrikernas kokbok" />
+  <meta name="twitter:title" content="Kapitel 5 Seriekoppling | Elektrikernas kokbok" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -36,8 +36,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="resistans.html"/>
-<link rel="next" href="kablar-och-ledarresistans.html"/>
+<link rel="prev" href="kablar-och-ledarresistans.html"/>
+<link rel="next" href="pararellkoppling.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -80,11 +80,17 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
 <li class="chapter" data-level="" data-path="likströmskretsar.html"><a href="likströmskretsar.html"><i class="fa fa-check"></i>Likströmskretsar</a></li>
-<li class="chapter" data-level="1" data-path="uri.html"><a href="uri.html"><i class="fa fa-check"></i><b>1</b> URI</a>
+<li class="chapter" data-level="1" data-path="spänning.html"><a href="spänning.html"><i class="fa fa-check"></i><b>1</b> Spänning</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="uri.html"><a href="uri.html#spänning"><i class="fa fa-check"></i><b>1.1</b> Spänning</a>
+<li class="chapter" data-level="1.1" data-path="spänning.html"><a href="spänning.html#prefix"><i class="fa fa-check"></i><b>1.1</b> Prefix</a></li>
+<li class="chapter" data-level="1.2" data-path="spänning.html"><a href="spänning.html#seriekoppling"><i class="fa fa-check"></i><b>1.2</b> Seriekoppling</a>
 <ul>
-<li class="chapter" data-level="1.1.1" data-path="uri.html"><a href="uri.html#prefix"><i class="fa fa-check"></i><b>1.1.1</b> Prefix</a></li>
+<li class="chapter" data-level="1.2.1" data-path="spänning.html"><a href="spänning.html#spänningsdelning"><i class="fa fa-check"></i><b>1.2.1</b> Spänningsdelning</a></li>
+<li class="chapter" data-level="1.2.2" data-path="spänning.html"><a href="spänning.html#okänd-spänningsdelning"><i class="fa fa-check"></i><b>1.2.2</b> Okänd spänningsdelning</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="spänning.html"><a href="spänning.html#spänningsfall"><i class="fa fa-check"></i><b>1.3</b> Spänningsfall</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="spänning.html"><a href="spänning.html#kablar"><i class="fa fa-check"></i><b>1.3.1</b> Kablar</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="resistans.html"><a href="resistans.html"><i class="fa fa-check"></i><b>2</b> Resistans</a>
@@ -103,12 +109,10 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="chapter" data-level="4.3" data-path="kablar-och-ledarresistans.html"><a href="kablar-och-ledarresistans.html#ledarlängd"><i class="fa fa-check"></i><b>4.3</b> Ledarlängd</a></li>
 <li class="chapter" data-level="4.4" data-path="kablar-och-ledarresistans.html"><a href="kablar-och-ledarresistans.html#ledarresistivitet"><i class="fa fa-check"></i><b>4.4</b> Ledarresistivitet</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="seriekoppling.html"><a href="seriekoppling.html"><i class="fa fa-check"></i><b>5</b> Seriekoppling</a>
+<li class="chapter" data-level="5" data-path="seriekoppling-1.html"><a href="seriekoppling-1.html"><i class="fa fa-check"></i><b>5</b> Seriekoppling</a>
 <ul>
-<li class="chapter" data-level="5.0.1" data-path="seriekoppling.html"><a href="seriekoppling.html#spänningsdelning"><i class="fa fa-check"></i><b>5.0.1</b> Spänningsdelning</a></li>
-<li class="chapter" data-level="5.0.2" data-path="seriekoppling.html"><a href="seriekoppling.html#okänd-spänningsdelning"><i class="fa fa-check"></i><b>5.0.2</b> Okänd spänningsdelning</a></li>
-<li class="chapter" data-level="5.1" data-path="seriekoppling.html"><a href="seriekoppling.html#delresistans"><i class="fa fa-check"></i><b>5.1</b> Delresistans</a></li>
-<li class="chapter" data-level="5.2" data-path="seriekoppling.html"><a href="seriekoppling.html#ersättningsresistans"><i class="fa fa-check"></i><b>5.2</b> Ersättningsresistans</a></li>
+<li class="chapter" data-level="5.1" data-path="seriekoppling-1.html"><a href="seriekoppling-1.html#delresistans"><i class="fa fa-check"></i><b>5.1</b> Delresistans</a></li>
+<li class="chapter" data-level="5.2" data-path="seriekoppling-1.html"><a href="seriekoppling-1.html#ersättningsresistans"><i class="fa fa-check"></i><b>5.2</b> Ersättningsresistans</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="pararellkoppling.html"><a href="pararellkoppling.html"><i class="fa fa-check"></i><b>6</b> Pararellkoppling</a>
 <ul>
@@ -119,11 +123,11 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="chapter" data-level="7" data-path="ackumulatorer.html"><a href="ackumulatorer.html"><i class="fa fa-check"></i><b>7</b> Ackumulatorer</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="ackumulatorer.html"><a href="ackumulatorer.html#polspänning"><i class="fa fa-check"></i><b>7.1</b> Polspänning</a></li>
-<li class="chapter" data-level="7.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#spänningsfall"><i class="fa fa-check"></i><b>7.2</b> Spänningsfall</a></li>
+<li class="chapter" data-level="7.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#spänningsfall-1"><i class="fa fa-check"></i><b>7.2</b> Spänningsfall</a></li>
 <li class="chapter" data-level="7.3" data-path="ackumulatorer.html"><a href="ackumulatorer.html#emk-total"><i class="fa fa-check"></i><b>7.3</b> EMK Total</a></li>
 <li class="chapter" data-level="7.4" data-path="ackumulatorer.html"><a href="ackumulatorer.html#resistans-total"><i class="fa fa-check"></i><b>7.4</b> Resistans total</a></li>
 <li class="chapter" data-level="7.5" data-path="ackumulatorer.html"><a href="ackumulatorer.html#yttre-resistans"><i class="fa fa-check"></i><b>7.5</b> Yttre resistans</a></li>
-<li class="chapter" data-level="7.6" data-path="ackumulatorer.html"><a href="ackumulatorer.html#seriekoppling-1"><i class="fa fa-check"></i><b>7.6</b> Seriekoppling</a>
+<li class="chapter" data-level="7.6" data-path="ackumulatorer.html"><a href="ackumulatorer.html#seriekoppling-2"><i class="fa fa-check"></i><b>7.6</b> Seriekoppling</a>
 <ul>
 <li class="chapter" data-level="7.6.1" data-path="ackumulatorer.html"><a href="ackumulatorer.html#inre-resistans"><i class="fa fa-check"></i><b>7.6.1</b> Inre resistans</a></li>
 <li class="chapter" data-level="7.6.2" data-path="ackumulatorer.html"><a href="ackumulatorer.html#kortslutningsström"><i class="fa fa-check"></i><b>7.6.2</b> Kortslutningsström</a></li>
@@ -227,9 +231,10 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ström" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">Kapitel 3</span> Ström<a href="ström.html#ström" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Elekttrisk ström är elektroner i rörelse i en elektrisk ledare eller krets.</p>
+<div id="seriekoppling-1" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Kapitel 5</span> Seriekoppling<a href="seriekoppling-1.html#seriekoppling-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="delresistans" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Delresistans<a href="seriekoppling-1.html#delresistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <colgroup>
 <col width="14%" />
@@ -249,62 +254,55 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(I = \frac {U}{R}\)</span></td>
-<td align="center"><span class="math inline">\(I\)</span></td>
-<td align="center"><span class="math inline">\(Ström\)</span></td>
-<td align="center"><span class="math inline">\(Ampere\)</span></td>
-<td align="center"><span class="math inline">\(A\)</span></td>
+<td><span class="math display">\[ {R}_{//}\frac{R_{tot}} {R} \]</span></td>
+<td align="center"><span class="math display">\[ R \]</span></td>
+<td align="center">Delresistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<h4 id="tip-2" class="hasAnchor">Tip:<a href="ström.html#tip-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Om spänningen är lika stor men strömmen har
-ökat, då måste resistansen ha minskat.</li>
-<li>Om resistasen är oförändrad men strömmen minskat då måste även spänningen minskat.</li>
-<li>Om resistansen ökar kommer strömmen att minska.</li>
-</ul>
-<p>Den typen av logiska resonemang är viktig vid <strong>felsökning</strong>.</p>
-</blockquote>
-<div id="prefix-2" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> Prefix<a href="ström.html#prefix-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Strömmen mäts i ampere och grundenheten är <span class="math inline">\(1\)</span> ampere. I formler betecknas strömmen med bokstaven <span class="math inline">\(I\)</span>. Ampere förkortas <span class="math inline">\(A\)</span> i dokumentation. För att enklare kunna skriva värdet på små och stora strömmar används prefix framför enheten ampere.</p>
 <table>
 <thead>
 <tr class="header">
-<th>Vanliga prefix</th>
-<th align="center">Enhet</th>
-<th align="center">Förkostning</th>
+<th align="center">Om alla delresistanser är lika</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(1 \ kiloampere\)</span></td>
-<td align="center"><span class="math inline">\(kA\)</span></td>
-<td align="center"><span class="math inline">\(10^{3}\)</span></td>
+<td align="center"><span class="math display">\[ {R}_{//}\frac{R_{tot}} {R} \]</span></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(1 \ miliampere\)</span></td>
-<td align="center"><span class="math inline">\(mA\)</span></td>
-<td align="center"><span class="math inline">\(10^{-3}\)</span></td>
+<td align="center"><span class="math display">\[ R_{//} = \frac{100} {10} \]</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(1 \ mikroampere\)</span></td>
-<td align="center"><span class="math inline">\(\mu A\)</span></td>
-<td align="center"><span class="math inline">\(10^{-6}\)</span></td>
+<td align="center"><span class="math display">\[ R_{//} = 4,2  \ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Om delresestanerna är olika</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_1 = R_{tot} - R_1 \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ R_1 = 10 - 6 \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_1 = 6 \ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="strömgrening" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Strömgrening<a href="ström.html#strömgrening" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Strömmen som flytter in till en punkt kallas <strong><em>“huvudström”</em></strong> och de som flyter därifrån kallas <strong><em>“grenströmmar”</em></strong>.</p>
-<blockquote>
-<p>Kirchoffs första lag:<br />
-<em>Summan av alla strömmar som flyter till en punkt är lika med
-summan av alla strömmar som flyter till punkten.</em></p>
-</blockquote>
+<div id="ersättningsresistans" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Ersättningsresistans<a href="seriekoppling-1.html#ersättningsresistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Ersättningsresistans är den resistans vilken man kan ersätta två eller flera resistorer i en krets med.
+För seriekopplingar är den totala resistansen $ R_T $ helt enkelt summan av de olika resistorernas resistans.</p>
 <table>
 <colgroup>
 <col width="14%" />
@@ -324,29 +322,50 @@ summan av alla strömmar som flyter till punkten.</em></p>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ I = I_{1} + I_{2} + I_{3} ...osv \]</span></td>
-<td align="center"><span class="math display">\[ I \]</span></td>
-<td align="center">Ström</td>
-<td align="center">Ampere</td>
-<td align="center"><span class="math display">\[ A \]</span></td>
+<td><span class="math display">\[ R_{ers} = R_{1} + R_{2} + R_{3} ... \]</span></td>
+<td align="center"><span class="math display">\[ R \]</span></td>
+<td align="center">Ersättningsresistans</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning</th>
+<th align="center">Exempel uträkning ersättningsresistans</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ I = I_{1} + I_{2} + I_{3} \]</span></td>
+<td align="center"><span class="math display">\[ R_{ers} = R_{1} + R_{2} + R_{3} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ I = 2 + 2 + 2 \]</span></td>
+<td align="center"><span class="math display">\[ R_{ers} = 10 + 12 + 18 \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ I = 9 \ A \]</span></td>
+<td align="center"><span class="math display">\[ R_{ers} = 40 \ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Ersättningsresistansen går även att räkna ut från spänning totalt delat med strömen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_{ers} = \frac{U_{tot}} {I} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ R_{ers} = \frac{U_{tot}} {I} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ R_{ers} = 4,2 \ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
@@ -357,8 +376,8 @@ summan av alla strömmar som flyter till punkten.</em></p>
           </div>
         </div>
       </div>
-<a href="resistans.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="kablar-och-ledarresistans.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="kablar-och-ledarresistans.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pararellkoppling.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

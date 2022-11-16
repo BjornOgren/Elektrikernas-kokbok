@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Kapitel 4 Pararellkoppling | Elektrikernas kokbok</title>
+  <title>Kapitel 2 Kablar och ledarresistans | Elektrikernas kokbok</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Kapitel 4 Pararellkoppling | Elektrikernas kokbok" />
+  <meta property="og:title" content="Kapitel 2 Kablar och ledarresistans | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kapitel 4 Pararellkoppling | Elektrikernas kokbok" />
+  <meta name="twitter:title" content="Kapitel 2 Kablar och ledarresistans | Elektrikernas kokbok" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -36,8 +36,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="seriekoppling.html"/>
-<link rel="next" href="ackumulatorer.html"/>
+<link rel="prev" href="uri.html"/>
+<link rel="next" href="seriekoppling.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -95,11 +95,12 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="chapter" data-level="1.3.1" data-path="uri.html"><a href="uri.html#prefix-2"><i class="fa fa-check"></i><b>1.3.1</b> Prefix</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="ledarresistans.html"><a href="ledarresistans.html"><i class="fa fa-check"></i><b>2</b> Ledarresistans</a>
+<li class="chapter" data-level="2" data-path="kablar-och-ledarresistans.html"><a href="kablar-och-ledarresistans.html"><i class="fa fa-check"></i><b>2</b> Kablar och ledarresistans</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="ledarresistans.html"><a href="ledarresistans.html#ledarresistivitet"><i class="fa fa-check"></i><b>2.1</b> Ledarresistivitet</a></li>
-<li class="chapter" data-level="2.2" data-path="ledarresistans.html"><a href="ledarresistans.html#ledararea"><i class="fa fa-check"></i><b>2.2</b> Ledararea</a></li>
-<li class="chapter" data-level="2.3" data-path="ledarresistans.html"><a href="ledarresistans.html#ledarlängd"><i class="fa fa-check"></i><b>2.3</b> Ledarlängd</a></li>
+<li class="chapter" data-level="2.1" data-path="kablar-och-ledarresistans.html"><a href="kablar-och-ledarresistans.html#ledarrresistans"><i class="fa fa-check"></i><b>2.1</b> Ledarrresistans</a></li>
+<li class="chapter" data-level="2.2" data-path="kablar-och-ledarresistans.html"><a href="kablar-och-ledarresistans.html#ledararea"><i class="fa fa-check"></i><b>2.2</b> Ledararea</a></li>
+<li class="chapter" data-level="2.3" data-path="kablar-och-ledarresistans.html"><a href="kablar-och-ledarresistans.html#ledarlängd"><i class="fa fa-check"></i><b>2.3</b> Ledarlängd</a></li>
+<li class="chapter" data-level="2.4" data-path="kablar-och-ledarresistans.html"><a href="kablar-och-ledarresistans.html#ledarresistivitet"><i class="fa fa-check"></i><b>2.4</b> Ledarresistivitet</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="seriekoppling.html"><a href="seriekoppling.html"><i class="fa fa-check"></i><b>3</b> Seriekoppling</a>
 <ul>
@@ -225,17 +226,12 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pararellkoppling" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">Kapitel 4</span> Pararellkoppling<a href="pararellkoppling.html#pararellkoppling" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Kirchhoffs första strömlag beskriver hur strömmar förgrenar sig i en pararellkrets. Den andra beskriver hur spänningar fördelas i en seriekrets.</p>
-<div id="strömgrening" class="section level3 hasAnchor" number="4.0.1">
-<h3><span class="header-section-number">4.0.1</span> Strömgrening<a href="pararellkoppling.html#strömgrening" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Strömmen som flytter in till en punkt kallas <strong><em>“huvudström”</em></strong> och de som flyter därifrån kallas <strong><em>“grenströmmar”</em></strong>.</p>
-<blockquote>
-<p>Kirchoffs första lag:<br />
-<em>Summan av alla strömmar som flyter till en punkt är lika med
-summan av alla strömmar som flyter till punkten.</em></p>
-</blockquote>
+<div id="kablar-och-ledarresistans" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Kapitel 2</span> Kablar och ledarresistans<a href="kablar-och-ledarresistans.html#kablar-och-ledarresistans" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Ledningsresistans
+En ledningstråds resistans beror på hur många fria ledningselektroner som finns tillgängliga för laddningstransporten, det vill säga vilket material den är tillverkad av, men även på trådens area A. Eftersom ledningselektronerna stöter på motstånd längs tråden, så beror resistansen även på hur lång den är l. Resistansen bestäms ur formeln (det kan även vara bra att känna till sambandet mellan Area och diameter)</p>
+<div id="ledarrresistans" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Ledarrresistans<a href="kablar-och-ledarresistans.html#ledarrresistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <colgroup>
 <col width="14%" />
@@ -255,150 +251,173 @@ summan av alla strömmar som flyter till punkten.</em></p>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ I = I_{1} + I_{2} + I_{3} ...osv \]</span></td>
-<td align="center"><span class="math display">\[ I \]</span></td>
-<td align="center">Ström</td>
-<td align="center">Ampere</td>
-<td align="center"><span class="math display">\[ A \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ I = I_{1} + I_{2} + I_{3} \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ I = 2 + 2 + 2 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ I = 9 \ A \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="okänd-grenström" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Okänd grenström<a href="pararellkoppling.html#okänd-grenström" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ I_{3} = I_{h} - I_{1} - I_{2} \]</span></td>
-<td align="center"><span class="math display">\[ I \]</span></td>
-<td align="center">Ström</td>
-<td align="center">Ampere</td>
-<td align="center"><span class="math display">\[ A \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning okänd grenström (1)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ I_{3} = I_{h} - I_{1} - I_{2} \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ I_{3} = 6 - 3 - 2 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ I_{h} = 1 \ A \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="ersättningsresistans-1" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Ersättningsresistans<a href="pararellkoppling.html#ersättningsresistans-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Ersättningsresistans är den resistans vilken man kan ersätta två eller flera resistorer i en krets med.</p>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ \frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} ... \]</span></td>
+<td><span class="math display">\[ R = \frac {p \times ^L }{A} \]</span></td>
 <td align="center"><span class="math display">\[ R \]</span></td>
-<td align="center">Ersättningsresistans</td>
+<td align="center">Ledarresistans</td>
 <td align="center">Omega</td>
 <td align="center"><span class="math display">\[ \Omega \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
-<colgroup>
-<col width="100%" />
-</colgroup>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning ersättningsresistans</th>
+<th align="center">Exempel uträkning ledarresistans</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ \frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} \]</span></td>
+<td align="center"><span class="math display">\[ R = \frac {p \times ^L }{A} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ \frac{1} {R} = \frac{1} {10} + \frac{1} {12} + \frac{1} {18} \]</span></td>
+<td align="center"><span class="math display">\[ R = \frac {0,0175 \times 10 }{1} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ R_{ers} = 40 \ \Omega \]</span></td>
+<td align="center"><span class="math display">\[ R = 0,0175 \ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ledararea" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Ledararea<a href="kablar-och-ledarresistans.html#ledararea" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ A = \frac {p \times ^L }{R} \]</span></td>
+<td align="center"><span class="math display">\[ A \]</span></td>
+<td align="center">Cirkel</td>
+<td align="center">Area</td>
+<td align="center"><span class="math display">\[ mm^2 \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
-<colgroup>
-<col width="100%" />
-</colgroup>
 <thead>
 <tr class="header">
-<th align="center">Ersättningsresistansen går även att räkna ut från spänning totalt delat med strömen</th>
+<th align="center">Exempel uträkning ledararea</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ R_{ers} = \frac{U_{tot}} {I} \]</span></td>
+<td align="center"><span class="math display">\[ A = \frac {p \times ^L }{R} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ R_{ers} = \frac{U_{tot}} {I} \]</span></td>
+<td align="center"><span class="math display">\[ A = \frac {0,0175 \times 20 }{0,466} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ R_{ers} = 4,2 \ \Omega \]</span></td>
+<td align="center"><span class="math display">\[ A = 0,75 \ mm^2 \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ledarlängd" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Ledarlängd<a href="kablar-och-ledarresistans.html#ledarlängd" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ L = \frac {R \times ^A }{P} \]</span></td>
+<td align="center"><span class="math display">\[ L \]</span></td>
+<td align="center">Ledarlängd</td>
+<td align="center">Längd</td>
+<td align="center"><span class="math display">\[ m \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning ledarlängd</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ L = \frac {R \times ^A }{P} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ L = \frac {1,75 \times 1,0 }{0,0175} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ L = 100 \ m \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ledarresistivitet" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Ledarresistivitet<a href="kablar-och-ledarresistans.html#ledarresistivitet" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[ p = \frac {R \times ^A }{L} \]</span></td>
+<td align="center"><span class="math display">\[ p \]</span></td>
+<td align="center">Ledarresistivitet</td>
+<td align="center">Omega</td>
+<td align="center"><span class="math display">\[ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning ledarresistivitet</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ p = \frac {R \times ^A }{L} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ p = \frac {2,67 \times 0,75 }{20} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ p = 0,0090,1 \ \Omega \ mm^2/m \]</span></td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +428,8 @@ summan av alla strömmar som flyter till punkten.</em></p>
           </div>
         </div>
       </div>
-<a href="seriekoppling.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ackumulatorer.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="uri.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="seriekoppling.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
