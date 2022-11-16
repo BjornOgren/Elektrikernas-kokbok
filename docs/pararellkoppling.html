@@ -103,10 +103,10 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </ul></li>
 <li class="chapter" data-level="3" data-path="seriekoppling.html"><a href="seriekoppling.html"><i class="fa fa-check"></i><b>3</b> Seriekoppling</a>
 <ul>
-<li class="chapter" data-level="3.0.1" data-path="seriekoppling.html"><a href="seriekoppling.html#spänningsdelning"><i class="fa fa-check"></i><b>3.0.1</b> Spänningsdelning</a></li>
-<li class="chapter" data-level="3.0.2" data-path="seriekoppling.html"><a href="seriekoppling.html#okänd-spänningsdelning"><i class="fa fa-check"></i><b>3.0.2</b> Okänd spänningsdelning</a></li>
-<li class="chapter" data-level="3.1" data-path="seriekoppling.html"><a href="seriekoppling.html#delresistans"><i class="fa fa-check"></i><b>3.1</b> Delresistans</a></li>
-<li class="chapter" data-level="3.2" data-path="seriekoppling.html"><a href="seriekoppling.html#ersättningsresistans"><i class="fa fa-check"></i><b>3.2</b> Ersättningsresistans</a></li>
+<li class="chapter" data-level="3.1" data-path="seriekoppling.html"><a href="seriekoppling.html#spänningsdelning"><i class="fa fa-check"></i><b>3.1</b> Spänningsdelning</a></li>
+<li class="chapter" data-level="3.2" data-path="seriekoppling.html"><a href="seriekoppling.html#okänd-spänningsdelning"><i class="fa fa-check"></i><b>3.2</b> Okänd spänningsdelning</a></li>
+<li class="chapter" data-level="3.3" data-path="seriekoppling.html"><a href="seriekoppling.html#delresistans"><i class="fa fa-check"></i><b>3.3</b> Delresistans</a></li>
+<li class="chapter" data-level="3.4" data-path="seriekoppling.html"><a href="seriekoppling.html#ersättningsresistans"><i class="fa fa-check"></i><b>3.4</b> Ersättningsresistans</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="pararellkoppling.html"><a href="pararellkoppling.html"><i class="fa fa-check"></i><b>4</b> Pararellkoppling</a>
 <ul>
@@ -134,7 +134,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </ul></li>
 <li class="chapter" data-level="6" data-path="effekt.html"><a href="effekt.html"><i class="fa fa-check"></i><b>6</b> Effekt</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="effekt.html"><a href="effekt.html#watt-tid"><i class="fa fa-check"></i><b>6.1</b> Watt tid</a></li>
+<li class="chapter" data-level="6.1" data-path="effekt.html"><a href="effekt.html#watttid"><i class="fa fa-check"></i><b>6.1</b> Watttid</a></li>
 <li class="chapter" data-level="6.2" data-path="effekt.html"><a href="effekt.html#kostnadsberäkning"><i class="fa fa-check"></i><b>6.2</b> Kostnadsberäkning</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html"><i class="fa fa-check"></i>Växelströmskretsar</a></li>
@@ -255,11 +255,11 @@ summan av alla strömmar som flyter till punkten.</em></p>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ I = I_{1} + I_{2} + I_{3} ...osv \]</span></td>
-<td align="center"><span class="math display">\[ I \]</span></td>
-<td align="center">Ström</td>
-<td align="center">Ampere</td>
-<td align="center"><span class="math display">\[ A \]</span></td>
+<td><span class="math inline">\(I_h = I_{1} + I_{2} + I_{3} ...osv\)</span></td>
+<td align="center"><span class="math inline">\(I_h\)</span></td>
+<td align="center"><span class="math inline">\(Huvudström\)</span></td>
+<td align="center"><span class="math inline">\(Ampere\)</span></td>
+<td align="center"><span class="math inline">\(A\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -271,13 +271,13 @@ summan av alla strömmar som flyter till punkten.</em></p>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ I = I_{1} + I_{2} + I_{3} \]</span></td>
+<td align="center"><span class="math display">\[ I_h = I_{1} + I_{2} + I_{3} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ I = 2 + 2 + 2 \]</span></td>
+<td align="center"><span class="math display">\[ I_h = 2 + 2 + 2 \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ I = 9 \ A \]</span></td>
+<td align="center"><span class="math display">\[ I_h = 9 \ A \]</span></td>
 </tr>
 </tbody>
 </table>
@@ -303,18 +303,18 @@ summan av alla strömmar som flyter till punkten.</em></p>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ I_{3} = I_{h} - I_{1} - I_{2} \]</span></td>
-<td align="center"><span class="math display">\[ I \]</span></td>
-<td align="center">Ström</td>
-<td align="center">Ampere</td>
-<td align="center"><span class="math display">\[ A \]</span></td>
+<td><span class="math inline">\(I_{3} = I_{h} - I_{1} - I_{2}\)</span></td>
+<td align="center"><span class="math inline">\(I\)</span></td>
+<td align="center"><span class="math inline">\(Ström\)</span></td>
+<td align="center"><span class="math inline">\(Ampere\)</span></td>
+<td align="center"><span class="math inline">\(A\)</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning okänd grenström (1)</th>
+<th align="center">Exempel uträkning</th>
 </tr>
 </thead>
 <tbody>
@@ -352,11 +352,11 @@ summan av alla strömmar som flyter till punkten.</em></p>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ \frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} ... \]</span></td>
-<td align="center"><span class="math display">\[ R \]</span></td>
-<td align="center">Ersättningsresistans</td>
-<td align="center">Omega</td>
-<td align="center"><span class="math display">\[ \Omega \]</span></td>
+<td><span class="math inline">\(\frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} ...osv\)</span></td>
+<td align="center"><span class="math inline">\(R\)</span></td>
+<td align="center"><span class="math inline">\(ersättningsresistans\)</span></td>
+<td align="center"><span class="math inline">\(Omega\)</span></td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -366,7 +366,7 @@ summan av alla strömmar som flyter till punkten.</em></p>
 </colgroup>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning ersättningsresistans</th>
+<th align="center">Exempel uträkning</th>
 </tr>
 </thead>
 <tbody>

@@ -88,3 +88,4 @@ spänningsfall-i-kablar
 kablar
 spänningsfall-1
 ledarresistans
+watttid

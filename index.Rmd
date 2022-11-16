@@ -173,7 +173,7 @@ Materialkonstanten $\rho$ i resistansformeln brukar anges i sorten $[\Omega mm^2
 # Seriekoppling
 Seriekoppling innebär att alla komponenter genomlöps av hela den strömstyrka som flyter genom ledningen, medan den elektriska spänningen över seriekopplingen fördelas över komponenterna i förhållande till deras resistans.
 
-### Spänningsdelning
+## Spänningsdelning
 Seriekopplar vi sju likadana lampor, kommer spänningen att fördela sig jämt över dem. Det bildar vad det kallas en **spänningsdelarkedja**.
 
 > Kirchoffs andra lag: \
@@ -190,7 +190,7 @@ Seriekopplar vi sju likadana lampor, kommer spänningen att fördela sig jämt �
 | $$ U_{tot} = 4 + 4 + 4 $$ |
 | $$ U_{tot} = 12 \ V $$ |
 
-### Okänd spänningsdelning
+## Okänd spänningsdelning
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
@@ -206,7 +206,7 @@ Seriekopplar vi sju likadana lampor, kommer spänningen att fördela sig jämt �
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ {R}_{//}\frac{R_{tot}} {R} $$ | $$ R $$ | Delresistans | Omega | $$ \Omega $$ |
+| ${R}_{//}\frac{R_{tot}} {R}$ | $R_{//}$ | Delresistans | Omega | $$ \Omega $$ |
 
 | Om alla delresistanser är lika |
 |:-------------:|
@@ -227,19 +227,19 @@ För seriekopplingar är den totala resistansen $ R_T $ helt enkelt summan av de
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ R_{ers} = R_{1} + R_{2} + R_{3} ... $$ | $$ R $$ | Ersättningsresistans | Omega | $$ \Omega $$ |
+| $R_{ERS.} = R_{1} + R_{2} + R_{3} ...osv$ | $R_{ERS.}$ | $Ersättningsresistans$ | $Omega$ | $\Omega$ |
 
 | Exempel uträkning ersättningsresistans |
 |:-------------:|
-| $$ R_{ers} = R_{1} + R_{2} + R_{3} $$ |
-| $$ R_{ers} = 10 + 12 + 18 $$ |
-| $$ R_{ers} = 40 \ \Omega $$ |
+| $$ R_{ERS.} = R_{1} + R_{2} + R_{3} $$ |
+| $$ R_{ERS.} = 10 + 12 + 18 $$ |
+| $$ R_{ERS.} = 40 \ \Omega $$ |
 
 | Ersättningsresistansen går även att räkna ut från spänning totalt delat med strömen |
 |:-------------:|
-| $$ R_{ers} = \frac{U_{tot}} {I} $$ |
-| $$ R_{ers} = \frac{U_{tot}} {I} $$ |
-| $$ R_{ers} = 4,2 \ \Omega $$ |
+| $$ R_{ERS.} = \frac{U_{tot}} {I} $$ |
+| $$ R_{ERS.} = \frac{U_{tot}} {I} $$ |
+| $$ R_{ERS.} = 4,2 \ \Omega $$ |
 
 # Pararellkoppling
 Kirchhoffs första strömlag beskriver hur strömmar förgrenar sig i en pararellkrets. Den andra beskriver hur spänningar fördelas i en seriekrets.
@@ -254,21 +254,21 @@ Strömmen som flytter in till en punkt kallas ***"huvudström"*** och de som fly
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ I = I_{1} + I_{2} + I_{3} ...osv $$ | $$ I $$ | Ström | Ampere | $$ A $$|
+| $I_h = I_{1} + I_{2} + I_{3} ...osv$ | $I_h$ | $Huvudström$ | $Ampere$ | $A$ |
 
 | Exempel uträkning |
 |:-------------:|
-| $$ I = I_{1} + I_{2} + I_{3} $$ |
-| $$ I = 2 + 2 + 2 $$ |
-| $$ I = 9 \ A $$ |
+| $$ I_h = I_{1} + I_{2} + I_{3} $$ |
+| $$ I_h = 2 + 2 + 2 $$ |
+| $$ I_h = 9 \ A $$ |
 
 ## Okänd grenström
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ I_{3} = I_{h} - I_{1} - I_{2} $$ | $$ I $$ | Ström | Ampere | $$ A $$|
+| $I_{3} = I_{h} - I_{1} - I_{2}$ | $I$ | $Ström$ | $Ampere$ | $A$ |
 
-| Exempel uträkning okänd grenström (1) |
+| Exempel uträkning|
 |:-------------:|
 | $$ I_{3} = I_{h} - I_{1} - I_{2} $$ |
 | $$ I_{3} = 6 - 3 - 2 $$ |
@@ -279,9 +279,9 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ \frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} ... $$ | $$ R $$ | Ersättningsresistans | Omega | $$ \Omega $$ |
+| $\frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} ...osv$| $R$ | $ersättningsresistans$ | $Omega$ | $\Omega$ |
 
-| Exempel uträkning ersättningsresistans |
+| Exempel uträkning |
 |:-------------:|
 | $$ \frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} $$ |
 | $$ \frac{1} {R} = \frac{1} {10} + \frac{1} {12} + \frac{1} {18} $$ |
@@ -299,9 +299,9 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ U = E - {R_{i}} \times I $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$|
+| $U = E - {R_{i}} \times I$ | $U$ | $Spänning$ | $Volt$ | $V$ |
 
-| Exempel uträkning tid (1) |
+| Exempel uträkning |
 |:-------------:|
 | $$ U = E - {R_{i}} \times I $$ |
 | $$ U = 1,5 - 0,4 \times 0,9 $$ |
@@ -311,9 +311,9 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ U_{drop} = R_i \times I $$ | $$ U $$ | Spänning | Volt | $$ V $$|
+| $U_{drop} = R_i \times I$ | $U_{drop}$ | $spänningsfall$ | $Volt$ | $V$|
 
-| Exempel uträkning spänningsfall |
+| Exempel uträkning |
 |:-------------:|
 | $$ U_{drop} = R_i \times I $$ |
 | $$ U_{drop} = 0,6 \times 2,2 $$ |
@@ -323,20 +323,20 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie $$ | $$ U $$ | Spänning | Volt | $$ V $$ |
+| $E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie$ | $E_{tot}$ | $Elektromotorisk \ kraft \ total$ | $Volt$ | $V$ |
 
-| Exempel uträkning EMK Total |
+| Exempel uträkning |
 |:-------------:|
-| $$ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie $$  |
-| $$ E_{tot} = 4,5 \times 3 $$  |
+| $$ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie $$ |
+| $$ E_{tot} = 4,5 \times 3 $$ |
 | $$ E_{tot} = 13,5 \ V $$ |
 
 ## Resistans total
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ R_{tot} = R_y + R_i $$ | $$ R_{tot} $$ | Resistans total | Omega | $$ \Omega $$ |
+| $ R_{tot} = R_y + R_i$ | $R_{tot}$ | $Resistans total$ | $Omega$ | $\Omega$ |
 
-| Exempel uträkning resistans total  |
+| Exempel uträkning |
 |:-------------:|
 | $$ R_{tot} = R_y + R_i $$ |
 | $$ R_{tot} = 22 + 1,2 $$ |
@@ -345,9 +345,9 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 ## Yttre resistans
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ R_y = R_{tot} - R_i $$ | $$ R_{y} $$ | Resistans | Omega | $$ \Omega $$ |
+| $R_y = R_{tot} - R_i$ | $R_{y}$ | $Resistans yttre$ | $Omega$ | $\Omega$ |
 
-| Exempel uträkning yttre resistans |
+| Exempel uträkning |
 |:-------------:|
 | $$ R_y = R_{tot} - R_i $$ |
 | $$ R_y = 5 - 0,4 $$ |
@@ -358,19 +358,19 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 ### Inre resistans
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} $$ | $$ R_{i} $$ | Inre resistans | Omega | $$ \Omega $$ |
+| $R_{i \ tot} = Antal \ Batt \times R_{I \ Batt}$ | $R_{i}$ | $Inre resistans$ | $Omega$ | $\Omega$ |
 
 | Exempel uträkning inre resistans i strömkällan |
 |:-------------:|
 |  $$ R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} $$ |
-|  $$ R_{i \ tot} = 3 \times  0,3 $$  |
+|  $$ R_{i \ tot} = 3 \times  0,3 $$ |
 | $$ R_{i \ tot} = 0,9 \ \Omega $$ |
 | Vid seriekoppling adderas reistanserna sig |
 
 ### Kortslutningsström
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ I = I_{max} $$ | $$ I_{max} $$ | Ström | Ampere | $$ A $$|
+| $I = I_{max}$ | $I_{max}$ | $Kortslutningsström$ | $Ampere$ | $A$|
 
 | Exempel uträkning kortslutningsström |
 |:-------------:|
@@ -396,9 +396,9 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 ### Kortslutningsström 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:------------:|:-------------:|:-------------:|
-| $$ I_{max} = Batt \ antal \times I_i $$ | $$ I_{max} $$ | Kortslutningsström | Ampere | $$ A $$|
+| $I_{max} = Batt \ antal \times I_i$ | $I_{max}$ | $Kortslutningsström$ | $Ampere$ | $A$ |
 
-| Exempel uträkning kortslutningsström |
+| Exempel uträkning |
 |:-------------:|
 | $$ I_{max} = Batt \ antal \times I_i $$ |
 | $$ I_{max} = 3 \times 0,5 \ A $$ |
@@ -414,21 +414,21 @@ Den momentana effektutvecklingen i en resistor är produkten av spänningen öve
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ P = U \times I $$ | $$ P $$ | Effekt | Watt | $$ W $$ |
+| $P = U \times I$ | $P$ | $Effekt$ | $Watt$ | $W$ |
 
-| Exemple uträkning Effekt |
+| Exemple uträkning |
 |:-------------:|
 | $$ P = U \times I $$ |
 | $$ P = U \times I = 230 \times 0,5 $$ |
 | $$ P= 115 \ W $$ |
 
-## Watt tid
+## Watttid
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ W = P \times t $$ | $$ P $$ | Effekt | Watt | $$ W $$ |
+| $W = P \times t$ | $P$ | $Watttid$ | $Watt$ | $$ W $$ |
 
-| Exemple uträkning watt tid |
+| Exemple uträkning |
 |:-------------:|
 | $$ W = P \times t $$ |
 | $$ W = P \times t = 0,115 \times 10^3 \times 10 $$ |
@@ -438,9 +438,9 @@ Den momentana effektutvecklingen i en resistor är produkten av spänningen öve
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ Kostnad = kW \times Pris $$ | $$ Kostnad $$ | Effekt | Watt | $$ W $$ |
+| $Kostnad = kW \times Pris$ | $Kostnad$ | $Effekt$ | $Watt$ | $W$ |
 
-| Exemple uträkning kostnad |
+| Exemple uträkning |
 |:-------------:|
 | $$ Kostnad = kW \times Pris $$ |
 | $$ Kostnad = kW \times Pris = 1,15 \times 1,10 $$ |
@@ -472,25 +472,25 @@ reciproka värde.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ Frekvens = \frac{1}{Tid} $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$|
+| $Frekvens = \frac{1}{Tid}$ | $f$ | $Frekvens$ | $Hertz$ | $Hz$ |
 
-| Exempel uträkning frekvens (1) |
+| Exempel uträkning |
 |:-------------:|
 | $$ Frekvens = \frac{1}{Tid} $$ |
 | $$ f =\frac{1}{38} \times 10^{3} $$ |
-| $$ f = 26,3 \ Hz  $$ |
+| $$ f = 26,3 \ Hz $$ |
 
 ### Tid
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ Tid = \frac{1}{Frekvens} $$ | $$ f $$ | Frekvens | Hertz | $$ Hz $$|
+| $t = \frac{1}{Frekvens}$ | $t$ | $Tid$ | $Millisekunder$ | $ms$|
 
 | Exempel uträkning tid (1) |
 |:-------------:|
 | $$ Tid = \frac{1}{Frekvens} $$ |
 | $$ Tid = \frac{1}{400} \times 10^{3} $$ |
-| $$ T = 2,5 \ ms  $$ |
+| $$ t = 2,5 \ ms  $$ |
 
 ## Toppvärden
 
@@ -498,9 +498,9 @@ reciproka värde.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ \widehat{u} = U_{eff} \times \sqrt{2} $$ | $$ \widehat{u} $$ | Toppspänning | Volt | $$ V $$|
+| $\widehat{u} = U_{eff} \times \sqrt{2}$ | $\widehat{u}$ | $Toppspänning$ | $Volt$ | $V$ |
 
-| Exempel uträkning toppspänning |
+| Exempel uträkning |
 |:-------------:|
 | $$ \widehat{u} = U_{eff} \times \sqrt{2} $$ |
 | $$ \widehat{u} = 415 \times \sqrt{2} $$ |
@@ -510,7 +510,7 @@ reciproka värde.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ \widehat{I} = I_{eff} \times \sqrt{2} $$ | $$ \widehat{I} $$ | Toppström | Amper | $$ A $$|
+| $\widehat{I} = I_{eff} \times \sqrt{2}$ | $\widehat{I}$ | $Toppström$ | $Amper$ | $A$ |
 
 | Exempel uträkning toppström |
 |:-------------:|
@@ -522,9 +522,9 @@ reciproka värde.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ \widehat{\breve{u}} = \widehat{u} \times 2  $$ | $$ \widehat{\breve{u}} $$ | Toppspänning | Volt | $$ V $$|
+| $\widehat{\breve{u}} = \widehat{u} \times 2 $| $\widehat{\breve{u}}$ | $Toppspänning$ | $Volt$ | $V$ |
 
-| Exempel uträkning topp till toppspänning |
+| Exempel uträkning |
 |:-------------:|
 | $$ \widehat{\breve{u}} $$ |
 | $$ \widehat{\breve{u}} = 587 \times 2 $$ |
@@ -549,9 +549,9 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ U_L = U_f \times \sqrt{3} $$ | $$ U_l $$ | Spänning | Volt | $$ V $$|
+| $U_L = U_f \times \sqrt{3}$ | $U_l$ | $Linjespänning$ | $Volt$ | $V$ |
 
-| Exempel uträkning fasspänning |
+| Exempel uträkning |
 |:-------------:|
 | $$ U_L = U_f \times \sqrt{3}  $$ |
 | $$ U_L = 230 \times \sqrt{3} $$ |
@@ -561,11 +561,11 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ U_f = \frac{U_L}{\sqrt{3}} $$ | $$ U_l $$ | Spänning | Volt | $$ V $$|
+| $U_f = \frac{U_L}{\sqrt{3}}$ | $U_l$ | $Spänning$ | $Volt$ | $V$ |
 
-| Exempel uträkning fasspänning |
+| Exempel uträkning|
 |:-------------:|
-| $$ U_f = \frac{U_L}{\sqrt{3}}  $$ |
+| $$ U_f = \frac{U_L}{\sqrt{3}} $$ |
 | $$ U_f = \frac{400}{\sqrt{3}} $$ |
 | $$ U_f = 230 \ V $$ |
 
@@ -577,7 +577,7 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ U_f = U_L = 400V  $$ | $$ U_L $$ | Spänning | Volt | $$ V $$|
+| $U_f = U_L = 400V$ | $U_f$ | $Fasspänning$ | $Volt$ | $V$ |
 
 # Ström
 
@@ -587,9 +587,9 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ I_f = \frac{U_f}{R} $$ | $$ I_f $$ | Ström | Ampere | $$ A $$|
+| $I_f = \frac{U_f}{R}$ | $I_f$ | $Ström$ | $Ampere$ | $A$ |
 
-| Exempel uträkning fasström |
+| Exempel uträkning |
 |:-------------:|
 | $$ I_f = \frac{U_f}{R} $$ |
 | $$ I_f \frac{400}{100} $$ |
@@ -597,7 +597,7 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 ### Linjeström
 
-$$ I_L = I_f = Faström $$
+$I_L = I_f = Faström$
 
 ## D-koppling
 
@@ -605,9 +605,9 @@ $$ I_L = I_f = Faström $$
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ I_f = \frac{U_h}{R} $$ | $$ I_f $$ | Ström | Ampere | $$ A $$|
+| $I_f = \frac{U_h}{R}$ | $I_f$ | $Fasström$ | $Ampere$ | $A$ |
 
-| Exempel uträkning fasström |
+| Exempel uträkning |
 |:-------------:|
 | $$ I_f = \frac{U_h}{R} $$ |
 | $$ I_f \frac{400}{100} $$ |
@@ -617,8 +617,8 @@ $$ I_L = I_f = Faström $$
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ I_L = I_f \times \sqrt{3} $$ | $$ I_L $$ | Ström | Ampere | $$ A $$|
-| $$ I_L = \frac {P}{ \sqrt{3} \times U_h } $$ | $$ I_L $$ | Ström | Ampere | $$ A $$|
+| $I_L = I_f \times \sqrt{3}$ | $I_L$ | $Linjeström$ | $Ampere$ | $A$ |
+| $I_L = \frac {P}{ \sqrt{3} \times U_h }$ | $I_L$ | $Linjeström$ | $Ampere$ | $A$ |
 
 | Exempel uträkning linjeström (1) |
 |:-------------:|
@@ -640,7 +640,7 @@ Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som 
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ P_{trefas}= \sqrt{3} \times U \times I_f $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+| $P_{trefas}= \sqrt{3} \times U \times I_f$ | $$ P $$ | $Effekt$ | $Watt$ | $W$ |
 
 | Effekt i tre D-kopplade resistorer |
 |:-------------:|
@@ -655,8 +655,8 @@ Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik r
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ P= U \times I \times cos  \phi $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
-| $$ P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi $$ | $$ P $$ | Aktiv effekt | Watt | $$ W $$ |
+| $P= U \times I \times cos  \phi$ | $P$ | $Aktiv effekt$ | $Watt$ | $W$ |
+| $P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi$ | $P$ | $Aktiv effekt$ | $Watt$ | $W$ |
 
 | Exempel uträkning aktiv effekt |
 |:-------------:|
@@ -675,14 +675,14 @@ Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenb
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ S=U \times I = \sqrt{P^2 + Q^2} $$ | $$ S $$ | Skenbar effekt | Voltampere | $$ VA $$|
-| $$ S_{trefas}= \sqrt{3} \times U \times I $$ | $$ S $$ | Skenbar effekt | Voltampere | $$ VA $$|
+| $S=U \times I = \sqrt{P^2 + Q^2}$ | $S$ | $Skenbar effekt$ | $Voltampere$ | $VA$ |
+| $S_{trefas}= \sqrt{3} \times U \times I$ | $S$ | $Skenbar effekt$ | $Voltampere$ | $VA$ |
 
 | Exempel uträkning skenbar effekt (1) |
 |:-------------:|
 | $$ S=U \times I $$ |
 | $$ S=230 \times 9,05 $$ |
-| $$ S=2081 \ W $$ |
+| $$ S=2081 \ VA $$ |
 
 | Exempel uträkning skenbar effekt (2) |
 |:-------------:|
@@ -694,14 +694,14 @@ Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenb
 |:-------------:|
 | $$ S_{trefas}= \sqrt{3} \times U \times I $$ |
 | $$ S_{trefas}= \sqrt{3} \times 230 \times 9,05 $$ |
-| $$ S_{trefas}=2081 \ W $$ |
+| $$ S_{trefas}=2081 \ VA $$ |
 
 ### Reaktiv
 Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva motståndet åstakomer. Den reaktiva effekten har enheten voltampere, VAr. Tillläget r står för reaktiv.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $$ Q=U \times I \times sin  \phi = \sqrt{S^{2}-P^{2}} $$ | $$ Q $$ | Reaktiv effekt | Voltampere reakt | $$ VAr $$|
+| $Q=U \times I \times sin  \phi = \sqrt{S^{2}-P^{2}}$ | $Q$ | $Reaktiv effekt$ | $Voltampere reaktiv$ | $VAr$ |
 
 | Exempel uträkning reaktiv effekt (1) |
 |:-------------:|
@@ -714,7 +714,6 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 | $$ Q= \sqrt{S^{2}-P^{2}} $$ |
 | $$ Q= \sqrt{1000^{2}-607^{2}} $$ |
 | $$ Q= 795 \ VAr $$ |
-
 
 # Växelströmsmotstånd
 

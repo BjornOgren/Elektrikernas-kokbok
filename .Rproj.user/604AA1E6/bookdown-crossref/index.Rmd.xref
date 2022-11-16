@@ -12,8 +12,8 @@ h2:ledarresistivitet Ledarresistivitet
 h2:ledararea Ledararea
 h2:ledarlängd Ledarlängd
 h1:seriekoppling Seriekoppling
-h3:spänningsdelning Spänningsdelning
-h3:okänd-spänningsdelning Okänd spänningsdelning
+h2:spänningsdelning Spänningsdelning
+h2:okänd-spänningsdelning Okänd spänningsdelning
 h2:delresistans Delresistans
 h2:ersättningsresistans Ersättningsresistans
 h1:pararellkoppling Pararellkoppling
@@ -33,7 +33,7 @@ h2:pararellkoppling-1 Pararellkoppling
 h3:inre-resistans-1 Inre resistans
 h3:kortslutningsström-1 Kortslutningsström
 h1:effekt Effekt
-h2:watt-tid Watt tid
+h2:watttid Watttid
 h2:kostnadsberäkning Kostnadsberäkning
 h1:växelströmskretsar Växelströmskretsar
 h1:frekvenz Frekvenz

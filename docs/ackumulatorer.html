@@ -103,10 +103,10 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </ul></li>
 <li class="chapter" data-level="3" data-path="seriekoppling.html"><a href="seriekoppling.html"><i class="fa fa-check"></i><b>3</b> Seriekoppling</a>
 <ul>
-<li class="chapter" data-level="3.0.1" data-path="seriekoppling.html"><a href="seriekoppling.html#spänningsdelning"><i class="fa fa-check"></i><b>3.0.1</b> Spänningsdelning</a></li>
-<li class="chapter" data-level="3.0.2" data-path="seriekoppling.html"><a href="seriekoppling.html#okänd-spänningsdelning"><i class="fa fa-check"></i><b>3.0.2</b> Okänd spänningsdelning</a></li>
-<li class="chapter" data-level="3.1" data-path="seriekoppling.html"><a href="seriekoppling.html#delresistans"><i class="fa fa-check"></i><b>3.1</b> Delresistans</a></li>
-<li class="chapter" data-level="3.2" data-path="seriekoppling.html"><a href="seriekoppling.html#ersättningsresistans"><i class="fa fa-check"></i><b>3.2</b> Ersättningsresistans</a></li>
+<li class="chapter" data-level="3.1" data-path="seriekoppling.html"><a href="seriekoppling.html#spänningsdelning"><i class="fa fa-check"></i><b>3.1</b> Spänningsdelning</a></li>
+<li class="chapter" data-level="3.2" data-path="seriekoppling.html"><a href="seriekoppling.html#okänd-spänningsdelning"><i class="fa fa-check"></i><b>3.2</b> Okänd spänningsdelning</a></li>
+<li class="chapter" data-level="3.3" data-path="seriekoppling.html"><a href="seriekoppling.html#delresistans"><i class="fa fa-check"></i><b>3.3</b> Delresistans</a></li>
+<li class="chapter" data-level="3.4" data-path="seriekoppling.html"><a href="seriekoppling.html#ersättningsresistans"><i class="fa fa-check"></i><b>3.4</b> Ersättningsresistans</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="pararellkoppling.html"><a href="pararellkoppling.html"><i class="fa fa-check"></i><b>4</b> Pararellkoppling</a>
 <ul>
@@ -134,7 +134,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </ul></li>
 <li class="chapter" data-level="6" data-path="effekt.html"><a href="effekt.html"><i class="fa fa-check"></i><b>6</b> Effekt</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="effekt.html"><a href="effekt.html#watt-tid"><i class="fa fa-check"></i><b>6.1</b> Watt tid</a></li>
+<li class="chapter" data-level="6.1" data-path="effekt.html"><a href="effekt.html#watttid"><i class="fa fa-check"></i><b>6.1</b> Watttid</a></li>
 <li class="chapter" data-level="6.2" data-path="effekt.html"><a href="effekt.html#kostnadsberäkning"><i class="fa fa-check"></i><b>6.2</b> Kostnadsberäkning</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="växelströmskretsar.html"><a href="växelströmskretsar.html"><i class="fa fa-check"></i>Växelströmskretsar</a></li>
@@ -248,18 +248,18 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ U = E - {R_{i}} \times I \]</span></td>
-<td align="center"><span class="math display">\[ f \]</span></td>
-<td align="center">Frekvens</td>
-<td align="center">Hertz</td>
-<td align="center"><span class="math display">\[ Hz \]</span></td>
+<td><span class="math inline">\(U = E - {R_{i}} \times I\)</span></td>
+<td align="center"><span class="math inline">\(U\)</span></td>
+<td align="center"><span class="math inline">\(Spänning\)</span></td>
+<td align="center"><span class="math inline">\(Volt\)</span></td>
+<td align="center"><span class="math inline">\(V\)</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning tid (1)</th>
+<th align="center">Exempel uträkning</th>
 </tr>
 </thead>
 <tbody>
@@ -296,18 +296,18 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ U_{drop} = R_i \times I \]</span></td>
-<td align="center"><span class="math display">\[ U \]</span></td>
-<td align="center">Spänning</td>
-<td align="center">Volt</td>
-<td align="center"><span class="math display">\[ V \]</span></td>
+<td><span class="math inline">\(U_{drop} = R_i \times I\)</span></td>
+<td align="center"><span class="math inline">\(U_{drop}\)</span></td>
+<td align="center"><span class="math inline">\(spänningsfall\)</span></td>
+<td align="center"><span class="math inline">\(Volt\)</span></td>
+<td align="center"><span class="math inline">\(V\)</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning spänningsfall</th>
+<th align="center">Exempel uträkning</th>
 </tr>
 </thead>
 <tbody>
@@ -344,18 +344,18 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie \]</span></td>
-<td align="center"><span class="math display">\[ U \]</span></td>
-<td align="center">Spänning</td>
-<td align="center">Volt</td>
-<td align="center"><span class="math display">\[ V \]</span></td>
+<td><span class="math inline">\(E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie\)</span></td>
+<td align="center"><span class="math inline">\(E_{tot}\)</span></td>
+<td align="center"><span class="math inline">\(Elektromotorisk \ kraft \ total\)</span></td>
+<td align="center"><span class="math inline">\(Volt\)</span></td>
+<td align="center"><span class="math inline">\(V\)</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning EMK Total</th>
+<th align="center">Exempel uträkning</th>
 </tr>
 </thead>
 <tbody>
@@ -392,18 +392,18 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ R_{tot} = R_y + R_i \]</span></td>
-<td align="center"><span class="math display">\[ R_{tot} \]</span></td>
-<td align="center">Resistans total</td>
-<td align="center">Omega</td>
-<td align="center"><span class="math display">\[ \Omega \]</span></td>
+<td>$ R_{tot} = R_y + R_i$</td>
+<td align="center"><span class="math inline">\(R_{tot}\)</span></td>
+<td align="center"><span class="math inline">\(Resistans total\)</span></td>
+<td align="center"><span class="math inline">\(Omega\)</span></td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning resistans total</th>
+<th align="center">Exempel uträkning</th>
 </tr>
 </thead>
 <tbody>
@@ -440,18 +440,18 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ R_y = R_{tot} - R_i \]</span></td>
-<td align="center"><span class="math display">\[ R_{y} \]</span></td>
-<td align="center">Resistans</td>
-<td align="center">Omega</td>
-<td align="center"><span class="math display">\[ \Omega \]</span></td>
+<td><span class="math inline">\(R_y = R_{tot} - R_i\)</span></td>
+<td align="center"><span class="math inline">\(R_{y}\)</span></td>
+<td align="center"><span class="math inline">\(Resistans yttre\)</span></td>
+<td align="center"><span class="math inline">\(Omega\)</span></td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning yttre resistans</th>
+<th align="center">Exempel uträkning</th>
 </tr>
 </thead>
 <tbody>
@@ -490,11 +490,11 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} \]</span></td>
-<td align="center"><span class="math display">\[ R_{i} \]</span></td>
-<td align="center">Inre resistans</td>
-<td align="center">Omega</td>
-<td align="center"><span class="math display">\[ \Omega \]</span></td>
+<td><span class="math inline">\(R_{i \ tot} = Antal \ Batt \times R_{I \ Batt}\)</span></td>
+<td align="center"><span class="math inline">\(R_{i}\)</span></td>
+<td align="center"><span class="math inline">\(Inre resistans\)</span></td>
+<td align="center"><span class="math inline">\(Omega\)</span></td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -541,11 +541,11 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ I = I_{max} \]</span></td>
-<td align="center"><span class="math display">\[ I_{max} \]</span></td>
-<td align="center">Ström</td>
-<td align="center">Ampere</td>
-<td align="center"><span class="math display">\[ A \]</span></td>
+<td><span class="math inline">\(I = I_{max}\)</span></td>
+<td align="center"><span class="math inline">\(I_{max}\)</span></td>
+<td align="center"><span class="math inline">\(Kortslutningsström\)</span></td>
+<td align="center"><span class="math inline">\(Ampere\)</span></td>
+<td align="center"><span class="math inline">\(A\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -646,11 +646,11 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ I_{max} = Batt \ antal \times I_i \]</span></td>
-<td align="center"><span class="math display">\[ I_{max} \]</span></td>
-<td align="center">Kortslutningsström</td>
-<td align="center">Ampere</td>
-<td align="center"><span class="math display">\[ A \]</span></td>
+<td><span class="math inline">\(I_{max} = Batt \ antal \times I_i\)</span></td>
+<td align="center"><span class="math inline">\(I_{max}\)</span></td>
+<td align="center"><span class="math inline">\(Kortslutningsström\)</span></td>
+<td align="center"><span class="math inline">\(Ampere\)</span></td>
+<td align="center"><span class="math inline">\(A\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -660,7 +660,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 </colgroup>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning kortslutningsström</th>
+<th align="center">Exempel uträkning</th>
 </tr>
 </thead>
 <tbody>
