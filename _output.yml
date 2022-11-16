@@ -5,8 +5,8 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Elektrikernas kokbok</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+        <li><a href="https://elkunskap.nu" target="blank">elkunskap.nu</a></li>
+    edit: https://github.com/elbjornen/Elektrikernas-kokbok/edit/main/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:

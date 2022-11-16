@@ -1,0 +1,2310 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Elektrikernas kokbok},
+  pdfauthor={Björn Ögren},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Elektrikernas kokbok}
+\author{Björn Ögren}
+\date{2022-11-16}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\chapter*{Introduction}\label{introduction}}
+\addcontentsline{toc}{chapter}{Introduction}
+
+Elbjörnen, det är jag det \textless3
+
+Du hittar mig på:\\
+Twitter: \url{https://twitter.com/elbjornen}\\
+Unsplash: \url{https://unsplash.com/@elbjornen}\\
+GitHub: \url{https://github.com/elbjornen}
+
+\hypertarget{likstruxf6mskretsar}{%
+\chapter*{Likströmskretsar}\label{likstruxf6mskretsar}}
+\addcontentsline{toc}{chapter}{Likströmskretsar}
+
+\hypertarget{uri}{%
+\chapter{URI}\label{uri}}
+
+Den tyske fysikern Simon Ohm uppställde år 1826 den regel som brukar kallas för Ohms lag. Om en ström \(I\) passerar igenom en ledare med resistansen \(R\) så faller spänningen med \(U = I×R\). Spänningsfallet blir proportionellt både mot strömmen och resistansen. Med en vätskeanalogi kan man säga at det blir ett \textbf{``tryckfall''} när vätskeflödet passerar ett motstånd.
+
+\hypertarget{spuxe4nning}{%
+\section{Spänning}\label{spuxe4nning}}
+
+Elektrisk spänning eller potentialskillnad, väsentligen samma sak som elektromotorisk kraft, är skillnaden i elektrisk potential mellan två punkter i en elektrisk krets.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(U = R \times I\) & \(U\) & \(Spänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+\hypertarget{tip}{%
+\subsubsection{Tip:}\label{tip}}
+
+\begin{itemize}
+\tightlist
+\item
+  Om spänningen är lika stor men strömmen har
+  ökat, då måste resistansen ha minskat.
+\item
+  Om resistasen är oförändrad men strömmen minskat då måste även spänningen minskat.
+\item
+  Om resistansen ökar kommer strömmen att minska.
+\end{itemize}
+
+Den typen av logiska resonemang är viktig vid \textbf{felsökning}.
+\end{quote}
+
+\hypertarget{prefix}{%
+\subsection{Prefix}\label{prefix}}
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule()
+Vanliga prefix & Enhet & Förkostning \\
+\midrule()
+\endhead
+\(1 \ kilovolt\) & \(kV\) & \(10^{3}\) \\
+\(1 \ milivolt\) & \(mV\) & \(10^{-3}\) \\
+\(1 \ mikrovolt\) & \(\mu V\) & \(10^{-6}\) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{resistans}{%
+\section{Resistans}\label{resistans}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(R = \frac {U}{I}\) & \(I\) & \(Resistans\) & \(Ohm\) & \(\Omega\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+\hypertarget{tip-1}{%
+\subsubsection{Tip:}\label{tip-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Om spänningen är lika stor men strömmen har
+  ökat, då måste resistansen ha minskat.
+\item
+  Om resistasen är oförändrad men strömmen minskat då måste även spänningen minskat.
+\item
+  Om resistansen ökar kommer strömmen att minska.
+\end{itemize}
+
+Den typen av logiska resonemang är viktig vid \textbf{felsökning}.
+\end{quote}
+
+\hypertarget{prefix-1}{%
+\subsection{Prefix}\label{prefix-1}}
+
+Resistans mäts i \(ohm\) och som betecknas med den grekiska bokstaven \(\Omega\) som uttalas (åmega).
+I formler används bokstaven \(R\) för att beteckna resistans. För att utrycka små och stora resistanser använder vi prefix framför enheten \(ohm\).
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule()
+Vanliga prefix & Enhet & Förkostning \\
+\midrule()
+\endhead
+\(1 \ megaohm\) & \(M\Omega\) & \(10^{6}\) \\
+\(1 \ kiloohm\) & \(k\Omega\) & \(10^{3}\) \\
+\(1 \ miliohm\) & \(m\Omega\) & \(10^{-3}\) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{struxf6m}{%
+\section{Ström}\label{struxf6m}}
+
+En elektrisk ström består av av laddningar i rörelse. En metalltråd innehåller fria elektroner men även om de hela tiden rör sig ( p.g.a. värmerörelsen ), så sker detta slumpmässigt utan att därför någon nettoström uppkommer.
+Om man tillför laddning, elektroner, till metalltrådens ena ände så stör man jämvikten och en utjämningsström av elektroner flyter kortvarigt i tråden. Om man dessutom kan bortföra elektronerna från metalltrådens andra ände så fortsätter strömmen att flyta genom tråden.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(I = \frac {U}{R}\) & \(I\) & \(Ström\) & \(Ampere\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+\hypertarget{tip-2}{%
+\subsubsection{Tip:}\label{tip-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  Om spänningen är lika stor men strömmen har
+  ökat, då måste resistansen ha minskat.
+\item
+  Om resistasen är oförändrad men strömmen minskat då måste även spänningen minskat.
+\item
+  Om resistansen ökar kommer strömmen att minska.
+\end{itemize}
+
+Den typen av logiska resonemang är viktig vid \textbf{felsökning}.
+\end{quote}
+
+\hypertarget{prefix-2}{%
+\subsection{Prefix}\label{prefix-2}}
+
+Strömmen mäts i ampere och grundenheten är \(1\) ampere. I formler betecknas strömmen med bokstaven \(I\). Ampere förkortas \(A\) i dokumentation. För att enklare kunna skriva värdet på små och stora strömmar används prefix framför enheten ampere.
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule()
+Vanliga prefix & Enhet & Förkostning \\
+\midrule()
+\endhead
+\(1 \ kiloampere\) & \(kA\) & \(10^{3}\) \\
+\(1 \ miliampere\) & \(mA\) & \(10^{-3}\) \\
+\(1 \ mikroampere\) & \(\mu A\) & \(10^{-6}\) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{ledarresistans}{%
+\chapter{Ledarresistans}\label{ledarresistans}}
+
+En ledningstråds resistans beror på hur många fria ledningselektroner som finns tillgängliga för laddningstransporten, det vill säga vilket material den är tillverkad av, men även på trådens area \(A\). Eftersom ledningselektronerna stöter på motstånd längs tråden, så beror resistansen även på hur lång den är \(l\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(R = \frac {\rho \times L }{A}\) & \(R\) & \(Resistans\) & \(Omega\) & \(\Omega\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( R = \frac {\rho \times L }{A} \) \\
+\( R = \frac {0,0175 \times 10 }{1} \) \\
+\( R = 0,0175 \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{ledarresistivitet}{%
+\section{Ledarresistivitet}\label{ledarresistivitet}}
+
+Materialkonstanten \(\rho\) i resistansformeln brukar anges i sorten \([\Omega mm^2/m]\). Detta förenklar beräkningar av kabelresistanser, eftersom det är naturligt att tala om kabellängder i \(m\) och tvärsnittsareor av storleksordningen \(mm^2\) - den som inte känner till detta kan dock bli mycket förbryllad!
+
+\begin{longtable}[]{@{}lc@{}}
+\toprule()
+Metall & \(Resistivitet\) \(\rho\) \([\Omega mm^2/m]\) \\
+\midrule()
+\endhead
+\(Aluminium\) & \(0,027\) \\
+\(Järn\) & \(0,11\) \\
+\(Koppar\) & \(0,0175\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(\rho = \frac {R \times A}{L}\) & \(\rho\) & \(Materialkonstant\) & \(Omega \ milimeter / meter\) & \([\Omega mm^2/m]\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( \rho = \frac {R \times A}{L} \) \\
+\( \rho = \frac {2,67 \times 0,75}{20} \) \\
+\( \rho = 0,0090,1 \ [\Omega mm^2/m] \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{ledararea}{%
+\section{Ledararea}\label{ledararea}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(A = \frac {\rho \times L}{R}\) & \(A\) & \(Area\) & \(Milimeter\) & \(mm^2\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( A = \frac {\rho \times L}{R} \) \\
+\( A = \frac {0,0175 \times 20}{0,466} \) \\
+\( A = 0,75 \ mm^2 \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{ledarluxe4ngd}{%
+\section{Ledarlängd}\label{ledarluxe4ngd}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(L = \frac {R \times A}{\rho}\) & \(L\) & \(Längd\) & \(Meter\) & \(m\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning ledarlängd \\
+\midrule()
+\endhead
+\( L = \frac {R \times A}{\rho} \) \\
+\( L = \frac {1,75 \times 1,0}{0,0175} \) \\
+\( L = 100 \ m \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{seriekoppling}{%
+\chapter{Seriekoppling}\label{seriekoppling}}
+
+Seriekoppling innebär att alla komponenter genomlöps av hela den strömstyrka som flyter genom ledningen, medan den elektriska spänningen över seriekopplingen fördelas över komponenterna i förhållande till deras resistans.
+
+\hypertarget{spuxe4nningsdelning}{%
+\section{Spänningsdelning}\label{spuxe4nningsdelning}}
+
+Seriekopplar vi sju likadana lampor, kommer spänningen att fördela sig jämt över dem. Det bildar vad det kallas en \textbf{spänningsdelarkedja}.
+
+\begin{quote}
+Kirchoffs andra lag:\\
+\emph{Summan av delspäningarna är lika med den totala spänningen.}
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(U_{tot} = U_{1} + U_{2} + U_{3}\) & \(U_{tot}\) & \(Spänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( U_{tot} = U_{1} + U_{2} + U_{3} \) \\
+\( U_{tot} = 4 + 4 + 4 \) \\
+\( U_{tot} = 12 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{okuxe4nd-spuxe4nningsdelning}{%
+\section{Okänd spänningsdelning}\label{okuxe4nd-spuxe4nningsdelning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(U_{tot} = U_{tot} - U_{3} - U_{2}\) & \(U_{tot}\) & \(Spänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( U_{tot} = U_{1} + U_{2} + U_{3} \) \\
+\( U_{3} = 12 - 4 - 6  \) \\
+\( U_{3} = 3 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{delresistans}{%
+\section{Delresistans}\label{delresistans}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\({R}_{//}\frac{R_{tot}} {R}\) & \(R_{//}\) & Delresistans & Omega & \( \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Om alla delresistanser är lika \\
+\midrule()
+\endhead
+\( {R}_{//}\frac{R_{tot}} {R} \) \\
+\( R_{//} = \frac{100} {10} \) \\
+\( R_{//} = 4,2  \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Om delresestanerna är olika \\
+\midrule()
+\endhead
+\( R_1 = R_{tot} - R_1 \) \\
+\( R_1 = 10 - 6 \) \\
+\( R_1 = 6 \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{ersuxe4ttningsresistans}{%
+\section{Ersättningsresistans}\label{ersuxe4ttningsresistans}}
+
+Ersättningsresistans är den resistans vilken man kan ersätta två eller flera resistorer i en krets med.
+För seriekopplingar är den totala resistansen \$ R\_T \$ helt enkelt summan av de olika resistorernas resistans.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(R_{ERS.} = R_{1} + R_{2} + R_{3} ...osv\) & \(R_{ERS.}\) & \(Ersättningsresistans\) & \(Omega\) & \(\Omega\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning ersättningsresistans \\
+\midrule()
+\endhead
+\( R_{ERS.} = R_{1} + R_{2} + R_{3} \) \\
+\( R_{ERS.} = 10 + 12 + 18 \) \\
+\( R_{ERS.} = 40 \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Ersättningsresistansen går även att räkna ut från spänning totalt delat med strömen
+\end{minipage} \\
+\midrule()
+\endhead
+\( R_{ERS.} = \frac{U_{tot}} {I} \) \\
+\( R_{ERS.} = \frac{U_{tot}} {I} \) \\
+\( R_{ERS.} = 4,2 \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{pararellkoppling}{%
+\chapter{Pararellkoppling}\label{pararellkoppling}}
+
+Kirchhoffs första strömlag beskriver hur strömmar förgrenar sig i en pararellkrets. Den andra beskriver hur spänningar fördelas i en seriekrets.
+
+\hypertarget{struxf6mgrening}{%
+\subsection{Strömgrening}\label{struxf6mgrening}}
+
+Strömmen som flytter in till en punkt kallas \textbf{\emph{``huvudström''}} och de som flyter därifrån kallas \textbf{\emph{``grenströmmar''}}.
+
+\begin{quote}
+Kirchoffs första lag:\\
+\emph{Summan av alla strömmar som flyter till en punkt är lika med
+summan av alla strömmar som flyter till punkten.}
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(I_h = I_{1} + I_{2} + I_{3} ...osv\) & \(I_h\) & \(Huvudström\) & \(Ampere\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( I_h = I_{1} + I_{2} + I_{3} \) \\
+\( I_h = 2 + 2 + 2 \) \\
+\( I_h = 9 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{okuxe4nd-grenstruxf6m}{%
+\section{Okänd grenström}\label{okuxe4nd-grenstruxf6m}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(I_{3} = I_{h} - I_{1} - I_{2}\) & \(I\) & \(Ström\) & \(Ampere\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( I_{3} = I_{h} - I_{1} - I_{2} \) \\
+\( I_{3} = 6 - 3 - 2 \) \\
+\( I_{h} = 1 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{ersuxe4ttningsresistans-1}{%
+\section{Ersättningsresistans}\label{ersuxe4ttningsresistans-1}}
+
+Ersättningsresistans är den resistans vilken man kan ersätta två eller flera resistorer i en krets med.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(\frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} ...osv\) & \(R\) & \(ersättningsresistans\) & \(Omega\) & \(\Omega\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Exempel uträkning
+\end{minipage} \\
+\midrule()
+\endhead
+\( \frac{1} {R} = \frac{1} {R}_{1} + \frac{1} {R}_{2} + \frac{1} {R}_{3} \) \\
+\( \frac{1} {R} = \frac{1} {10} + \frac{1} {12} + \frac{1} {18} \) \\
+\( R_{ers} = 40 \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Ersättningsresistansen går även att räkna ut från spänning totalt delat med strömen
+\end{minipage} \\
+\midrule()
+\endhead
+\( R_{ers} = \frac{U_{tot}} {I} \) \\
+\( R_{ers} = \frac{U_{tot}} {I} \) \\
+\( R_{ers} = 4,2 \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{ackumulatorer}{%
+\chapter{Ackumulatorer}\label{ackumulatorer}}
+
+\hypertarget{polspuxe4nning}{%
+\section{Polspänning}\label{polspuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(U = E - {R_{i}} \times I\) & \(U\) & \(Spänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( U = E - {R_{i}} \times I \) \\
+\( U = 1,5 - 0,4 \times 0,9 \) \\
+\( U = 1,14 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{spuxe4nningsfall}{%
+\section{Spänningsfall}\label{spuxe4nningsfall}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(U_{drop} = R_i \times I\) & \(U_{drop}\) & \(spänningsfall\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( U_{drop} = R_i \times I \) \\
+\( U_{drop} = 0,6 \times 2,2 \) \\
+\( U_{drop} = 1,32 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{emk-total}{%
+\section{EMK Total}\label{emk-total}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie\) & \(E_{tot}\) & \(Elektromotorisk \ kraft \ total\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie \) \\
+\( E_{tot} = 4,5 \times 3 \) \\
+\( E_{tot} = 13,5 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{resistans-total}{%
+\section{Resistans total}\label{resistans-total}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\$ R\_\{tot\} = R\_y + R\_i\$ & \(R_{tot}\) & \(Resistans total\) & \(Omega\) & \(\Omega\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( R_{tot} = R_y + R_i \) \\
+\( R_{tot} = 22 + 1,2 \) \\
+\( R_{tot} = 23,2 \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{yttre-resistans}{%
+\section{Yttre resistans}\label{yttre-resistans}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(R_y = R_{tot} - R_i\) & \(R_{y}\) & \(Resistans yttre\) & \(Omega\) & \(\Omega\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( R_y = R_{tot} - R_i \) \\
+\( R_y = 5 - 0,4 \) \\
+\( R_y = 4,6 \ \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{seriekoppling-1}{%
+\section{Seriekoppling}\label{seriekoppling-1}}
+
+\hypertarget{inre-resistans}{%
+\subsection{Inre resistans}\label{inre-resistans}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(R_{i \ tot} = Antal \ Batt \times R_{I \ Batt}\) & \(R_{i}\) & \(Inre resistans\) & \(Omega\) & \(\Omega\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning inre resistans i strömkällan \\
+\midrule()
+\endhead
+\( R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} \) \\
+\( R_{i \ tot} = 3 \times  0,3 \) \\
+\( R_{i \ tot} = 0,9 \ \Omega \) \\
+Vid seriekoppling adderas reistanserna sig \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kortslutningsstruxf6m}{%
+\subsection{Kortslutningsström}\label{kortslutningsstruxf6m}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(I = I_{max}\) & \(I_{max}\) & \(Kortslutningsström\) & \(Ampere\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning kortslutningsström \\
+\midrule()
+\endhead
+\( I = I_{max} \) \\
+\( I = I_{max} = 0,5 \ A \) \\
+\( I = I_{max} = 0,5 \ A \) \\
+Eftersom det vid seriekoppling är samma ström genom hela kretsen \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{pararellkoppling-1}{%
+\section{Pararellkoppling}\label{pararellkoppling-1}}
+
+\hypertarget{inre-resistans-1}{%
+\subsection{Inre resistans}\label{inre-resistans-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( R_{i \ tot} = \frac {R_{i Batt}}{Batt_{Antal}} \) & \( R_{i \ \ tot} \) & Inre resistans & Omega & \( \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning inre resistans i strömkällan \\
+\midrule()
+\endhead
+\( R_{i \ tot} = \frac {R_{i / Batt}}{Batt_{Antal}} \) \\
+\( R_{i \ tot} = \frac {0,3}{3} \) \\
+\( R_{i \ tot} = 0,1 \ \Omega \) \\
+Vid parallelkoppling delas resistansen sig \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kortslutningsstruxf6m-1}{%
+\subsection{Kortslutningsström}\label{kortslutningsstruxf6m-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1449}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2174}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2029}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2174}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2174}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(I_{max} = Batt \ antal \times I_i\) & \(I_{max}\) & \(Kortslutningsström\) & \(Ampere\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Exempel uträkning
+\end{minipage} \\
+\midrule()
+\endhead
+\( I_{max} = Batt \ antal \times I_i \) \\
+\( I_{max} = 3 \times 0,5 \ A \) \\
+\( I_{max} = 1,5 \ A \) \\
+Eftersomm totalströmmen vid pararellkoppling blir summan av delströmmarna \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{effekt}{%
+\chapter{Effekt}\label{effekt}}
+
+Effekt betecknas ofta med bokstaven P från engelskans power och kan bland annat yttra sig i form av ett
+värmeflöde eller mekaniskt arbete. SI-enheten för effekt är watt (W), där en watt motsvarar en
+energiomvandling på en joule per sekund (W=J/s). Utöver watt finns det ett flertal enheter som betecknar effekt, exempelvis enheten hästkraft, vilket i Sverige motsvarar en effekt på 735,5 watt.
+
+Den momentana effektutvecklingen i en resistor är produkten av spänningen över komponenten och den elektriska strömmen genom komponenten.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(P = U \times I\) & \(P\) & \(Effekt\) & \(Watt\) & \(W\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exemple uträkning \\
+\midrule()
+\endhead
+\( P = U \times I \) \\
+\( P = U \times I = 230 \times 0,5 \) \\
+\( P= 115 \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{watttid}{%
+\section{Watttid}\label{watttid}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(W = P \times t\) & \(P\) & \(Watttid\) & \(Watt\) & \( W \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exemple uträkning \\
+\midrule()
+\endhead
+\( W = P \times t \) \\
+\( W = P \times t = 0,115 \times 10^3 \times 10 \) \\
+\( W = 1,15 \ kWh\) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kostnadsberuxe4kning}{%
+\section{Kostnadsberäkning}\label{kostnadsberuxe4kning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(Kostnad = kW \times Pris\) & \(Kostnad\) & \(Effekt\) & \(Watt\) & \(W\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exemple uträkning \\
+\midrule()
+\endhead
+\( Kostnad = kW \times Pris \) \\
+\( Kostnad = kW \times Pris = 1,15 \times 1,10 \) \\
+\( Kostnad = -:- \ Kr \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{vuxe4xelstruxf6mskretsar}{%
+\chapter*{Växelströmskretsar}\label{vuxe4xelstruxf6mskretsar}}
+\addcontentsline{toc}{chapter}{Växelströmskretsar}
+
+\hypertarget{frekvenz}{%
+\chapter{Frekvenz}\label{frekvenz}}
+
+\hypertarget{tidsintervall}{%
+\section{Tidsintervall}\label{tidsintervall}}
+
+Frekvens är en storhet för antalet
+repeterande händelser inom ett givet
+tidsintervall{[}1{]}. För att beräkna
+frekvensen fixerar man ett
+tidsintervall, räknar antalet
+förekomster av händelsen och
+dividerar detta antal med längden av
+tidsintervallet. Resultatet anges i
+enheten hertz (Hz) efter den tyske
+fysikern Heinrich Rudolf Hertz, där
+1 Hz är en händelse som inträffar en
+gång per sekund. Alternativt kan man
+mäta tiden mellan två förekomster av
+händelsen ((tids)perioden) och
+därefter beräkna frekvensens
+reciproka värde.
+
+\hypertarget{frekvens}{%
+\subsection{Frekvens}\label{frekvens}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(Frekvens = \frac{1}{Tid}\) & \(f\) & \(Frekvens\) & \(Hertz\) & \(Hz\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( Frekvens = \frac{1}{Tid} \) \\
+\( f =\frac{1}{38} \times 10^{3} \) \\
+\( f = 26,3 \ Hz \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{tid}{%
+\subsection{Tid}\label{tid}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(t = \frac{1}{Frekvens}\) & \(t\) & \(Tid\) & \(Millisekunder\) & \(ms\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning tid (1) \\
+\midrule()
+\endhead
+\( Tid = \frac{1}{Frekvens} \) \\
+\( Tid = \frac{1}{400} \times 10^{3} \) \\
+\( t = 2,5 \ ms  \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{toppvuxe4rden}{%
+\section{Toppvärden}\label{toppvuxe4rden}}
+
+\hypertarget{toppspuxe4nning}{%
+\subsection{Toppspänning}\label{toppspuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(\widehat{u} = U_{eff} \times \sqrt{2}\) & \(\widehat{u}\) & \(Toppspänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( \widehat{u} = U_{eff} \times \sqrt{2} \) \\
+\( \widehat{u} = 415 \times \sqrt{2} \) \\
+\( \widehat{u} \approx 587 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{toppstruxf6m}{%
+\subsection{Toppström}\label{toppstruxf6m}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(\widehat{I} = I_{eff} \times \sqrt{2}\) & \(\widehat{I}\) & \(Toppström\) & \(Amper\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning toppström \\
+\midrule()
+\endhead
+\( \widehat{I} = I_{eff} \times \sqrt{2} \) \\
+\( \widehat{I} = 20 \times \sqrt{2} \) \\
+\( \widehat{I} \approx 28,3 \ A  \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{topp-till-toppspuxe4nning}{%
+\subsection{Topp till toppspänning}\label{topp-till-toppspuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\$\widehat{\breve{u}} = \widehat{u} \times 2 \$ & \(\widehat{\breve{u}}\) & \(Toppspänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( \widehat{\breve{u}} \) \\
+\( \widehat{\breve{u}} = 587 \times 2 \) \\
+\( \widehat{\breve{u}} = 1174 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{topp-till-toppvuxe4rde-av-struxf6m}{%
+\subsection{Topp till toppvärde av ström}\label{topp-till-toppvuxe4rde-av-struxf6m}}
+
+\[ \widehat{\breve{I}} = \widehat{I} \times 2 \]
+
+Exemple
+
+\[ \widehat{\breve{I}} = \widehat{I} \times 2 \approx 28,3 \times 2 = 56 \ A \]
+
+Topp till toppvärd är således
+\[ \widehat{\breve{I}} \approx 56 \ A \]
+
+\hypertarget{spuxe4nning-1}{%
+\chapter{Spänning}\label{spuxe4nning-1}}
+
+\hypertarget{y-koppling}{%
+\section{Y-Koppling}\label{y-koppling}}
+
+\hypertarget{linjespuxe4nning}{%
+\subsection{Linjespänning}\label{linjespuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(U_L = U_f \times \sqrt{3}\) & \(U_l\) & \(Linjespänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( U_L = U_f \times \sqrt{3}  \) \\
+\( U_L = 230 \times \sqrt{3} \) \\
+\( U_L = 400 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{fasspuxe4nning}{%
+\subsection{Fasspänning}\label{fasspuxe4nning}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(U_f = \frac{U_L}{\sqrt{3}}\) & \(U_l\) & \(Spänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( U_f = \frac{U_L}{\sqrt{3}} \) \\
+\( U_f = \frac{400}{\sqrt{3}} \) \\
+\( U_f = 230 \ V \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{d-koppling}{%
+\section{D-koppling}\label{d-koppling}}
+
+\hypertarget{linjespuxe4nning-1}{%
+\subsection{Linjespänning}\label{linjespuxe4nning-1}}
+
+\hypertarget{fasspuxe4nning-1}{%
+\subsection{Fasspänning}\label{fasspuxe4nning-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(U_f = U_L = 400V\) & \(U_f\) & \(Fasspänning\) & \(Volt\) & \(V\) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{struxf6m-1}{%
+\chapter{Ström}\label{struxf6m-1}}
+
+\hypertarget{y-koppling-1}{%
+\section{Y-Koppling}\label{y-koppling-1}}
+
+\hypertarget{fasstruxf6m}{%
+\subsection{Fasström}\label{fasstruxf6m}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(I_f = \frac{U_f}{R}\) & \(I_f\) & \(Ström\) & \(Ampere\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( I_f = \frac{U_f}{R} \) \\
+\( I_f \frac{400}{100} \) \\
+\( I_f = 4 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{linjestruxf6m}{%
+\subsection{Linjeström}\label{linjestruxf6m}}
+
+\(I_L = I_f = Faström\)
+
+\hypertarget{d-koppling-1}{%
+\section{D-koppling}\label{d-koppling-1}}
+
+\hypertarget{fasstruxf6m-1}{%
+\subsection{Fasström}\label{fasstruxf6m-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(I_f = \frac{U_h}{R}\) & \(I_f\) & \(Fasström\) & \(Ampere\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning \\
+\midrule()
+\endhead
+\( I_f = \frac{U_h}{R} \) \\
+\( I_f \frac{400}{100} \) \\
+\( I_f = 4 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{linjestruxf6m-1}{%
+\subsection{Linjeström}\label{linjestruxf6m-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(I_L = I_f \times \sqrt{3}\) & \(I_L\) & \(Linjeström\) & \(Ampere\) & \(A\) \\
+\(I_L = \frac {P}{ \sqrt{3} \times U_h }\) & \(I_L\) & \(Linjeström\) & \(Ampere\) & \(A\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning linjeström (1) \\
+\midrule()
+\endhead
+\( I_L = I_f \times \sqrt{3} \) \\
+\( I_L = 90 \times \sqrt{3} \) \\
+\( I_L = 2,3 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning linjeström (2) \\
+\midrule()
+\endhead
+\( I_L = \frac {P}{ \sqrt{3} \times U_h} \) \\
+\( I_L = \frac {6000}{ \sqrt{3} \times 400} \) \\
+\( I_L = 8,7 \ A \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{effekt-1}{%
+\chapter{Effekt}\label{effekt-1}}
+
+\hypertarget{trefaskretsar}{%
+\section{Trefaskretsar}\label{trefaskretsar}}
+
+Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudström. Men i en D-koppling är det fasströmmarna genom belastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: \[ \sqrt{3} \] som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med \[ cos \phi \].
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(P_{trefas}= \sqrt{3} \times U \times I_f\) & \( P \) & \(Effekt\) & \(Watt\) & \(W\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Effekt i tre D-kopplade resistorer \\
+\midrule()
+\endhead
+\( P_{trefas}= \sqrt{3} \times U \times I_f \) \\
+\( P_{trefas}= \sqrt{3} \times U \times I_f \) \\
+\( P= 4800 \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{reaktiva-kretsar}{%
+\section{Reaktiva kretsar}\label{reaktiva-kretsar}}
+
+\hypertarget{aktiv}{%
+\subsection{Aktiv}\label{aktiv}}
+
+Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik rörelse. Aktiva effekten har enheten watt och betecknas med P i effektriangeln.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(P= U \times I \times cos \phi\) & \(P\) & \(Aktiv effekt\) & \(Watt\) & \(W\) \\
+\(P_{trefas}= \sqrt{3} \times U \times I \times cos \phi\) & \(P\) & \(Aktiv effekt\) & \(Watt\) & \(W\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning aktiv effekt \\
+\midrule()
+\endhead
+\( P=U \times I \times cos  \phi \) \\
+\( P=230 \times 0,78 \times 0,78 \) \\
+\( P=1640 \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning aktiv effekt trefas \\
+\midrule()
+\endhead
+\( P_{trefas}= \sqrt{3} \times U \times I \times cos  \phi \) \\
+\( P_{trefas}= \sqrt{3} \times ? \times ? \times ? \) \\
+\( P_{trefas}= \ W \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{skenbar}{%
+\subsection{Skenbar}\label{skenbar}}
+
+Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenbar effekt har enheten voltampere (VA).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(S=U \times I = \sqrt{P^2 + Q^2}\) & \(S\) & \(Skenbar effekt\) & \(Voltampere\) & \(VA\) \\
+\(S_{trefas}= \sqrt{3} \times U \times I\) & \(S\) & \(Skenbar effekt\) & \(Voltampere\) & \(VA\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning skenbar effekt (1) \\
+\midrule()
+\endhead
+\( S=U \times I \) \\
+\( S=230 \times 9,05 \) \\
+\( S=2081 \ VA \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning skenbar effekt (2) \\
+\midrule()
+\endhead
+\( S= \sqrt{P^2 + Q^2} \) \\
+\( S= \sqrt{2000^2 + 1000^2} \) \\
+\( S=2,2 \ kVA \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning skenbar effekt trefas \\
+\midrule()
+\endhead
+\( S_{trefas}= \sqrt{3} \times U \times I \) \\
+\( S_{trefas}= \sqrt{3} \times 230 \times 9,05 \) \\
+\( S_{trefas}=2081 \ VA \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{reaktiv}{%
+\subsection{Reaktiv}\label{reaktiv}}
+
+Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva motståndet åstakomer. Den reaktiva effekten har enheten voltampere, VAr. Tillläget r står för reaktiv.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\(Q=U \times I \times sin \phi = \sqrt{S^{2}-P^{2}}\) & \(Q\) & \(Reaktiv effekt\) & \(Voltampere reaktiv\) & \(VAr\) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning reaktiv effekt (1) \\
+\midrule()
+\endhead
+\( Q=U \times I \times sin  \phi \) \\
+\( Q=U \times I \times sin  \phi \) \\
+\( Q=  \ VAr \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning reaktiv effekt (2) \\
+\midrule()
+\endhead
+\( Q= \sqrt{S^{2}-P^{2}} \) \\
+\( Q= \sqrt{1000^{2}-607^{2}} \) \\
+\( Q= 795 \ VAr \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{vuxe4xelstruxf6msmotstuxe5nd}{%
+\chapter{Växelströmsmotstånd}\label{vuxe4xelstruxf6msmotstuxe5nd}}
+
+\hypertarget{impedans}{%
+\section{Impedans}\label{impedans}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( Z=\sqrt{R^2 + (X_{L} - X_{L})^2} \) & \( Z \) & Impedans & Ohm & \(  \Omega \) \\
+\( R = \frac{U}{I}  \) & \( R \) & Resistans & Ohm & \(  \Omega \) \\
+\( X_L = 2 \pi fL \) & \( X_L \) & Induktiv reaktans & Ohm & \(  \Omega \) \\
+\( X_C =\frac{1} {2 \pi f C}  \) & \( X_C \) & kapacitiv reaktans & Ohm & \(  \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning impedans Z \\
+\midrule()
+\endhead
+\( Z=\sqrt{R^2 + (X_{L})^2} \) \\
+\( Z=\sqrt{20^2 + (15,7)^2} \) \\
+\( Z= 25,4 \  \Omega \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kondensatorer}{%
+\section{Kondensatorer}\label{kondensatorer}}
+
+Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule()
+Prefixer & Förkortning & Tiopotens \\
+\midrule()
+\endhead
+\( 1 \ mikrofarad  \) & \(  \mu F \) & \( 10^{-6} \) \\
+\( 1 \ nanofarad  \) & \( nF \) & \( 10^{-9} \) \\
+\( 1 \ picofarad  \) & \( pF \) & \( 10^{-12} \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kapacitans}{%
+\subsection{Kapacitans}\label{kapacitans}}
+
+Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss spänning.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( C=\frac{1}{(2 \pi f  X_c)} \) & \( C \) & Kapacitans & Farad & \( F^{As/V} \) \\
+\( f = \frac{1}{T}   \) & \( f \) & Hertz & \( Hz \) & \\
+\( 2 \times \pi = 3.14  \) & \( Pi \) & Omkrets & Radies & \( \pi \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Exempel uträkning kapacitans
+\end{minipage} \\
+\midrule()
+\endhead
+\( L=\frac{X_L} {2 \pi f} \) \\
+\( L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \) \\
+\( L= 0.16 \ H \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{kapacitiv-reaktans}{%
+\subsection{Kapacitiv reaktans}\label{kapacitiv-reaktans}}
+
+Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då kommer ekvationen att minska när frekvesen ökar.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( X_C =\frac{1} {2 \pi f C}  \) & \( X_C \) & kapacitiv reaktans & Ohm & \(  \Omega \) \\
+\( f = \frac{1}{T}   \) & \( f \) & Hertz & \( Hz \) & \\
+\( 2 \times \pi = 3.14  \) & \( Pi \) & Omkrets & Radies & \( \pi \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning kapacitiv reaktans \\
+\midrule()
+\endhead
+\( X_C =\frac{1} {2 \pi f C} \) \\
+\( X_C = \frac{1}{2 \times \pi \times 50 \times 0,0002} \) \\
+\( X_C = 15,91 \  \Omega  \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{seriekopplade}{%
+\subsection{Seriekopplade}\label{seriekopplade}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( C_{tot}=C_{1} + C_{2}... \) & \( C \) & Kapacitans & Farad & \( F^{As/V} \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}c@{}}
+\toprule()
+Exempel uträkning kapacitiv reaktans \\
+\midrule()
+\endhead
+\( C_{tot}=C_{1} + C_{2} \) \\
+\( C_{tot}=12_{1} + 12_{2} \) \\
+\( C_{tot}=24 \  \mu F \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{parallellkopplade}{%
+\subsection{Parallellkopplade}\label{parallellkopplade}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( 
+\frac{1}{C_{tot}} =
+\frac{1}{C_{1}} +
+\frac{1}{C_{2}} +
+\frac{1}{C_{3}}
+...
+\) & \( C \) & Kapacitans & Farad & \( F^{As/V} \) \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+Exempel uträkning kapacitiv reaktans
+\end{minipage} \\
+\midrule()
+\endhead
+\( 
+\frac{1}{C_{tot}} =
+\frac{1}{C_{1}} +
+\frac{1}{C_{2}} +
+\frac{1}{C_{3}}
+...
+\) \\
+\( 
+\frac{1}{C_{tot}} =
+\frac{1}{1,8_{1}} +
+\frac{1}{16_{2}} +
+\frac{1}{32_{3}}
+\) \\
+\( C_{tot}=4.5 \ nF \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{spolar}{%
+\section{Spolar}\label{spolar}}
+
+Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten Henry (H).
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule()
+Prefixer & Enhet & Förkostning \\
+\midrule()
+\endhead
+\( 1 \ millihenry  \) & \( mH \) & \( 10^{-3} \) \\
+\( 1 \ mikrohenry  \) & \(  \mu H \) & \( 10^{-6} \) \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{induktans}{%
+\subsection{Induktans}\label{induktans}}
+
+Induktansen beror på hur många varv spolen har, diametern, avståndet mellan ledarna och om spolen är försedd med järnkärna. Flera lindningsvarv och större diameter ger spolen större indutans.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( L=\frac{X_L} {2\pi f} \) & \( L \) & Induktans & Henry & \( H^{Vs/A} \) \\
+\( f = \frac{1}{T}   \) & \( f \) & Frekvens & Hertz & \( Hz \) \\
+\( 2 \times \pi = 3.14  \) & \( Pi \) & ? & ? & \( \pi \) \\
+\bottomrule()
+\end{longtable}
+
+\[ L=\frac{X_L} {2 \times \pi f} \]
+\[ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \]
+\[ L= 0.16 \ H \]
+
+\hypertarget{induktiv-reaktans}{%
+\subsection{Induktiv reaktans}\label{induktiv-reaktans}}
+
+Växelströmsmotståndet är
+frekvensberoende och motståndet ökar när
+frekvensen ökar.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1429}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2143}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Samband
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Beteckning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Storhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Enhet
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Förkortning
+\end{minipage} \\
+\midrule()
+\endhead
+\( X_L = 2 \pi fL \) & \( X_L \) & Induktiv reaktans & Ohm & \(  \Omega \) \\
+\( f = \frac{1}{T} \) & \( f \) & Frekvens & Hertz & \( Hz \) \\
+\( 2 \times \pi = 3.14  \) & \( Pi \) & ? & ? & \( \pi \) \\
+\bottomrule()
+\end{longtable}
+
+\[ X_L = 2 \pi fL \]
+\[ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  \]
+\[ X_L=15,7 \  \Omega \]
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
