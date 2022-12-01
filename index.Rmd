@@ -243,7 +243,7 @@ För seriekopplingar är den totala resistansen $ R_T $ helt enkelt summan av de
 # Pararellkoppling
 Kirchhoffs första strömlag beskriver hur strömmar förgrenar sig i en pararellkrets. Den andra beskriver hur spänningar fördelas i en seriekrets.
 
-### Strömgrening
+## Strömgrening
 
 Strömmen som flytter in till en punkt kallas ***"huvudström"*** och de som flyter därifrån kallas ***"grenströmmar"***.
 
@@ -357,7 +357,7 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 ### Inre resistans
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $R_{i \ tot} = Antal \ Batt \times R_{I \ Batt}$ | $R_{i}$ | $Inre resistans$ | $Omega$ | $\Omega$ |
+| $R_{i \ tot} = Antal \ Batt \times R_{i \ Batt}$ | $R_{i}$ | $Inre resistans$ | $Omega$ | $\Omega$ |
 
 | Exempel uträkning inre resistans i strömkällan |
 |:-------------:|
