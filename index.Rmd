@@ -318,22 +318,10 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 | $$ U_{drop} = 0,6 \times 2,2 $$ |
 | $$ U_{drop} = 1,32 \ V $$ |
 
-## EMK Total
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning | 
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie$ | $E_{tot}$ | $Elektromotorisk \ kraft \ total$ | $Volt$ | $V$ |
-
-| Exempel uträkning |
-|:-------------:|
-| $$ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie $$ |
-| $$ E_{tot} = 4,5 \times 3 $$ |
-| $$ E_{tot} = 13,5 \ V $$ |
-
 ## Resistans total
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $ R_{tot} = R_y + R_i$ | $R_{tot}$ | $Resistans total$ | $Omega$ | $\Omega$ |
+| $R_{tot} = R_y + R_i$ | $R_{tot}$ | $Resistans total$ | $Omega$ | $\Omega$ |
 
 | Exempel uträkning |
 |:-------------:|
@@ -353,6 +341,18 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 | $$ R_y = 4,6 \ \Omega $$ |
 
 ## Seriekoppling
+
+### EMK Total
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie$ | $E_{tot}$ | $Elektromotorisk \ kraft \ total$ | $Volt$ | $V$ |
+
+| Exempel uträkning |
+|:-------------:|
+| $$ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie $$ |
+| $$ E_{tot} = 4,5 \times 3 $$ |
+| $$ E_{tot} = 13,5 \ V $$ |
 
 ### Inre resistans
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
@@ -379,6 +379,16 @@ Ersättningsresistans är den resistans vilken man kan ersätta två eller flera
 | Eftersom det vid seriekoppling är samma ström genom hela kretsen |
 
 ## Pararellkoppling
+
+### EMK Total
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $E_{tot} = E_{batt}$ | $E_{tot}$ | $Elektromotorisk \ kraft \ total$ | $Volt$ | $V$ |
+
+| Exempel uträkning |
+|:-------------:|
+| $$ E_{tot} = E_{batt} $$ |
 
 ### Inre resistans
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 

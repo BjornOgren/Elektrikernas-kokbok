@@ -23,13 +23,14 @@ h2:ersättningsresistans-1 Ersättningsresistans
 h1:ackumulatorer Ackumulatorer
 h2:polspänning Polspänning
 h2:spänningsfall Spänningsfall
-h2:emk-total EMK Total
 h2:resistans-total Resistans total
 h2:yttre-resistans Yttre resistans
 h2:seriekoppling-1 Seriekoppling
+h3:emk-total EMK Total
 h3:inre-resistans Inre resistans
 h3:kortslutningsström Kortslutningsström
 h2:pararellkoppling-1 Pararellkoppling
+h3:emk-total-1 EMK Total
 h3:inre-resistans-1 Inre resistans
 h3:kortslutningsström-1 Kortslutningsström
 h1:effekt Effekt
