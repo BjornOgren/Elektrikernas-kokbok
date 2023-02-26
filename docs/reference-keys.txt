@@ -73,3 +73,5 @@ spolar
 induktans
 induktiv-reaktans
 emk-total-1
+ström-2
+ström-3

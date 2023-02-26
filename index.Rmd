@@ -592,28 +592,30 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 ## Y-Koppling
 
+### Ström
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $I \ genom \ varje \ R = \frac{U_f}{R}$ | $I_f$ | $Ström$ | $Ampere$ | $A$ |
+| $I = \frac{U_f}{R}$ | $I_f$ | $Ström$ | $Ampere$ | $A$ |
 
 | Exempel uträkning |
 |:-------------:|
-| $$ I \ genom \ varje \ R = \frac{U_f}{R} $$ |
-| $$ I \ genom \ varje \ R = \frac{230}{100} $$ |
-| $$ I \ genom \ varje \ R = 2,3 \ A $$ |
+| $$ I = \frac{U_f}{R} $$ |
+| $$ I = \frac{230}{100} $$ |
+| $$ I = 2,3 \ A $$ |
 | $$ Eftersom \ I_{linje} = I_{Lidning} \ vid \ Y-koppling \ blir \ I_1 = I_2 = I_3 = 2,3 \ A $$ |
 
 ## D-koppling
 
+### Ström
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $ I \ genom \ varje \ R = \frac{U_h}{R}$ | $I_f$ | $Fasström$ | $Ampere$ | $A$ |
+| $ I = \frac{U_h}{R}$ | $I_f$ | $Fasström$ | $Ampere$ | $A$ |
 
 | Exempel uträkning |
 |:-------------:|
-| $$ I \ genom \ varje \ R = \frac{U_h}{R} $$ |
-| $$ I \ genom \ varje \ R = \frac{230}{100} $$ |
-| $$ I \ genom \ varje \ R = 4 \ A $$ |
+| $$ I = \frac{U_h}{R} $$ |
+| $$ I = \frac{230}{100} $$ |
+| $$ I = 4 \ A $$ |
 | $$ Eftersom \ I_{linje} = I_{Lidning} \times \sqrt{3} \ vid \ D-koppling \ blir \ I_1 = I_2 = I_3 = 2,3 \times \sqrt{3} = 2,3 \ A $$ |
 
 ### Linjeström
@@ -637,9 +639,19 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 # Effekt
 
-## Trefaskretsar
 Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudström. Men i en D-koppling är det fasströmmarna genom belastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: $$ \sqrt{3} $$ som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med $$ cos \phi $$.
 
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $P = U \times I_f$ | $$ P $$ | $Effekt$ | $Watt$ | $W$ |
+
+| Effekt i Y-kopplade resistorer |
+|:-------------:|
+| $$ P = U \times I_f $$ |
+| $$ P = U \times I_f $$ |
+| $$ P = 4800 \ W $$ |
+
+## Trefaskretsar
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
