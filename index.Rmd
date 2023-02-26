@@ -605,11 +605,9 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 ## D-koppling
 
-### Fasström
-
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $I_f = \frac{U_h}{R}$ | $I_f$ | $Fasström$ | $Ampere$ | $A$ |
+| $ I \ genom \ varje \ R = \frac{U_h}{R}$ | $I_f$ | $Fasström$ | $Ampere$ | $A$ |
 
 | Exempel uträkning |
 |:-------------:|
