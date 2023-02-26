@@ -55,11 +55,9 @@ h3:linjespänning-1 Linjespänning
 h3:fasspänning-1 Fasspänning
 h1:ström-1 Ström
 h2:y-koppling-1 Y-Koppling
+h2:d-koppling-1 D-koppling
 h3:fasström Fasström
 h3:linjeström Linjeström
-h2:d-koppling-1 D-koppling
-h3:fasström-1 Fasström
-h3:linjeström-1 Linjeström
 h1:effekt-1 Effekt
 h2:trefaskretsar Trefaskretsar
 h2:reaktiva-kretsar Reaktiva kretsar

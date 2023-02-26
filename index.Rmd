@@ -592,21 +592,16 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 ## Y-Koppling
 
-### Fasström
-
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $I_f = \frac{U_f}{R}$ | $I_f$ | $Ström$ | $Ampere$ | $A$ |
+| $I \ genom \ varje \ R = \frac{U_f}{R}$ | $I_f$ | $Ström$ | $Ampere$ | $A$ |
 
 | Exempel uträkning |
 |:-------------:|
-| $$ I_f = \frac{U_f}{R} $$ |
-| $$ I_f \frac{400}{100} $$ |
-| $$ I_f = 4 \ A $$ |
-
-### Linjeström
-
-$I_L = I_f = Faström$
+| $$ I \ genom \ varje \ R = \frac{U_f}{R} $$ |
+| $$ I \ genom \ varje \ R = \frac{230}{100} $$ |
+| $$ I \ genom \ varje \ R = 2,3 \ A $$ |
+| $$ Eftersom \ I_{linje} = I_{Lidning} \ vid \ Y-koppling \ blir \ I_1 = I_2 = I_3 = 2,3 \ A $$ |
 
 ## D-koppling
 
@@ -618,9 +613,10 @@ $I_L = I_f = Faström$
 
 | Exempel uträkning |
 |:-------------:|
-| $$ I_f = \frac{U_h}{R} $$ |
-| $$ I_f \frac{400}{100} $$ |
-| $$ I_f = 4 \ A $$ |
+| $$ I \ genom \ varje \ R = \frac{U_h}{R} $$ |
+| $$ I \ genom \ varje \ R = \frac{230}{100} $$ |
+| $$ I \ genom \ varje \ R = 4 \ A $$ |
+| $$ Eftersom \ I_{linje} = I_{Lidning} \times \sqrt{3} \ vid \ D-koppling \ blir \ I_1 = I_2 = I_3 = 2,3 \times \sqrt{3} = 2,3 \ A $$ |
 
 ### Linjeström
 
