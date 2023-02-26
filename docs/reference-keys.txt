@@ -75,3 +75,5 @@ induktiv-reaktans
 emk-total-1
 ström-2
 ström-3
+y-koppling-2
+d-koppling-2

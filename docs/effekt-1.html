@@ -175,12 +175,13 @@
 </ul></li>
 <li class="chapter" data-level="10" data-path="effekt-1.html"><a href="effekt-1.html"><i class="fa fa-check"></i><b>10</b> Effekt</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="effekt-1.html"><a href="effekt-1.html#trefaskretsar"><i class="fa fa-check"></i><b>10.1</b> Trefaskretsar</a></li>
-<li class="chapter" data-level="10.2" data-path="effekt-1.html"><a href="effekt-1.html#reaktiva-kretsar"><i class="fa fa-check"></i><b>10.2</b> Reaktiva kretsar</a>
+<li class="chapter" data-level="10.1" data-path="effekt-1.html"><a href="effekt-1.html#y-koppling-2"><i class="fa fa-check"></i><b>10.1</b> Y-koppling</a></li>
+<li class="chapter" data-level="10.2" data-path="effekt-1.html"><a href="effekt-1.html#d-koppling-2"><i class="fa fa-check"></i><b>10.2</b> D-Koppling</a></li>
+<li class="chapter" data-level="10.3" data-path="effekt-1.html"><a href="effekt-1.html#reaktiva-kretsar"><i class="fa fa-check"></i><b>10.3</b> Reaktiva kretsar</a>
 <ul>
-<li class="chapter" data-level="10.2.1" data-path="effekt-1.html"><a href="effekt-1.html#aktiv"><i class="fa fa-check"></i><b>10.2.1</b> Aktiv</a></li>
-<li class="chapter" data-level="10.2.2" data-path="effekt-1.html"><a href="effekt-1.html#skenbar"><i class="fa fa-check"></i><b>10.2.2</b> Skenbar</a></li>
-<li class="chapter" data-level="10.2.3" data-path="effekt-1.html"><a href="effekt-1.html#reaktiv"><i class="fa fa-check"></i><b>10.2.3</b> Reaktiv</a></li>
+<li class="chapter" data-level="10.3.1" data-path="effekt-1.html"><a href="effekt-1.html#aktiv"><i class="fa fa-check"></i><b>10.3.1</b> Aktiv</a></li>
+<li class="chapter" data-level="10.3.2" data-path="effekt-1.html"><a href="effekt-1.html#skenbar"><i class="fa fa-check"></i><b>10.3.2</b> Skenbar</a></li>
+<li class="chapter" data-level="10.3.3" data-path="effekt-1.html"><a href="effekt-1.html#reaktiv"><i class="fa fa-check"></i><b>10.3.3</b> Reaktiv</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html"><i class="fa fa-check"></i><b>11</b> Växelströmsmotstånd</a>
@@ -222,6 +223,8 @@
 <div id="effekt-1" class="section level1 hasAnchor" number="10">
 <h1><span class="header-section-number">Kapitel 10</span> Effekt<a href="effekt-1.html#effekt-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudström. Men i en D-koppling är det fasströmmarna genom belastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: <span class="math display">\[ \sqrt{3} \]</span> som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med <span class="math display">\[ cos \phi \]</span>.</p>
+<div id="y-koppling-2" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Y-koppling<a href="effekt-1.html#y-koppling-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <colgroup>
 <col width="14%" />
@@ -241,7 +244,7 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(P = U \times I_f\)</span></td>
+<td><span class="math inline">\(P_f = U_f \times I_f\)</span></td>
 <td align="center"><span class="math display">\[ P \]</span></td>
 <td align="center"><span class="math inline">\(Effekt\)</span></td>
 <td align="center"><span class="math inline">\(Watt\)</span></td>
@@ -257,18 +260,19 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P = U \times I_f \]</span></td>
+<td align="center"><span class="math display">\[ P_f = U_f \times I_f \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ P = U \times I_f \]</span></td>
+<td align="center"><span class="math display">\[ P_f = 230 \times 23 \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P = 4800 \ W \]</span></td>
+<td align="center"><span class="math display">\[ P_f = 5,29 ≈ 5,3 \ kW \]</span></td>
 </tr>
 </tbody>
 </table>
-<div id="trefaskretsar" class="section level2 hasAnchor" number="10.1">
-<h2><span class="header-section-number">10.1</span> Trefaskretsar<a href="effekt-1.html#trefaskretsar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="d-koppling-2" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> D-Koppling<a href="effekt-1.html#d-koppling-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <colgroup>
 <col width="14%" />
@@ -288,8 +292,8 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(P_{trefas}= \sqrt{3} \times U \times I_f\)</span></td>
-<td align="center"><span class="math display">\[ P \]</span></td>
+<td><span class="math inline">\(P_{trefas}= U_h \times I_{Linje} \times \sqrt{3}\)</span></td>
+<td align="center"><span class="math inline">\(P\)</span></td>
 <td align="center"><span class="math inline">\(Effekt\)</span></td>
 <td align="center"><span class="math inline">\(Watt\)</span></td>
 <td align="center"><span class="math inline">\(W\)</span></td>
@@ -304,21 +308,21 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P_{trefas}= \sqrt{3} \times U \times I_f \]</span></td>
+<td align="center"><span class="math display">\[ P_{trefas} = U_h \times I_{Linje} \times \sqrt{3} \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ P_{trefas}= \sqrt{3} \times U \times I_f \]</span></td>
+<td align="center"><span class="math display">\[ P_{trefas} = 400 \times 23 \times \sqrt{3} \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P= 4800 \ W \]</span></td>
+<td align="center"><span class="math display">\[ P_{trefas} \ 15935  ≈ 16 \ kW \]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="reaktiva-kretsar" class="section level2 hasAnchor" number="10.2">
-<h2><span class="header-section-number">10.2</span> Reaktiva kretsar<a href="effekt-1.html#reaktiva-kretsar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="aktiv" class="section level3 hasAnchor" number="10.2.1">
-<h3><span class="header-section-number">10.2.1</span> Aktiv<a href="effekt-1.html#aktiv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="reaktiva-kretsar" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Reaktiva kretsar<a href="effekt-1.html#reaktiva-kretsar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="aktiv" class="section level3 hasAnchor" number="10.3.1">
+<h3><span class="header-section-number">10.3.1</span> Aktiv<a href="effekt-1.html#aktiv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik rörelse. Aktiva effekten har enheten watt och betecknas med P i effektriangeln.</p>
 <table>
 <colgroup>
@@ -391,8 +395,8 @@
 </tbody>
 </table>
 </div>
-<div id="skenbar" class="section level3 hasAnchor" number="10.2.2">
-<h3><span class="header-section-number">10.2.2</span> Skenbar<a href="effekt-1.html#skenbar" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="skenbar" class="section level3 hasAnchor" number="10.3.2">
+<h3><span class="header-section-number">10.3.2</span> Skenbar<a href="effekt-1.html#skenbar" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenbar effekt har enheten voltampere (VA).</p>
 <table>
 <colgroup>
@@ -483,8 +487,8 @@
 </tbody>
 </table>
 </div>
-<div id="reaktiv" class="section level3 hasAnchor" number="10.2.3">
-<h3><span class="header-section-number">10.2.3</span> Reaktiv<a href="effekt-1.html#reaktiv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="reaktiv" class="section level3 hasAnchor" number="10.3.3">
+<h3><span class="header-section-number">10.3.3</span> Reaktiv<a href="effekt-1.html#reaktiv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva motståndet åstakomer. Den reaktiva effekten har enheten voltampere, VAr. Tillläget r står för reaktiv.</p>
 <table>
 <colgroup>

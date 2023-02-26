@@ -21,6 +21,8 @@ extra_dependencies: awesomebox
 
 Elbjörnen, det är jag det <3
 
+Uppskattas om du som läsare hittar stavfel eller felberäkningar att man kontakta mig för korrigering.
+
 Du hittar mig på: \
 Twitter: https://twitter.com/elbjornen \
 Unsplash: https://unsplash.com/@elbjornen \
@@ -609,7 +611,7 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 ### Ström
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $ I = \frac{U_h}{R}$ | $I_f$ | $Fasström$ | $Ampere$ | $A$ |
+| $I = \frac{U_h}{R}$ | $I_f$ | $Fasström$ | $Ampere$ | $A$ |
 
 | Exempel uträkning |
 |:-------------:|
@@ -641,27 +643,28 @@ $$ \widehat{\breve{I}} \approx 56 \ A $$
 
 Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som gäller både för Y- och D-koppling. I praktiken är vi oftast intresserade av strömmarna som går i ledarna till en belastning, det vi kallar huvudström. Men i en D-koppling är det fasströmmarna genom belastningen som ger effektutvecklingen. Därför komplettear vi effektformeln med: $$ \sqrt{3} $$ som beskriver sambandet mellan huvudström och fasström. Formeln utgör även grunden för beräkningar av effekten i reaktiva belastningar och den kompletteras då med $$ cos \phi $$.
 
+## Y-koppling
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $P = U \times I_f$ | $$ P $$ | $Effekt$ | $Watt$ | $W$ |
+| $P_f = U_f \times I_f$ | $$ P $$ | $Effekt$ | $Watt$ | $W$ |
 
 | Effekt i Y-kopplade resistorer |
 |:-------------:|
-| $$ P = U \times I_f $$ |
-| $$ P = U \times I_f $$ |
-| $$ P = 4800 \ W $$ |
+| $$ P_f = U_f \times I_f $$ |
+| $$ P_f = 230 \times 23 $$ |
+| $$ P_f = 5,29 ≈ 5,3 \ kW $$ |
 
-## Trefaskretsar
+## D-Koppling
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $P_{trefas}= \sqrt{3} \times U \times I_f$ | $$ P $$ | $Effekt$ | $Watt$ | $W$ |
-
+| $P_{trefas}= U_h \times I_{Linje} \times \sqrt{3}$ | $P$ | $Effekt$ | $Watt$ | $W$ |
+ 
 | Effekt i tre D-kopplade resistorer |
 |:-------------:|
-| $$ P_{trefas}= \sqrt{3} \times U \times I_f $$ |
-| $$ P_{trefas}= \sqrt{3} \times U \times I_f $$ |
-| $$ P= 4800 \ W $$ |
+| $$ P_{trefas} = U_h \times I_{Linje} \times \sqrt{3} $$ |
+| $$ P_{trefas} = 400 \times 23 \times \sqrt{3} $$ |
+| $$ P_{trefas} \ 15935  ≈ 16 \ kW $$ |
 
 ## Reaktiva kretsar
 
