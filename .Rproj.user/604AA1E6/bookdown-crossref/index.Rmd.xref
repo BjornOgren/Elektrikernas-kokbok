@@ -47,21 +47,20 @@ h3:toppström Toppström
 h3:topp-till-toppspänning Topp till toppspänning
 h3:topp-till-toppvärde-av-ström Topp till toppvärde av ström
 h1:spänning-1 Spänning
-h2:y-koppling Y-Koppling
-h3:linjespänning Linjespänning
+h2:trefas Trefas
+h3:huvudspänning Huvudspänning
 h3:fasspänning Fasspänning
-h2:d-koppling D-koppling
-h3:linjespänning-1 Linjespänning
-h3:fasspänning-1 Fasspänning
 h1:ström-1 Ström
-h2:y-koppling-1 Y-Koppling
-h3:ström-2 Ström
-h2:d-koppling-1 D-koppling
-h3:ström-3 Ström
-h3:linjeström Linjeström
+h2:enfas Enfas
+h3:fasström Fasström
+h2:trefas-1 Trefas
+h3:huvudström Huvudström
 h1:effekt-1 Effekt
-h2:y-koppling-2 Y-koppling
-h2:d-koppling-2 D-Koppling
+h2:enfas-1 Enfas
+h3:y-kopplad-faseffekt Y-kopplad faseffekt
+h2:trefas-2 Trefas
+h3:y-kopplad-totaleffekt Y-kopplad totaleffekt
+h3:d-kopplad-totaleffekt D-kopplad totaleffekt
 h2:reaktiva-kretsar Reaktiva kretsar
 h3:aktiv Aktiv
 h3:skenbar Skenbar
