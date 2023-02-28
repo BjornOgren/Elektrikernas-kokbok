@@ -760,7 +760,7 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 | $Z = \sqrt{R^2 + (X_{L} - X_{L})^2}$ | $Z$ | Impedans | Ohm | $\Omega$ |
 | $R = \frac{U}{I}$ | $R$ | Resistans | Ohm | $\Omega$ |
 $X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $  \Omega$ |
-| $X_C =\frac{1} {2 \times \pi \times f \times C}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega $ |
+| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega $ |
 
 | Exempel uträkning impedans Z |
 |:-------------:|
@@ -798,14 +798,14 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $X_C =\frac{1} {2 \times \pi \times f \times C}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
+| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
 | $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
 | $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
 
 | Exempel uträkning kapacitiv reaktans |
 |:-------------:|
-| $$ X_C =\frac{1} {2 \times \pi \times f \times C} $$ |
-| $$ X_C = \frac{1}{2 \times \pi \times 50 \times 0,0002} $$ |
+| $$ X_C =\frac{1} {(2 \times \pi \times f \times C)} $$ |
+| $$ X_C = \frac{1}{(2 \times \pi \times 50 \times 0,0002)} $$ |
 | $$ X_C = 15,91 \ \Omega  $$ |
 
 ### Seriekopplade
@@ -846,13 +846,13 @@ Induktansen beror på hur många varv spolen har, diametern, avståndet mellan l
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $L=\frac{X_L} {2 \times \pi \times f}$ | $L$ | Induktans | Henry | $H^{Vs/A}$ |
+| $L=\frac{X_L} {(2 \times \pi \times f)}$ | $L$ | Induktans | Henry | $H^{Vs/A}$ |
 | $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
 | $2 \times \pi = 3.14$ | $Pi$ |  |  | $\pi$ |
 
 | Exempel uträkning induktans |
 |:-------------:|
-| $$ L=\frac{X_L} {2 \times \pi \times f} $$ |
+| $$ L=\frac{X_L} {(2 \times \pi \times f)} $$ |
 | $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3})} $$ | $$ L= 0.16 \ H $$ |
 
 ### Induktiv reaktans
