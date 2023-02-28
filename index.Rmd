@@ -692,7 +692,7 @@ Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik r
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $P_f =  \times cos \phi$ | $P$ | $Aktiv effekt$ | $Watt$ | $W$ |
-| $P_{trefas}= \sqrt{3} \times U \times I \times cos \phi$ | $P$ | $Aktiv effekt$ | $Watt$ | $W$ |
+| $P_{trefas}= \sqrt{3} \times U \times I \times cos \phi$ | $P_{trefas}$ | $Aktiv effekt trefas$ | $Watt$ | $W$ |
 
 | Exempel uträkning aktiv effekt |
 |:-------------:|
@@ -711,8 +711,8 @@ Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenb
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $S = U \times I = \sqrt{P^2 + Q^2}$ | $S$ | $Skenbar effekt$ | $Voltampere$ | $VA$ |
-| $S_{trefas} = \sqrt{3} \times U \times I$ | $S$ | $Skenbar effekt$ | $Voltampere$ | $VA$ |
+| $S = U \times I = \sqrt{P^2 + Q^2}$ | $S$ | $Skenbar \ effekt$ | $Voltampere$ | $VA$ |
+| $S_{trefas} = \sqrt{3} \times U \times I$ | $S_{3fas}$ | $Skenbar \ effekt \ tresfas$ | $Voltampere$ | $VA$ |
 
 | Exempel uträkning skenbar effekt (1) |
 |:-------------:|
@@ -737,7 +737,7 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $Q = U \times I \times sin  \phi = \sqrt{S^{2}-P^{2}}$ | $Q$ | $Reaktiv effekt$ | $Voltampere reaktiv$ | $VAr$ |
+| $Q = U \times I \times sin  \phi = \sqrt{S^{2}-P^{2}}$ | $Q$ | $Reaktiv \ effekt$ | $Voltampere \ reaktiv$ | $VAr$ |
 
 | Exempel uträkning reaktiv effekt (1) |
 |:-------------:|
@@ -863,7 +863,7 @@ Induktansen beror på hur många varv spolen har, diametern, avståndet mellan l
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $L=\frac{X_L} {2\pi f}$ | $L$ | Induktans | Henry | $H^{Vs/A}$ |
-| $f = \frac{1}{T}$ | $f $ | Frekvens | Hertz | $Hz$ |
+| $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
 | $2 \times \pi = 3.14$ | $Pi$ | ? | ? | $\pi$ |
 
 ::: {.latex}
