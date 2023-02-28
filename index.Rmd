@@ -533,7 +533,7 @@ reciproka värde.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $\widehat{\breve{u}} = \widehat{u} \times 2 $| $\widehat{\breve{u}}$ | $Toppspänning$ | $Volt$ | $V$ |
+| $\widehat{\breve{u}} = \widehat{u} \times 2$| $\widehat{\breve{u}}$ | $Toppspänning$ | $Volt$ | $V$ |
 
 | Exempel uträkning |
 |:-------------:|
@@ -692,17 +692,17 @@ Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik r
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $P_f =  \times cos \phi$ | $P$ | $Aktiv effekt$ | $Watt$ | $W$ |
-| $P_{trefas}= \sqrt{3} \times U \times I \times cos \phi$ | $P_{trefas}$ | $Aktiv effekt trefas$ | $Watt$ | $W$ |
+| $P_{trefas}= \sqrt{3} \times U \times I \times cos \ \phi$ | $P_{trefas}$ | $Aktiv \ effekt \ trefas$ | $Watt$ | $W$ |
 
 | Exempel uträkning aktiv effekt |
 |:-------------:|
-| $$ P_f = U \times I \times cos  \phi $$ |
+| $$ P_f = U \times I \times cos \ \phi $$ |
 | $$ P_f = 230 \times 0,78 \times 0,78 $$ |
 | $$ P_f =1640 \ W $$ |
 
-| Exempel uträkning aktiv effekt trefas|
+| Exempel uträkning aktiv effekt trefas |
 |:-------------:|
-| $$ P_{trefas} = \sqrt{3} \times U \times I \times cos  \phi $$ |
+| $$ P_{trefas} = \sqrt{3} \times U \times I \times cos \ \phi $$ |
 | $$ P_{trefas} = \sqrt{3} \times ? \times ? \times ? $$ |
 | $$ P_{trefas} = \ W $$ |
 
@@ -759,14 +759,14 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $Z = \sqrt{R^2 + (X_{L} - X_{L})^2}$ | $Z$ | Impedans | Ohm | $\Omega$ |
 | $R = \frac{U}{I}$ | $R$ | Resistans | Ohm | $\Omega$ |
-$X_L = 2 \pi fL$ | $X_L$ | Induktiv reaktans | Ohm | $  \Omega$ |
-| $X_C =\frac{1} {2 \pi f C}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega $ |
+$X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $  \Omega$ |
+| $X_C =\frac{1} {2 \times \pi \times f \times C}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega $ |
 
 | Exempel uträkning impedans Z |
 |:-------------:|
 | $$ Z=\sqrt{R^2 + (X_{L})^2} $$ |
 | $$ Z=\sqrt{20^2 + (15,7)^2} $$ |
-| $$ Z= 25,4 \  \Omega $$ |
+| $$ Z= 25,4 \ \Omega $$ |
 
 
 ## Kondensatorer
@@ -783,13 +783,13 @@ Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss s
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $C=\frac{1}{(2 \pi f  X_c)}$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
-| $f = \frac{1}{T}$ | $f$ | Hertz | $Hz$ |
+| $C=\frac{1}{(2 \pi \times f \times X_c)}$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
+| $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
 | $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
 
 | Exempel uträkning kapacitans |
 |:-------------:|
-| $$ L=\frac{X_L} {2 \pi f} $$ |
+| $$ L=\frac{X_L} {2 \times \pi \times f} $$ |
 | $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ |
 | $$ L= 0.16 \ H $$ |
 
@@ -798,15 +798,15 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $X_C =\frac{1} {2 \pi f C}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
-| $f = \frac{1}{T}$ | $f$ | Hertz | $Hz$ |
+| $X_C =\frac{1} {2 \times \pi \times f \times C}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
+| $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
 | $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
 
 | Exempel uträkning kapacitiv reaktans |
 |:-------------:|
-| $$ X_C =\frac{1} {2 \pi f C} $$ |
+| $$ X_C =\frac{1} {2 \times \pi \times f \times C} $$ |
 | $$ X_C = \frac{1}{2 \times \pi \times 50 \times 0,0002} $$ |
-| $$ X_C = 15,91 \  \Omega  $$ |
+| $$ X_C = 15,91 \ \Omega  $$ |
 
 ### Seriekopplade
 
@@ -816,37 +816,21 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 
 | Exempel uträkning kapacitiv reaktans |
 |:-------------:|
-| $C_{tot}=C_{1} + C_{2}$ |
-| $C_{tot}=12_{1} + 12_{2}$ |
-| $C_{tot}=24 \  \mu F$ |
+| $C_{tot} = C_{1} + C_{2}$ |
+| $C_{tot} = 12_{1} + 12_{2}$ |
+| $C_{tot} = 24 \ \mu F$ |
 
 ### Parallellkopplade
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $$
-\frac{1}{C_{tot}} =
-\frac{1}{C_{1}} +
-\frac{1}{C_{2}} +
-\frac{1}{C_{3}}
-...
-$$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
+\frac{1}{C_{tot}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} ... $$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
 
 | Exempel uträkning kapacitiv reaktans |
 |:-------------:|
-| $$ 
-\frac{1}{C_{tot}} =
-\frac{1}{C_{1}} +
-\frac{1}{C_{2}} +
-\frac{1}{C_{3}}
-...
-$$ |
-| $$ 
-\frac{1}{C_{tot}} =
-\frac{1}{1,8_{1}} +
-\frac{1}{16_{2}} +
-\frac{1}{32_{3}}
-$$ |
+| $$ \frac{1}{C_{tot}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} ... $$ |
+| $$ \frac{1}{C_{tot}} = \frac{1}{1,8_{1}} + \frac{1}{16_{2}} + \frac{1}{32_{3}} $$ |
 | $$ C_{tot}=4.5 \ nF $$ |
 
 ## Spolar
@@ -862,16 +846,14 @@ Induktansen beror på hur många varv spolen har, diametern, avståndet mellan l
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $L=\frac{X_L} {2\pi f}$ | $L$ | Induktans | Henry | $H^{Vs/A}$ |
+| $L=\frac{X_L} {2 \times \pi \times f}$ | $L$ | Induktans | Henry | $H^{Vs/A}$ |
 | $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
-| $2 \times \pi = 3.14$ | $Pi$ | ? | ? | $\pi$ |
+| $2 \times \pi = 3.14$ | $Pi$ |  |  | $\pi$ |
 
-::: {.latex}
-$$ L=\frac{X_L} {2 \times \pi f} $$ 
-$$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ 
-$$ L= 0.16 \ H $$ 
-:::
-|
+| Exempel uträkning induktans |
+|:-------------:|
+| $$ L=\frac{X_L} {2 \times \pi \times f} $$ |
+| $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3})} $$ | $$ L= 0.16 \ H $$ |
 
 ### Induktiv reaktans
 Växelströmsmotståndet är
@@ -880,13 +862,12 @@ frekvensen ökar.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $X_L = 2 \pi fL$ | $X_L$ | Induktiv reaktans | Ohm | $\Omega$ |
+| $X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $\Omega$ |
 | $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
-| $2 \times \pi = 3.14$ | $Pi$ | ? | ? | $\pi$ |
+| $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
 
-::: {.latex}
-
-$$ X_L = 2 \pi fL $$
-$$ X_L = 2 \times \pi \ 50 \ Hz \times 0,05 \ H  $$
-$$ X_L=15,7 \  \Omega $$
-:::
+| Exempel uträkning Induktiv reaktans |
+|:-------------:|
+| $$ X_L = 2 \times \pi \times f \times L $$ |
+| $$ X_L = 2 \times \pi \ 50 \times 0,05 $$ |
+| $$ X_L = 15,7 \ \Omega $$ |
