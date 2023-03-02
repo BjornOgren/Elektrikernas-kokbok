@@ -19,6 +19,18 @@ extra_dependencies: awesomebox
 
 # Introduction {-}
 
+<h1>Hello, my name is <span id="name"></span></h1>
+<script>
+
+  var a = window.prompt("Enter side A");
+  var b = window.prompt("Enter side B");
+  var c;
+  
+  c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+  
+  document.getElementById("name").innerHTML = c;
+</script>
+
 Elbjörnen, det är jag det <3
 
 Uppskattas om du som läsare hittar stavfel eller felberäkningar att man kontakta mig för korrigering.
@@ -751,6 +763,55 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 | $$ Q = \sqrt{1000^{2}-607^{2}} $$ |
 | $$ Q = 795 \ VAr $$ |
 
+### Effektfaktor
+
+<script>
+  // ******** index.js ********
+  
+  // Math = An object that provides basic 
+  //        mathematics functionality and constants.
+  
+  //var myNum;
+  
+  //myNum = Math.round(3.5);
+  //myNum = Math.floor(3.9);
+  //myNum = Math.ceil(3.1);
+  //myNum = Math.pow(3, 3);
+  //myNum = Math.sqrt(64);
+  //myNum = Math.abs(-1);
+  //myNum = Math.min(1, 5, 2, 4, 3);
+  //myNum = Math.max(1, 5, 2, 4, 3);
+  //myNum = Math.PI;
+  //myNum = Math.E;
+  
+  //console.log(myNum);
+  
+  // solve for hypotenuse of a right triangle
+  
+  var a = window.prompt("Enter side A");
+  var b = window.prompt("Enter side B");
+  var c;
+  
+  c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+  
+  let name = "Nathan";
+  document.getElementById("name").innerHTML = name;
+  
+  console.log("Side c =",c);
+</script>
+
+<h1>Hello, my name is <span id="name"></span></h1>
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning |
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $cos \ \phi = \frac{Z}{R}$ | $Q$ | $Reaktiv \ effekt$ | $Voltampere \ reaktiv$ | $VAr$ |
+
+| Exempel uträkning fasförsjutningsvinkel |
+|:-------------:|
+| $$ cos \ \phi = \frac{Z}{R} $$ |
+| $$ cos \ \phi = \frac{40}{50} $$ |
+| $$ cos \ \phi =  $$ |
+
 # Växelströmsmotstånd
 
 ## Impedans
@@ -767,7 +828,6 @@ $X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $  \O
 | $$ Z=\sqrt{R^2 + (X_{L})^2} $$ |
 | $$ Z=\sqrt{20^2 + (15,7)^2} $$ |
 | $$ Z= 25,4 \ \Omega $$ |
-
 
 ## Kondensatorer
 Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.

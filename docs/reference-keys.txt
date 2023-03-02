@@ -99,3 +99,4 @@ d-kopplad-totaleffekt
 huvudspänning
 y-koppling-faseffekt
 y-kopplad-faseffekt
+effektfaktor
