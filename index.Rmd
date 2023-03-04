@@ -834,7 +834,7 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 | $$ X_C = \frac{1}{(2 \times \pi \times 50 \times 0,0002)} $$ |
 | $$ X_C = 15,91 \ \Omega  $$ |
 
-### Seriekopplade
+### Parallellkopplade
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
@@ -846,7 +846,7 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 | $C_{tot} = 12_{1} + 12_{2}$ |
 | $C_{tot} = 24 \ \mu F$ |
 
-### Parallellkopplade
+### Seriekopplade
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
