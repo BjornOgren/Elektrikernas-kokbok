@@ -770,15 +770,30 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $Z = \sqrt{R^2 + (X_{L} - X_{L})^2}$ | $Z$ | Impedans | Ohm | $\Omega$ |
-| $R = \frac{U}{I}$ | $R$ | Resistans | Ohm | $\Omega$ |
-$X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $  \Omega$ |
-| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega $ |
+| $Z = \frac{U}{I}$ | $Z$ | Impedans | Ohm | $\Omega$ |
+$X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $\Omega$ |
+| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
 
 | Exempel uträkning impedans Z |
 |:-------------:|
 | $$ Z=\sqrt{R^2 + (X_{L})^2} $$ |
 | $$ Z=\sqrt{20^2 + (15,7)^2} $$ |
 | $$ Z= 25,4 \ \Omega $$ |
+
+## Resistans
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $R = \sqrt{R^2 - (X_{L} - X_{L})^2}$ | $R$ | Resistans | Ohm | $\Omega$ |
+| $Z = \frac{U}{I}$ | $Z$ | Impedans | Ohm | $\Omega$ |
+$X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $\Omega$ |
+| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
+
+| Exempel uträkning resistans R |
+|:-------------:|
+| $$ Z=\sqrt{R^2 - (X_{L})^2} $$ |
+| $$ Z=\sqrt{48^2 - (31,42)^2} $$ |
+| $$ Z= 36,29 ≈ 36 \ \Omega $$ |
 
 ## Kondensatorer
 Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.

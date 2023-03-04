@@ -189,17 +189,18 @@
 <li class="chapter" data-level="11" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html"><i class="fa fa-check"></i><b>11</b> Växelströmsmotstånd</a>
 <ul>
 <li class="chapter" data-level="11.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#impedans"><i class="fa fa-check"></i><b>11.1</b> Impedans</a></li>
-<li class="chapter" data-level="11.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kondensatorer"><i class="fa fa-check"></i><b>11.2</b> Kondensatorer</a>
+<li class="chapter" data-level="11.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#resistans-1"><i class="fa fa-check"></i><b>11.2</b> Resistans</a></li>
+<li class="chapter" data-level="11.3" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kondensatorer"><i class="fa fa-check"></i><b>11.3</b> Kondensatorer</a>
 <ul>
-<li class="chapter" data-level="11.2.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kapacitans"><i class="fa fa-check"></i><b>11.2.1</b> Kapacitans</a></li>
-<li class="chapter" data-level="11.2.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kapacitiv-reaktans"><i class="fa fa-check"></i><b>11.2.2</b> Kapacitiv reaktans</a></li>
-<li class="chapter" data-level="11.2.3" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#seriekopplade"><i class="fa fa-check"></i><b>11.2.3</b> Seriekopplade</a></li>
-<li class="chapter" data-level="11.2.4" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#parallellkopplade"><i class="fa fa-check"></i><b>11.2.4</b> Parallellkopplade</a></li>
+<li class="chapter" data-level="11.3.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kapacitans"><i class="fa fa-check"></i><b>11.3.1</b> Kapacitans</a></li>
+<li class="chapter" data-level="11.3.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#kapacitiv-reaktans"><i class="fa fa-check"></i><b>11.3.2</b> Kapacitiv reaktans</a></li>
+<li class="chapter" data-level="11.3.3" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#seriekopplade"><i class="fa fa-check"></i><b>11.3.3</b> Seriekopplade</a></li>
+<li class="chapter" data-level="11.3.4" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#parallellkopplade"><i class="fa fa-check"></i><b>11.3.4</b> Parallellkopplade</a></li>
 </ul></li>
-<li class="chapter" data-level="11.3" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#spolar"><i class="fa fa-check"></i><b>11.3</b> Spolar</a>
+<li class="chapter" data-level="11.4" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#spolar"><i class="fa fa-check"></i><b>11.4</b> Spolar</a>
 <ul>
-<li class="chapter" data-level="11.3.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#induktans"><i class="fa fa-check"></i><b>11.3.1</b> Induktans</a></li>
-<li class="chapter" data-level="11.3.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#induktiv-reaktans"><i class="fa fa-check"></i><b>11.3.2</b> Induktiv reaktans</a></li>
+<li class="chapter" data-level="11.4.1" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#induktans"><i class="fa fa-check"></i><b>11.4.1</b> Induktans</a></li>
+<li class="chapter" data-level="11.4.2" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html#induktiv-reaktans"><i class="fa fa-check"></i><b>11.4.2</b> Induktiv reaktans</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -252,9 +253,9 @@
 <td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(R = \frac{U}{I}\)</span></td>
-<td align="center"><span class="math inline">\(R\)</span></td>
-<td align="center">Resistans</td>
+<td><span class="math inline">\(Z = \frac{U}{I}\)</span></td>
+<td align="center"><span class="math inline">\(Z\)</span></td>
+<td align="center">Impedans</td>
 <td align="center">Ohm</td>
 <td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
@@ -263,14 +264,14 @@
 <td align="center"><span class="math inline">\(X_L\)</span></td>
 <td align="center">Induktiv reaktans</td>
 <td align="center">Ohm</td>
-<td align="center">$ $</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(X_C =\frac{1} {(2 \times \pi \times f \times C)}\)</span></td>
 <td align="center"><span class="math inline">\(X_C\)</span></td>
 <td align="center">kapacitiv reaktans</td>
 <td align="center">Ohm</td>
-<td align="center">$$</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -293,8 +294,77 @@
 </tbody>
 </table>
 </div>
-<div id="kondensatorer" class="section level2 hasAnchor" number="11.2">
-<h2><span class="header-section-number">11.2</span> Kondensatorer<a href="växelströmsmotstånd.html#kondensatorer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="resistans-1" class="section level2 hasAnchor" number="11.2">
+<h2><span class="header-section-number">11.2</span> Resistans<a href="växelströmsmotstånd.html#resistans-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(R = \sqrt{R^2 - (X_{L} - X_{L})^2}\)</span></td>
+<td align="center"><span class="math inline">\(R\)</span></td>
+<td align="center">Resistans</td>
+<td align="center">Ohm</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(Z = \frac{U}{I}\)</span></td>
+<td align="center"><span class="math inline">\(Z\)</span></td>
+<td align="center">Impedans</td>
+<td align="center">Ohm</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(X_L = 2 \times \pi \times f \times L\)</span></td>
+<td align="center"><span class="math inline">\(X_L\)</span></td>
+<td align="center">Induktiv reaktans</td>
+<td align="center">Ohm</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(X_C =\frac{1} {(2 \times \pi \times f \times C)}\)</span></td>
+<td align="center"><span class="math inline">\(X_C\)</span></td>
+<td align="center">kapacitiv reaktans</td>
+<td align="center">Ohm</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning resistans R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ Z=\sqrt{R^2 - (X_{L})^2} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ Z=\sqrt{48^2 - (31,42)^2} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ Z= 36,29 ≈ 36 \ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="kondensatorer" class="section level2 hasAnchor" number="11.3">
+<h2><span class="header-section-number">11.3</span> Kondensatorer<a href="växelströmsmotstånd.html#kondensatorer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.</p>
 <table>
 <thead>
@@ -322,8 +392,8 @@
 </tr>
 </tbody>
 </table>
-<div id="kapacitans" class="section level3 hasAnchor" number="11.2.1">
-<h3><span class="header-section-number">11.2.1</span> Kapacitans<a href="växelströmsmotstånd.html#kapacitans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="kapacitans" class="section level3 hasAnchor" number="11.3.1">
+<h3><span class="header-section-number">11.3.1</span> Kapacitans<a href="växelströmsmotstånd.html#kapacitans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss spänning.</p>
 <table>
 <colgroup>
@@ -388,8 +458,8 @@
 </tbody>
 </table>
 </div>
-<div id="kapacitiv-reaktans" class="section level3 hasAnchor" number="11.2.2">
-<h3><span class="header-section-number">11.2.2</span> Kapacitiv reaktans<a href="växelströmsmotstånd.html#kapacitiv-reaktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="kapacitiv-reaktans" class="section level3 hasAnchor" number="11.3.2">
+<h3><span class="header-section-number">11.3.2</span> Kapacitiv reaktans<a href="växelströmsmotstånd.html#kapacitiv-reaktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då kommer ekvationen att minska när frekvesen ökar.</p>
 <table>
 <colgroup>
@@ -451,8 +521,8 @@
 </tbody>
 </table>
 </div>
-<div id="seriekopplade" class="section level3 hasAnchor" number="11.2.3">
-<h3><span class="header-section-number">11.2.3</span> Seriekopplade<a href="växelströmsmotstånd.html#seriekopplade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="seriekopplade" class="section level3 hasAnchor" number="11.3.3">
+<h3><span class="header-section-number">11.3.3</span> Seriekopplade<a href="växelströmsmotstånd.html#seriekopplade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -499,8 +569,8 @@
 </tbody>
 </table>
 </div>
-<div id="parallellkopplade" class="section level3 hasAnchor" number="11.2.4">
-<h3><span class="header-section-number">11.2.4</span> Parallellkopplade<a href="växelströmsmotstånd.html#parallellkopplade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="parallellkopplade" class="section level3 hasAnchor" number="11.3.4">
+<h3><span class="header-section-number">11.3.4</span> Parallellkopplade<a href="växelströmsmotstånd.html#parallellkopplade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -552,8 +622,8 @@
 </table>
 </div>
 </div>
-<div id="spolar" class="section level2 hasAnchor" number="11.3">
-<h2><span class="header-section-number">11.3</span> Spolar<a href="växelströmsmotstånd.html#spolar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="spolar" class="section level2 hasAnchor" number="11.4">
+<h2><span class="header-section-number">11.4</span> Spolar<a href="växelströmsmotstånd.html#spolar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten Henry (H).</p>
 <table>
 <thead>
@@ -576,8 +646,8 @@
 </tr>
 </tbody>
 </table>
-<div id="induktans" class="section level3 hasAnchor" number="11.3.1">
-<h3><span class="header-section-number">11.3.1</span> Induktans<a href="växelströmsmotstånd.html#induktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="induktans" class="section level3 hasAnchor" number="11.4.1">
+<h3><span class="header-section-number">11.4.1</span> Induktans<a href="växelströmsmotstånd.html#induktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Induktansen beror på hur många varv spolen har, diametern, avståndet mellan ledarna och om spolen är försedd med järnkärna. Flera lindningsvarv och större diameter ger spolen större indutans.</p>
 <table>
 <colgroup>
@@ -636,8 +706,8 @@
 </tbody>
 </table>
 </div>
-<div id="induktiv-reaktans" class="section level3 hasAnchor" number="11.3.2">
-<h3><span class="header-section-number">11.3.2</span> Induktiv reaktans<a href="växelströmsmotstånd.html#induktiv-reaktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="induktiv-reaktans" class="section level3 hasAnchor" number="11.4.2">
+<h3><span class="header-section-number">11.4.2</span> Induktiv reaktans<a href="växelströmsmotstånd.html#induktiv-reaktans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Växelströmsmotståndet är
 frekvensberoende och motståndet ökar när
 frekvensen ökar.</p>

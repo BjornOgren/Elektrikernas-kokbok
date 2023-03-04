@@ -100,3 +100,4 @@ huvudspänning
 y-koppling-faseffekt
 y-kopplad-faseffekt
 effektfaktor
+resistans-1
