@@ -832,32 +832,44 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 |:-------------:|
 | $$ X_C =\frac{1} {(2 \times \pi \times f \times C)} $$ |
 | $$ X_C = \frac{1}{(2 \times \pi \times 50 \times 0,0002)} $$ |
-| $$ X_C = 15,91 \ \Omega  $$ |
+| $$ X_C = 15,91 \ \Omega $$ |
 
 ### Parallellkopplade
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $C_{tot}=C_{1} + C_{2}...$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
+| $C_{tot}=C_{1} + C_{2} \ ...$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
 
-| Exempel uträkning kapacitiv reaktans |
+| Exempel uträkning |
 |:-------------:|
 | $C_{tot} = C_{1} + C_{2}$ |
-| $C_{tot} = 12_{1} + 12_{2}$ |
+| $C_{tot} = 12 + 12$ |
 | $C_{tot} = 24 \ \mu F$ |
+
+| Exempel uträkning en av kapacitanserna |
+|:-------------:|
+| $C_{2} = C_{tot} - C_{2}$ |
+| $C_{2} = 80 - 50$ |
+| $C_{2} = 30 \ μF$ |
 
 ### Seriekopplade
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $$
-\frac{1}{C_{tot}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} ... $$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
+\frac{1}{C_{tot}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} \Rightarrow C_{tot} \Rightarrow \ ... $$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
 
-| Exempel uträkning kapacitiv reaktans |
+| Exempel uträkning|
 |:-------------:|
-| $$ \frac{1}{C_{tot}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} ... $$ |
-| $$ \frac{1}{C_{tot}} = \frac{1}{1,8_{1}} + \frac{1}{16_{2}} + \frac{1}{32_{3}} $$ |
-| $$ C_{tot}=4.5 \ nF $$ |
+| $$ \frac{1}{C_{tot}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} \Rightarrow C_{tot} \Rightarrow $$ |
+| $$ \frac{1}{C_{tot}} = \frac{1}{1,8} + \frac{1}{16} + \frac{1}{32} \Rightarrow C_{tot} \Rightarrow $$ |
+| $$ C_{tot} = 4.5 \ nF $$ |
+
+| Exempel uträkning en av kapacitanserna |
+|:-------------:|
+| $$ \frac{1}{C_{2}} = \frac{1}{C_{tot}} - \frac{1}{C_{1}} \Rightarrow C_{2} \Rightarrow $$ |
+| $$ \frac{1}{C_{2}} = \frac{1}{2,0} - \frac{1}{2.2} \Rightarrow C_{2} \Rightarrow $$ |
+| $$ C_{2} = 22 \ nF $$ |
 
 ## Spolar
 Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten Henry (H).
@@ -874,7 +886,7 @@ Induktansen beror på hur många varv spolen har, diametern, avståndet mellan l
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $L=\frac{X_L} {(2 \times \pi \times f)}$ | $L$ | Induktans | Henry | $H^{Vs/A}$ |
 | $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
-| $2 \times \pi = 3.14$ | $Pi$ |  |  | $\pi$ |
+| $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
 
 | Exempel uträkning induktans |
 |:-------------:|
