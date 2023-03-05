@@ -628,13 +628,13 @@ Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som 
 ## Enfas
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $P_f = U_f \times I_f$ | $$ P_f $$ | $Faseffekt$ | $Watt$ | $W$ |
+| $P = U_f \times I_f$ | $$ P $$ | $Faseffekt$ | $Watt$ | $W$ |
 
 | Exempel uträkning faseffekt genom fasspäning |
 |:-------------:|
-| $$ P_f = U_f \times I_f $$ |
-| $$ P_f = 230 \times 23 $$ |
-| $$ P_f = 5290 ≈ 5,3 \ kW $$ |
+| $$ P = U_f \times I_f $$ |
+| $$ P = 230 \times 23 $$ |
+| $$ P = 5290 ≈ 5,3 \ kW $$ |
 
 ### Y-kopplad faseffekt
 
@@ -685,71 +685,85 @@ Det finns en formel för beräkning av effekt och strömmar i trefaskretsar som 
 | $$ P_d = 5,29 ≈ 5,3 \ kW $$ |
 
 ## Reaktiva kretsar
+När ström- och spänningskurvan inte sammanfaller då effekten behövs, finns en fasförskjutning. Ju större förskjutningen är mellan ström och spänning, desto mindre nyttig effekt (aktiv effekt) går att få ut av en apparat. Fasförskjutning sker i alla induktiva laster (t.ex. motorer). Vinkeln på fasförskjutningen anges med den grekiska bokstaven φ. I en induktiv belastning ligger strömkurvan efter spänningskurvan. Vid en kapacitiv belastning ligger strömkurvan före spänningskurvan. Genom att montera en kondensator på en motor går det att motverka förskjutningen. Det kallas faskompensering.
 
-### Aktiv
-Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik rörelse. Aktiva effekten har enheten watt och betecknas med P i effektriangeln.
+### Aktiv effekt (P)
+Den aktiva effekten är den del av effekten som blir till nyttigt arbete i en apparat. Den aktiva effekten beräknas med formeln P = U ∙ I ∙ cos() (uttalas "cosinus fi" och förklaras nedan). Det är den aktiva effekten som elmätare mäter och abonnenterna betalar för.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $P_f =  \times cos \phi$ | $P$ | $Aktiv effekt$ | $Watt$ | $W$ |
-| $P_{trefas}= \sqrt{3} \times U \times I \times cos \ \phi$ | $P_{trefas}$ | $Aktiv \ effekt \ trefas$ | $Watt$ | $W$ |
+| $P = U \times I \times cos \ \phi $ | $P$ | $Aktiv effekt$ | $Watt$ | $W$ |
+| $P_{trefas} = \sqrt{3} \times U \times I \times cos \ \phi$ | $P_{trefas}$ | $Aktiv \ effekt \ trefas$ | $Watt$ | $W$ |
 
-| Exempel uträkning aktiv effekt |
+| Beräkning av aktiv effekt, enfas |
 |:-------------:|
-| $$ P_f = U \times I \times cos \ \phi $$ |
-| $$ P_f = 230 \times 0,78 \times 0,78 $$ |
-| $$ P_f =1640 \ W $$ |
+| $$ P = U \times I \times cos \ \phi $$ |
+| $$ P = 230 \times 0,78 \times 0,78 $$ |
+| $$ P =1640 \ W $$ |
 
-| Exempel uträkning aktiv effekt trefas |
+| Beräkning av aktiv effekt, trefas |
 |:-------------:|
 | $$ P_{trefas} = \sqrt{3} \times U \times I \times cos \ \phi $$ |
 | $$ P_{trefas} = \sqrt{3} \times ? \times ? \times ? $$ |
 | $$ P_{trefas} = \ W $$ |
 
-### Skenbar
-Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenbar effekt har enheten voltampere (VA).
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning | 
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $S = U \times I = \sqrt{P^2 + Q^2}$ | $S$ | $Skenbar \ effekt$ | $Voltampere$ | $VA$ |
-| $S_{trefas} = \sqrt{3} \times U \times I$ | $S_{3fas}$ | $Skenbar \ effekt \ tresfas$ | $Voltampere$ | $VA$ |
-
-| Exempel uträkning skenbar effekt (1) |
-|:-------------:|
-| $$ S = U \times I $$ |
-| $$ S = 230 \times 9,05 $$ |
-| $$ S=2081 \ VA $$ |
-
-| Exempel uträkning skenbar effekt (2) |
-|:-------------:|
-| $$ S = \sqrt{P^2 + Q^2} $$ |
-| $$ S = \sqrt{2000^2 + 1000^2} $$ |
-| $$S = 2,2 \ kVA $$ |
-
-| Exempel uträkning skenbar effekt trefas |
-|:-------------:|
-| $$ S_{trefas} = \sqrt{3} \times U \times I $$ |
-| $$ S_{trefas} = \sqrt{3} \times 230 \times 9,05 $$ |
-| $$ S_{trefas} =2081 \ VA $$ |
-
-### Reaktiv
-Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva motståndet åstakomer. Den reaktiva effekten har enheten voltampere, VAr. Tillläget r står för reaktiv.
+### Reaktiv effekt (Q)
+Den reaktiva effekten är den effekt som tillförs från elnätet och inte blir till nyttigt arbete i en apparat. Den reaktiva effekten uppstår i induktiva och kapacitiva laster. Exempel på induktiva laster är motorer och lysrörsarmaturer. Användning av induktiva laster leder till en förskjutning mellan ström- och spänningskurvan.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $Q = U \times I \times sin  \phi = \sqrt{S^{2}-P^{2}}$ | $Q$ | $Reaktiv \ effekt$ | $Voltampere \ reaktiv$ | $VAr$ |
 
-| Exempel uträkning reaktiv effekt (1) |
+| Beräkning av reaktiv effekt (1) |
 |:-------------:|
 | $$ Q = U \times I \times sin  \phi $$ |
 | $$ Q = U \times I \times sin  \phi $$ |
 | $$ Q = \ VAr $$ |
 
-| Exempel uträkning reaktiv effekt (2) |
+| Beräkning av reaktiv effekt (2) |
 |:-------------:|
 | $$ Q = \sqrt{S^{2}-P^{2}} $$ |
 | $$ Q = \sqrt{1000^{2}-607^{2}} $$ |
 | $$ Q = 795 \ VAr $$ |
+
+### Skenbar effekt (S)
+
+Den skenbara effekten är den verkliga effekten som en apparat drar från elnätet. Den beräknas med formeln S = U ∙ I och har enheten VA (voltampere). Det går också att räkna fram den skenbara effekten utifrån den aktiva och reaktiva effekten. Då används formeln S = √(P2 + Q2).
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $S = U \times I$ | $S$ | $Skenbar \ effekt$ | $Voltampere$ | $VA$ |
+| $S = \sqrt{P^2 + Q^2}$ | $S$ | $Skenbar \ effekt$ | $Voltampere$ | $VA$ |
+| $S_{trefas} = \sqrt{3} \times U \times I$ | $S_{3fas}$ | $Skenbar \ effekt \ tresfas$ | $Voltampere$ | $VA$ |
+
+| Beräkning av skenbar effekt (1) |
+|:-------------:|
+| $$ S = U \times I $$ |
+| $$ S = 230 \times 9,05 $$ |
+| $$ S=2081 \ VA $$ |
+
+| Beräkning av skenbar effekt (2) |
+|:-------------:|
+| $$ S = \sqrt{P^2 + Q^2} $$ |
+| $$ S = \sqrt{2000^2 + 1000^2} $$ |
+| $$S = 2,2 \ kVA $$ |
+
+| Beräkning av skenbar effekt, trefas |
+|:-------------:|
+| $$ S_{trefas} = \sqrt{3} \times U \times I $$ |
+| $$ S_{trefas} = \sqrt{3} \times 230 \times 9,05 $$ |
+| $$ S_{trefas} =2081 \ VA $$ |
+
+### Effektfaktorn (cos φ)
+Effektfaktorn är förhållandet mellan aktiv effekt och skenbar effekt. Effektfaktorn uttrycks som vinkelfunktionen av vinkeln φ. Om spänning och ström ligger ur fas med 40° i förhållande till varandra blir φ = 40°. Om φ = 40° blir effektfaktorn cos(40°) ≈ 0,77. Det strävas alltid efter att effektfaktorn ska ligga så nära 1 som möjligt.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $cos φ = \frac {P}{S}$ | $φ$ | $Effektfaktor$ | $cos \ fi$ | $φ$ |
+
+| Exempel uträkning |
+|:-------------:|
+| $$ cos φ = \frac {P}{S} $$ |
 
 # Växelströmsmotstånd
 

@@ -109,3 +109,7 @@ induktiva-belastningar
 formler-1
 parallellkopplade-1
 seriekopplade-1
+aktiv-effekt-p
+reaktiv-effekt-q
+skenbar-effekt-s
+effektfaktorn-cos-φ

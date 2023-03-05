@@ -62,9 +62,10 @@ h2:trefas-2 Trefas
 h3:y-kopplad-totaleffekt Y-kopplad totaleffekt
 h3:d-kopplad-totaleffekt D-kopplad totaleffekt
 h2:reaktiva-kretsar Reaktiva kretsar
-h3:aktiv Aktiv
-h3:skenbar Skenbar
-h3:reaktiv Reaktiv
+h3:aktiv-effekt-p Aktiv effekt (P)
+h3:reaktiv-effekt-q Reaktiv effekt (Q)
+h3:skenbar-effekt-s Skenbar effekt (S)
+h3:effektfaktorn-cos-φ Effektfaktorn (cos φ)
 h1:växelströmsmotstånd Växelströmsmotstånd
 h2:impedans Impedans
 h2:resistans-1 Resistans

@@ -180,9 +180,10 @@
 </ul></li>
 <li class="chapter" data-level="10.3" data-path="effekt-1.html"><a href="effekt-1.html#reaktiva-kretsar"><i class="fa fa-check"></i><b>10.3</b> Reaktiva kretsar</a>
 <ul>
-<li class="chapter" data-level="10.3.1" data-path="effekt-1.html"><a href="effekt-1.html#aktiv"><i class="fa fa-check"></i><b>10.3.1</b> Aktiv</a></li>
-<li class="chapter" data-level="10.3.2" data-path="effekt-1.html"><a href="effekt-1.html#skenbar"><i class="fa fa-check"></i><b>10.3.2</b> Skenbar</a></li>
-<li class="chapter" data-level="10.3.3" data-path="effekt-1.html"><a href="effekt-1.html#reaktiv"><i class="fa fa-check"></i><b>10.3.3</b> Reaktiv</a></li>
+<li class="chapter" data-level="10.3.1" data-path="effekt-1.html"><a href="effekt-1.html#aktiv-effekt-p"><i class="fa fa-check"></i><b>10.3.1</b> Aktiv effekt (P)</a></li>
+<li class="chapter" data-level="10.3.2" data-path="effekt-1.html"><a href="effekt-1.html#reaktiv-effekt-q"><i class="fa fa-check"></i><b>10.3.2</b> Reaktiv effekt (Q)</a></li>
+<li class="chapter" data-level="10.3.3" data-path="effekt-1.html"><a href="effekt-1.html#skenbar-effekt-s"><i class="fa fa-check"></i><b>10.3.3</b> Skenbar effekt (S)</a></li>
+<li class="chapter" data-level="10.3.4" data-path="effekt-1.html"><a href="effekt-1.html#effektfaktorn-cos-φ"><i class="fa fa-check"></i><b>10.3.4</b> Effektfaktorn (cos φ)</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="växelströmsmotstånd.html"><a href="växelströmsmotstånd.html"><i class="fa fa-check"></i><b>11</b> Växelströmsmotstånd</a>
@@ -252,8 +253,8 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(P_f = U_f \times I_f\)</span></td>
-<td align="center"><span class="math display">\[ P_f \]</span></td>
+<td><span class="math inline">\(P = U_f \times I_f\)</span></td>
+<td align="center"><span class="math display">\[ P \]</span></td>
 <td align="center"><span class="math inline">\(Faseffekt\)</span></td>
 <td align="center"><span class="math inline">\(Watt\)</span></td>
 <td align="center"><span class="math inline">\(W\)</span></td>
@@ -268,13 +269,13 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P_f = U_f \times I_f \]</span></td>
+<td align="center"><span class="math display">\[ P = U_f \times I_f \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ P_f = 230 \times 23 \]</span></td>
+<td align="center"><span class="math display">\[ P = 230 \times 23 \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P_f = 5290 ≈ 5,3 \ kW \]</span></td>
+<td align="center"><span class="math display">\[ P = 5290 ≈ 5,3 \ kW \]</span></td>
 </tr>
 </tbody>
 </table>
@@ -473,9 +474,10 @@
 </div>
 <div id="reaktiva-kretsar" class="section level2 hasAnchor" number="10.3">
 <h2><span class="header-section-number">10.3</span> Reaktiva kretsar<a href="effekt-1.html#reaktiva-kretsar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="aktiv" class="section level3 hasAnchor" number="10.3.1">
-<h3><span class="header-section-number">10.3.1</span> Aktiv<a href="effekt-1.html#aktiv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Det är den aktivs effekt som vi kan omsätta till ljus, värme eller mekansik rörelse. Aktiva effekten har enheten watt och betecknas med P i effektriangeln.</p>
+<p>När ström- och spänningskurvan inte sammanfaller då effekten behövs, finns en fasförskjutning. Ju större förskjutningen är mellan ström och spänning, desto mindre nyttig effekt (aktiv effekt) går att få ut av en apparat. Fasförskjutning sker i alla induktiva laster (t.ex. motorer). Vinkeln på fasförskjutningen anges med den grekiska bokstaven φ. I en induktiv belastning ligger strömkurvan efter spänningskurvan. Vid en kapacitiv belastning ligger strömkurvan före spänningskurvan. Genom att montera en kondensator på en motor går det att motverka förskjutningen. Det kallas faskompensering.</p>
+<div id="aktiv-effekt-p" class="section level3 hasAnchor" number="10.3.1">
+<h3><span class="header-section-number">10.3.1</span> Aktiv effekt (P)<a href="effekt-1.html#aktiv-effekt-p" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Den aktiva effekten är den del av effekten som blir till nyttigt arbete i en apparat. Den aktiva effekten beräknas med formeln P = U ∙ I ∙ cos() (uttalas “cosinus fi” och förklaras nedan). Det är den aktiva effekten som elmätare mäter och abonnenterna betalar för.</p>
 <table>
 <colgroup>
 <col width="14%" />
@@ -495,14 +497,14 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(P_f = \times cos \phi\)</span></td>
+<td>$P = U I cos  $</td>
 <td align="center"><span class="math inline">\(P\)</span></td>
 <td align="center"><span class="math inline">\(Aktiv effekt\)</span></td>
 <td align="center"><span class="math inline">\(Watt\)</span></td>
 <td align="center"><span class="math inline">\(W\)</span></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(P_{trefas}= \sqrt{3} \times U \times I \times cos \ \phi\)</span></td>
+<td><span class="math inline">\(P_{trefas} = \sqrt{3} \times U \times I \times cos \ \phi\)</span></td>
 <td align="center"><span class="math inline">\(P_{trefas}\)</span></td>
 <td align="center"><span class="math inline">\(Aktiv \ effekt \ trefas\)</span></td>
 <td align="center"><span class="math inline">\(Watt\)</span></td>
@@ -513,25 +515,25 @@
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning aktiv effekt</th>
+<th align="center">Beräkning av aktiv effekt, enfas</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P_f = U \times I \times cos \ \phi \]</span></td>
+<td align="center"><span class="math display">\[ P = U \times I \times cos \ \phi \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ P_f = 230 \times 0,78 \times 0,78 \]</span></td>
+<td align="center"><span class="math display">\[ P = 230 \times 0,78 \times 0,78 \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ P_f =1640 \ W \]</span></td>
+<td align="center"><span class="math display">\[ P =1640 \ W \]</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning aktiv effekt trefas</th>
+<th align="center">Beräkning av aktiv effekt, trefas</th>
 </tr>
 </thead>
 <tbody>
@@ -547,101 +549,9 @@
 </tbody>
 </table>
 </div>
-<div id="skenbar" class="section level3 hasAnchor" number="10.3.2">
-<h3><span class="header-section-number">10.3.2</span> Skenbar<a href="effekt-1.html#skenbar" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Skenbar effekt är produkten av strömmens och spänningens effektvärden. Skenbar effekt har enheten voltampere (VA).</p>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(S = U \times I = \sqrt{P^2 + Q^2}\)</span></td>
-<td align="center"><span class="math inline">\(S\)</span></td>
-<td align="center"><span class="math inline">\(Skenbar \ effekt\)</span></td>
-<td align="center"><span class="math inline">\(Voltampere\)</span></td>
-<td align="center"><span class="math inline">\(VA\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(S_{trefas} = \sqrt{3} \times U \times I\)</span></td>
-<td align="center"><span class="math inline">\(S_{3fas}\)</span></td>
-<td align="center"><span class="math inline">\(Skenbar \ effekt \ tresfas\)</span></td>
-<td align="center"><span class="math inline">\(Voltampere\)</span></td>
-<td align="center"><span class="math inline">\(VA\)</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning skenbar effekt (1)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S = U \times I \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ S = 230 \times 9,05 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S=2081 \ VA \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning skenbar effekt (2)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S = \sqrt{P^2 + Q^2} \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ S = \sqrt{2000^2 + 1000^2} \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[S = 2,2 \ kVA \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning skenbar effekt trefas</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S_{trefas} = \sqrt{3} \times U \times I \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ S_{trefas} = \sqrt{3} \times 230 \times 9,05 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ S_{trefas} =2081 \ VA \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="reaktiv" class="section level3 hasAnchor" number="10.3.3">
-<h3><span class="header-section-number">10.3.3</span> Reaktiv<a href="effekt-1.html#reaktiv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva motståndet åstakomer. Den reaktiva effekten har enheten voltampere, VAr. Tillläget r står för reaktiv.</p>
+<div id="reaktiv-effekt-q" class="section level3 hasAnchor" number="10.3.2">
+<h3><span class="header-section-number">10.3.2</span> Reaktiv effekt (Q)<a href="effekt-1.html#reaktiv-effekt-q" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Den reaktiva effekten är den effekt som tillförs från elnätet och inte blir till nyttigt arbete i en apparat. Den reaktiva effekten uppstår i induktiva och kapacitiva laster. Exempel på induktiva laster är motorer och lysrörsarmaturer. Användning av induktiva laster leder till en förskjutning mellan ström- och spänningskurvan.</p>
 <table>
 <colgroup>
 <col width="14%" />
@@ -672,7 +582,7 @@
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning reaktiv effekt (1)</th>
+<th align="center">Beräkning av reaktiv effekt (1)</th>
 </tr>
 </thead>
 <tbody>
@@ -690,7 +600,7 @@
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning reaktiv effekt (2)</th>
+<th align="center">Beräkning av reaktiv effekt (2)</th>
 </tr>
 </thead>
 <tbody>
@@ -702,6 +612,148 @@
 </tr>
 <tr class="odd">
 <td align="center"><span class="math display">\[ Q = 795 \ VAr \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="skenbar-effekt-s" class="section level3 hasAnchor" number="10.3.3">
+<h3><span class="header-section-number">10.3.3</span> Skenbar effekt (S)<a href="effekt-1.html#skenbar-effekt-s" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Den skenbara effekten är den verkliga effekten som en apparat drar från elnätet. Den beräknas med formeln S = U ∙ I och har enheten VA (voltampere). Det går också att räkna fram den skenbara effekten utifrån den aktiva och reaktiva effekten. Då används formeln S = √(P2 + Q2).</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(S = U \times I\)</span></td>
+<td align="center"><span class="math inline">\(S\)</span></td>
+<td align="center"><span class="math inline">\(Skenbar \ effekt\)</span></td>
+<td align="center"><span class="math inline">\(Voltampere\)</span></td>
+<td align="center"><span class="math inline">\(VA\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(S = \sqrt{P^2 + Q^2}\)</span></td>
+<td align="center"><span class="math inline">\(S\)</span></td>
+<td align="center"><span class="math inline">\(Skenbar \ effekt\)</span></td>
+<td align="center"><span class="math inline">\(Voltampere\)</span></td>
+<td align="center"><span class="math inline">\(VA\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(S_{trefas} = \sqrt{3} \times U \times I\)</span></td>
+<td align="center"><span class="math inline">\(S_{3fas}\)</span></td>
+<td align="center"><span class="math inline">\(Skenbar \ effekt \ tresfas\)</span></td>
+<td align="center"><span class="math inline">\(Voltampere\)</span></td>
+<td align="center"><span class="math inline">\(VA\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Beräkning av skenbar effekt (1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ S = U \times I \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ S = 230 \times 9,05 \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ S=2081 \ VA \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Beräkning av skenbar effekt (2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ S = \sqrt{P^2 + Q^2} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ S = \sqrt{2000^2 + 1000^2} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[S = 2,2 \ kVA \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Beräkning av skenbar effekt, trefas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ S_{trefas} = \sqrt{3} \times U \times I \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ S_{trefas} = \sqrt{3} \times 230 \times 9,05 \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ S_{trefas} =2081 \ VA \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="effektfaktorn-cos-φ" class="section level3 hasAnchor" number="10.3.4">
+<h3><span class="header-section-number">10.3.4</span> Effektfaktorn (cos φ)<a href="effekt-1.html#effektfaktorn-cos-φ" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Effektfaktorn är förhållandet mellan aktiv effekt och skenbar effekt. Effektfaktorn uttrycks som vinkelfunktionen av vinkeln φ. Om spänning och ström ligger ur fas med 40° i förhållande till varandra blir φ = 40°. Om φ = 40° blir effektfaktorn cos(40°) ≈ 0,77. Det strävas alltid efter att effektfaktorn ska ligga så nära 1 som möjligt.</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(cos φ = \frac {P}{S}\)</span></td>
+<td align="center"><span class="math inline">\(φ\)</span></td>
+<td align="center"><span class="math inline">\(Effektfaktor\)</span></td>
+<td align="center"><span class="math inline">\(cos \ fi\)</span></td>
+<td align="center"><span class="math inline">\(φ\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ cos φ = \frac {P}{S} \]</span></td>
 </tr>
 </tbody>
 </table>
