@@ -101,3 +101,11 @@ y-koppling-faseffekt
 y-kopplad-faseffekt
 effektfaktor
 resistans-1
+kapacitiva-belastningar
+kondensatorer---parallell--och-seriekoppling
+impedans-1
+formler
+induktiva-belastningar
+formler-1
+parallellkopplade-1
+seriekopplade-1

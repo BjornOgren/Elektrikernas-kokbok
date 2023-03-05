@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Kapitel 5 Ackumulatorer | Elektrikernas kokbok</title>
-  <meta name="description" content="Kapitel 5 Ackumulatorer | Elektrikernas kokbok" />
+  <title>Kapitel 12 Kapacitiva belastningar | Elektrikernas kokbok</title>
+  <meta name="description" content="Kapitel 12 Kapacitiva belastningar | Elektrikernas kokbok" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Kapitel 5 Ackumulatorer | Elektrikernas kokbok" />
+  <meta property="og:title" content="Kapitel 12 Kapacitiva belastningar | Elektrikernas kokbok" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="elbjornen/Elektrikernas-kokbok" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kapitel 5 Ackumulatorer | Elektrikernas kokbok" />
+  <meta name="twitter:title" content="Kapitel 12 Kapacitiva belastningar | Elektrikernas kokbok" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="pararellkoppling.html"/>
-<link rel="next" href="effekt.html"/>
+<link rel="prev" href="växelströmsmotstånd.html"/>
+<link rel="next" href="induktiva-belastningar.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -228,58 +228,37 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ackumulatorer" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">Kapitel 5</span> Ackumulatorer<a href="ackumulatorer.html#ackumulatorer" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="polspänning" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> Polspänning<a href="ackumulatorer.html#polspänning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="kapacitiva-belastningar" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">Kapitel 12</span> Kapacitiva belastningar<a href="kapacitiva-belastningar.html#kapacitiva-belastningar" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.</p>
 <table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
 <thead>
 <tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
+<th>Prefixer</th>
 <th align="center">Förkortning</th>
+<th align="center">Tiopotens</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(U = E - {R_{i}} \times I\)</span></td>
-<td align="center"><span class="math inline">\(U\)</span></td>
-<td align="center"><span class="math inline">\(Spänning\)</span></td>
-<td align="center"><span class="math inline">\(Volt\)</span></td>
-<td align="center"><span class="math inline">\(V\)</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ U = E - {R_{i}} \times I \]</span></td>
+<td><span class="math inline">\(1 \ mikrofarad\)</span></td>
+<td align="center"><span class="math inline">\(\mu F\)</span></td>
+<td align="center"><span class="math inline">\(10^{-6}\)</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ U = 1,5 - 0,4 \times 0,9 \]</span></td>
+<td><span class="math inline">\(1 \ nanofarad\)</span></td>
+<td align="center"><span class="math inline">\(nF\)</span></td>
+<td align="center"><span class="math inline">\(10^{-9}\)</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ U = 1,14 \ V \]</span></td>
+<td><span class="math inline">\(1 \ picofarad\)</span></td>
+<td align="center"><span class="math inline">\(pF\)</span></td>
+<td align="center"><span class="math inline">\(10^{-12}\)</span></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="spänningsfall" class="section level2 hasAnchor" number="5.2">
-<h2><span class="header-section-number">5.2</span> Spänningsfall<a href="ackumulatorer.html#spänningsfall" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="formler" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> Formler<a href="kapacitiva-belastningar.html#formler" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <colgroup>
 <col width="14%" />
@@ -299,286 +278,88 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(U_{drop} = R_i \times I\)</span></td>
-<td align="center"><span class="math inline">\(U_{drop}\)</span></td>
-<td align="center"><span class="math inline">\(spänningsfall\)</span></td>
-<td align="center"><span class="math inline">\(Volt\)</span></td>
-<td align="center"><span class="math inline">\(V\)</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ U_{drop} = R_i \times I \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ U_{drop} = 0,6 \times 2,2 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ U_{drop} = 1,32 \ V \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="resistans-total" class="section level2 hasAnchor" number="5.3">
-<h2><span class="header-section-number">5.3</span> Resistans total<a href="ackumulatorer.html#resistans-total" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(R_{tot} = R_y + R_i\)</span></td>
-<td align="center"><span class="math inline">\(R_{tot}\)</span></td>
-<td align="center"><span class="math inline">\(Resistans total\)</span></td>
-<td align="center"><span class="math inline">\(Omega\)</span></td>
+<td><span class="math inline">\(Z = \sqrt{R^2 + X_{C}}\)</span></td>
+<td align="center"><span class="math inline">\(Z\)</span></td>
+<td align="center">Impedans</td>
+<td align="center">Ohm</td>
 <td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ R_{tot} = R_y + R_i \]</span></td>
-</tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ R_{tot} = 22 + 1,2 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ R_{tot} = 23,2 \ \Omega \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="yttre-resistans" class="section level2 hasAnchor" number="5.4">
-<h2><span class="header-section-number">5.4</span> Yttre resistans<a href="ackumulatorer.html#yttre-resistans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(R_y = R_{tot} - R_i\)</span></td>
-<td align="center"><span class="math inline">\(R_{y}\)</span></td>
-<td align="center"><span class="math inline">\(Resistans yttre\)</span></td>
-<td align="center"><span class="math inline">\(Omega\)</span></td>
+<td><span class="math inline">\(Z = \frac{U}{I}\)</span></td>
+<td align="center"><span class="math inline">\(Z\)</span></td>
+<td align="center">Impedans</td>
+<td align="center">Ohm</td>
 <td align="center"><span class="math inline">\(\Omega\)</span></td>
 </tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ R_y = R_{tot} - R_i \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ R_y = 5 - 0,4 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ R_y = 4,6 \ \Omega \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="seriekoppling-1" class="section level2 hasAnchor" number="5.5">
-<h2><span class="header-section-number">5.5</span> Seriekoppling<a href="ackumulatorer.html#seriekoppling-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="emk-total" class="section level3 hasAnchor" number="5.5.1">
-<h3><span class="header-section-number">5.5.1</span> EMK Total<a href="ackumulatorer.html#emk-total" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie\)</span></td>
-<td align="center"><span class="math inline">\(E_{tot}\)</span></td>
-<td align="center"><span class="math inline">\(Elektromotorisk \ kraft \ total\)</span></td>
-<td align="center"><span class="math inline">\(Volt\)</span></td>
-<td align="center"><span class="math inline">\(V\)</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ E_{tot} = E_{batt} \times Antalet \ batterier \ i \ serie \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ E_{tot} = 4,5 \times 3 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ E_{tot} = 13,5 \ V \]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="inre-resistans" class="section level3 hasAnchor" number="5.5.2">
-<h3><span class="header-section-number">5.5.2</span> Inre resistans<a href="ackumulatorer.html#inre-resistans" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(R_{i \ tot} = Antal \ Batt \times R_{i \ Batt}\)</span></td>
-<td align="center"><span class="math inline">\(R_{i}\)</span></td>
-<td align="center"><span class="math inline">\(Inre resistans\)</span></td>
-<td align="center"><span class="math inline">\(Omega\)</span></td>
-<td align="center"><span class="math inline">\(\Omega\)</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning inre resistans i strömkällan</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ R_{i \ tot} = Antal \ Batt \times R_{I \ Batt} \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ R_{i \ tot} = 3 \times  0,3 \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ R_{i \ tot} = 0,9 \ \Omega \]</span></td>
-</tr>
-<tr class="even">
-<td align="center">Vid seriekoppling adderas reistanserna sig</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="kortslutningsström" class="section level3 hasAnchor" number="5.5.3">
-<h3><span class="header-section-number">5.5.3</span> Kortslutningsström<a href="ackumulatorer.html#kortslutningsström" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(I = I_{max}\)</span></td>
-<td align="center"><span class="math inline">\(I_{max}\)</span></td>
-<td align="center"><span class="math inline">\(Kortslutningsström\)</span></td>
+<td><span class="math inline">\(I =\frac{U} {X_C}\)</span></td>
+<td align="center"><span class="math inline">\(I\)</span></td>
+<td align="center"><span class="math inline">\(Ström\)</span></td>
 <td align="center"><span class="math inline">\(Ampere\)</span></td>
 <td align="center"><span class="math inline">\(A\)</span></td>
 </tr>
+<tr class="even">
+<td><span class="math inline">\(C=\frac{1}{(2 \pi \times f \times X_C)}\)</span></td>
+<td align="center"><span class="math inline">\(C\)</span></td>
+<td align="center">Kapacitans</td>
+<td align="center">Farad</td>
+<td align="center"><span class="math inline">\(F^{As/V}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(X_C =\frac{1} {(2 \times \pi \times f \times C)}\)</span></td>
+<td align="center"><span class="math inline">\(X_C\)</span></td>
+<td align="center">kapacitiv reaktans</td>
+<td align="center">Ohm</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(X_C = \sqrt{Z^2 - R}\)</span></td>
+<td align="center"><span class="math inline">\(X_C\)</span></td>
+<td align="center">kapacitiv reaktans</td>
+<td align="center">Ohm</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(cos \ \phi = \frac{Z}{R}\)</span></td>
+<td align="center"><span class="math display">\[ | \]</span></td>
+<td align="center"><span class="math display">\[ | \]</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
 </tbody>
 </table>
+</div>
+<div id="kondensatorer" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> Kondensatorer<a href="kapacitiva-belastningar.html#kondensatorer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.</p>
 <table>
 <thead>
 <tr class="header">
-<th align="center">Exempel uträkning kortslutningsström</th>
+<th>Prefixer</th>
+<th align="center">Förkortning</th>
+<th align="center">Tiopotens</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ I = I_{max} \]</span></td>
+<td><span class="math inline">\(1 \ mikrofarad\)</span></td>
+<td align="center"><span class="math inline">\(\mu F\)</span></td>
+<td align="center"><span class="math inline">\(10^{-6}\)</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ I = I_{max} = 0,5 \ A \]</span></td>
+<td><span class="math inline">\(1 \ nanofarad\)</span></td>
+<td align="center"><span class="math inline">\(nF\)</span></td>
+<td align="center"><span class="math inline">\(10^{-9}\)</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ I = I_{max} = 0,5 \ A \]</span></td>
-</tr>
-<tr class="even">
-<td align="center">Eftersom det vid seriekoppling är samma ström genom hela kretsen</td>
+<td><span class="math inline">\(1 \ picofarad\)</span></td>
+<td align="center"><span class="math inline">\(pF\)</span></td>
+<td align="center"><span class="math inline">\(10^{-12}\)</span></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div id="pararellkoppling-1" class="section level2 hasAnchor" number="5.6">
-<h2><span class="header-section-number">5.6</span> Pararellkoppling<a href="ackumulatorer.html#pararellkoppling-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="emk-total-1" class="section level3 hasAnchor" number="5.6.1">
-<h3><span class="header-section-number">5.6.1</span> EMK Total<a href="ackumulatorer.html#emk-total-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="parallellkopplade" class="section level3 hasAnchor" number="12.2.1">
+<h3><span class="header-section-number">12.2.1</span> Parallellkopplade<a href="kapacitiva-belastningar.html#parallellkopplade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -598,11 +379,11 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(E_{tot} = E_{batt}\)</span></td>
-<td align="center"><span class="math inline">\(E_{tot}\)</span></td>
-<td align="center"><span class="math inline">\(Elektromotorisk \ kraft \ total\)</span></td>
-<td align="center"><span class="math inline">\(Volt\)</span></td>
-<td align="center"><span class="math inline">\(V\)</span></td>
+<td><span class="math inline">\(C_{tot}=C_{1} + C_{2} \ ...\)</span></td>
+<td align="center"><span class="math inline">\(C\)</span></td>
+<td align="center">Kapacitans</td>
+<td align="center">Farad</td>
+<td align="center"><span class="math inline">\(F^{As/V}\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -614,13 +395,37 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ E_{tot} = E_{batt} \]</span></td>
+<td align="center"><span class="math inline">\(C_{tot} = C_{1} + C_{2}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(C_{tot} = 12 + 12\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(C_{tot} = 24 \ \mu F\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning en av kapacitanserna</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(C_{2} = C_{tot} - C_{2}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(C_{2} = 80 - 50\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(C_{2} = 30 \ μF\)</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="inre-resistans-1" class="section level3 hasAnchor" number="5.6.2">
-<h3><span class="header-section-number">5.6.2</span> Inre resistans<a href="ackumulatorer.html#inre-resistans-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="seriekopplade" class="section level3 hasAnchor" number="12.2.2">
+<h3><span class="header-section-number">12.2.2</span> Seriekopplade<a href="kapacitiva-belastningar.html#seriekopplade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
 <colgroup>
 <col width="14%" />
@@ -640,62 +445,12 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math display">\[ R_{i \ tot} = \frac {R_{i Batt}}{Batt_{Antal}} \]</span></td>
-<td align="center"><span class="math display">\[ R_{i \ \ tot} \]</span></td>
-<td align="center">Inre resistans</td>
-<td align="center">Omega</td>
-<td align="center"><span class="math display">\[ \Omega \]</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Exempel uträkning inre resistans i strömkällan</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math display">\[ R_{i \ tot} = \frac {R_{i / Batt}}{Batt_{Antal}} \]</span></td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math display">\[ R_{i \ tot} = \frac {0,3}{3} \]</span></td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math display">\[ R_{i \ tot} = 0,1 \ \Omega \]</span></td>
-</tr>
-<tr class="even">
-<td align="center">Vid parallelkoppling delas resistansen sig</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="kortslutningsström-1" class="section level3 hasAnchor" number="5.6.3">
-<h3><span class="header-section-number">5.6.3</span> Kortslutningsström<a href="ackumulatorer.html#kortslutningsström-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="21%" />
-<col width="20%" />
-<col width="21%" />
-<col width="21%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Samband</th>
-<th align="center">Beteckning</th>
-<th align="center">Storhet</th>
-<th align="center">Enhet</th>
-<th align="center">Förkortning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(I_{max} = Batt \ antal \times I_i\)</span></td>
-<td align="center"><span class="math inline">\(I_{max}\)</span></td>
-<td align="center"><span class="math inline">\(Kortslutningsström\)</span></td>
-<td align="center"><span class="math inline">\(Ampere\)</span></td>
-<td align="center"><span class="math inline">\(A\)</span></td>
+<td><span class="math display">\[
+\frac{1}{C_{tot}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} \Rightarrow C_{tot} \Rightarrow \ ... \]</span></td>
+<td align="center"><span class="math inline">\(C\)</span></td>
+<td align="center">Kapacitans</td>
+<td align="center">Farad</td>
+<td align="center"><span class="math inline">\(F^{As/V}\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -710,20 +465,168 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center"><span class="math display">\[ I_{max} = Batt \ antal \times I_i \]</span></td>
+<td align="center"><span class="math display">\[ \frac{1}{C_{tot}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} \Rightarrow C_{tot} \Rightarrow \]</span></td>
 </tr>
 <tr class="even">
-<td align="center"><span class="math display">\[ I_{max} = 3 \times 0,5 \ A \]</span></td>
+<td align="center"><span class="math display">\[ \frac{1}{C_{tot}} = \frac{1}{1,8} + \frac{1}{16} + \frac{1}{32} \Rightarrow C_{tot} \Rightarrow \]</span></td>
 </tr>
 <tr class="odd">
-<td align="center"><span class="math display">\[ I_{max} = 1,5 \ A \]</span></td>
+<td align="center"><span class="math display">\[ C_{tot} = 4.5 \ nF \]</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning en av kapacitanserna</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ \frac{1}{C_{2}} = \frac{1}{C_{tot}} - \frac{1}{C_{1}} \Rightarrow C_{2} \Rightarrow \]</span></td>
 </tr>
 <tr class="even">
-<td align="center">Eftersomm totalströmmen vid pararellkoppling blir summan av delströmmarna</td>
+<td align="center"><span class="math display">\[ \frac{1}{C_{2}} = \frac{1}{2,0} - \frac{1}{2.2} \Rightarrow C_{2} \Rightarrow \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ C_{2} = 22 \ nF \]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
+</div>
+<div id="kapacitans" class="section level2 hasAnchor" number="12.3">
+<h2><span class="header-section-number">12.3</span> Kapacitans<a href="kapacitiva-belastningar.html#kapacitans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss spänning.</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(C=\frac{1}{(2 \pi \times f \times X_c)}\)</span></td>
+<td align="center"><span class="math inline">\(C\)</span></td>
+<td align="center">Kapacitans</td>
+<td align="center">Farad</td>
+<td align="center"><span class="math inline">\(F^{As/V}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(f = \frac{1}{T}\)</span></td>
+<td align="center"><span class="math inline">\(f\)</span></td>
+<td align="center">Frekvens</td>
+<td align="center">Hertz</td>
+<td align="center"><span class="math inline">\(Hz\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(2 \times \pi = 3.14\)</span></td>
+<td align="center"><span class="math inline">\(Pi\)</span></td>
+<td align="center">Omkrets</td>
+<td align="center">Radies</td>
+<td align="center"><span class="math inline">\(\pi\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning kapacitans</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ C=\frac{X_c} {2 \times \pi \times f} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ C=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ C= 0.16 \ H \]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="kapacitiv-reaktans" class="section level2 hasAnchor" number="12.4">
+<h2><span class="header-section-number">12.4</span> Kapacitiv reaktans<a href="kapacitiva-belastningar.html#kapacitiv-reaktans" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar.
+Då kommer ekvationen att minska när frekvesen ökar.</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Samband</th>
+<th align="center">Beteckning</th>
+<th align="center">Storhet</th>
+<th align="center">Enhet</th>
+<th align="center">Förkortning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(X_C =\frac{1} {(2 \times \pi \times f \times C)}\)</span></td>
+<td align="center"><span class="math inline">\(X_C\)</span></td>
+<td align="center">kapacitiv reaktans</td>
+<td align="center">Ohm</td>
+<td align="center"><span class="math inline">\(\Omega\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(f = \frac{1}{T}\)</span></td>
+<td align="center"><span class="math inline">\(f\)</span></td>
+<td align="center">Frekvens</td>
+<td align="center">Hertz</td>
+<td align="center"><span class="math inline">\(Hz\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(2 \times \pi = 3.14\)</span></td>
+<td align="center"><span class="math inline">\(Pi\)</span></td>
+<td align="center">Omkrets</td>
+<td align="center">Radies</td>
+<td align="center"><span class="math inline">\(\pi\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Exempel uträkning kapacitiv reaktans</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math display">\[ X_C =\frac{1} {(2 \times \pi \times f \times C)} \]</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[ X_C = \frac{1}{(2 \times \pi \times 50 \times 0,0002)} \]</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[ X_C = 15,91 \ \Omega \]</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
             </section>
@@ -731,8 +634,8 @@
           </div>
         </div>
       </div>
-<a href="pararellkoppling.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="effekt.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="växelströmsmotstånd.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="induktiva-belastningar.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

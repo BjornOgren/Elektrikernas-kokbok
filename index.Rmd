@@ -751,18 +751,6 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 | $$ Q = \sqrt{1000^{2}-607^{2}} $$ |
 | $$ Q = 795 \ VAr $$ |
 
-### Effektfaktor
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning |
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $cos \ \phi = \frac{Z}{R}$ | $Q$ | $Reaktiv \ effekt$ | $Voltampere \ reaktiv$ | $VAr$ |
-
-| Exempel uträkning fasförsjutningsvinkel |
-|:-------------:|
-| $$ cos \ \phi = \frac{Z}{R} $$ |
-| $$ cos \ \phi = \frac{40}{50} $$ |
-| $$ cos \ \phi =  $$ |
-
 # Växelströmsmotstånd
 
 ## Impedans
@@ -771,8 +759,6 @@ Den reaktiva effekten uppstår på grund av fasförskjutningen som det reaktiva 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $Z = \sqrt{R^2 + (X_{L} - X_{L})^2}$ | $Z$ | Impedans | Ohm | $\Omega$ |
 | $Z = \frac{U}{I}$ | $Z$ | Impedans | Ohm | $\Omega$ |
-$X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $\Omega$ |
-| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
 
 | Exempel uträkning impedans Z |
 |:-------------:|
@@ -786,14 +772,33 @@ $X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $\Ome
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
 | $R = \sqrt{R^2 - (X_{L} - X_{L})^2}$ | $R$ | Resistans | Ohm | $\Omega$ |
 | $Z = \frac{U}{I}$ | $Z$ | Impedans | Ohm | $\Omega$ |
-$X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $\Omega$ |
-| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
 
 | Exempel uträkning resistans R |
 |:-------------:|
 | $$ Z=\sqrt{R^2 - (X_{L})^2} $$ |
 | $$ Z=\sqrt{48^2 - (31,42)^2} $$ |
 | $$ Z= 36,29 ≈ 36 \ \Omega $$ |
+
+# Kapacitiva belastningar
+Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.
+
+|Prefixer | Förkortning| Tiopotens |
+|----------|:-------------:|:-------------:|
+| $1 \ mikrofarad$ | $\mu F$ | $10^{-6}$ |
+| $1 \ nanofarad$ | $nF$ | $10^{-9}$ |
+| $1 \ picofarad$ | $pF$ | $10^{-12}$ |
+
+## Formler
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $Z = \sqrt{R^2 + X_{C}}$ | $Z$ | Impedans | Ohm | $\Omega$ |
+| $Z = \frac{U}{I}$ | $Z$ | Impedans | Ohm | $\Omega$ |
+| $I =\frac{U} {X_C}$ | $I$ | $Ström$ | $Ampere$ | $A$|
+| $C=\frac{1}{(2 \pi \times f \times X_C)}$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
+| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
+| $X_C = \sqrt{Z^2 - R}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
+| $cos \ \phi = \frac{Z}{R}$ | $$ | $$ | $$ | $$ |
 
 ## Kondensatorer
 Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och betecknas C. Enheten för kapacitans är farad som betecknas F.
@@ -803,36 +808,6 @@ Kondensatorns förmåga att lagra elektrisk laddning kallas kapacitans, och bete
 | $1 \ mikrofarad$ | $\mu F$ | $10^{-6}$ |
 | $1 \ nanofarad$ | $nF$ | $10^{-9}$ |
 | $1 \ picofarad$ | $pF$ | $10^{-12}$ |
-
-### Kapacitans
-Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss spänning.
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning | 
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $C=\frac{1}{(2 \pi \times f \times X_c)}$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
-| $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
-| $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
-
-| Exempel uträkning kapacitans |
-|:-------------:|
-| $$ L=\frac{X_L} {2 \times \pi \times f} $$ |
-| $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ |
-| $$ L= 0.16 \ H $$ |
-
-### Kapacitiv reaktans
-Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då kommer ekvationen att minska när frekvesen ökar.
-
-| Samband | Beteckning | Storhet | Enhet | Förkortning | 
-|----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
-| $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
-| $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
-
-| Exempel uträkning kapacitiv reaktans |
-|:-------------:|
-| $$ X_C =\frac{1} {(2 \times \pi \times f \times C)} $$ |
-| $$ X_C = \frac{1}{(2 \times \pi \times 50 \times 0,0002)} $$ |
-| $$ X_C = 15,91 \ \Omega $$ |
 
 ### Parallellkopplade
 
@@ -871,6 +846,51 @@ Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar. Då komme
 | $$ \frac{1}{C_{2}} = \frac{1}{2,0} - \frac{1}{2.2} \Rightarrow C_{2} \Rightarrow $$ |
 | $$ C_{2} = 22 \ nF $$ |
 
+## Kapacitans
+Kapacitans beskriver hur mycket energi kondensatorn kan innehålla vid en viss spänning.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $C=\frac{1}{(2 \pi \times f \times X_c)}$ | $C$ | Kapacitans | Farad | $F^{As/V}$ |
+| $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
+| $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
+
+| Exempel uträkning kapacitans |
+|:-------------:|
+| $$ C=\frac{X_c} {2 \times \pi \times f} $$ |
+| $$ C=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3} \ \sqrt{3})} $$ |
+| $$ C= 0.16 \ H $$ |
+
+## Kapacitiv reaktans
+Växelströmsmotståndet i kondensatorn minskar när frekvensen ökar.
+Då kommer ekvationen att minska när frekvesen ökar.
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $X_C =\frac{1} {(2 \times \pi \times f \times C)}$ | $X_C$ | kapacitiv reaktans | Ohm | $\Omega$ |
+| $f = \frac{1}{T}$ | $f$ | Frekvens | Hertz | $Hz$ |
+| $2 \times \pi = 3.14$ | $Pi$ | Omkrets | Radies | $\pi$ |
+
+| Exempel uträkning kapacitiv reaktans |
+|:-------------:|
+| $$ X_C =\frac{1} {(2 \times \pi \times f \times C)} $$ |
+| $$ X_C = \frac{1}{(2 \times \pi \times 50 \times 0,0002)} $$ |
+| $$ X_C = 15,91 \ \Omega $$ |
+
+# Induktiva belastningar
+
+## Formler
+
+| Samband | Beteckning | Storhet | Enhet | Förkortning | 
+|----------|:-------------:|:-------------:|:-------------:|:-------------:|
+| $Z = \sqrt{R^2 + X_{C}}$ | $Z$ | Impedans | Ohm | $\Omega$ |
+| $Z = \frac{U}{I}$ | $Z$ | Impedans | Ohm | $\Omega$ |
+| $I =\frac{U} {X_L}$ | $I$ | $Ström$ | $Ampere$ | $A$|
+| $L=\frac{X_L} {(2 \times \pi \times f)}$ | $L$ | Induktans | Henry | $H^{Vs/A}$ |
+| $X_L = 2 \times \pi \times f \times L$ | $X_L$ | Induktiv reaktans | Ohm | $\Omega$ |
+| $X_L = \sqrt{Z^2 - R}$ | $X_L$ | Induktiv reaktans | Ohm | $\Omega$ |
+| $cos \ \phi = \frac{Z}{R}$ | $$ | $$ | $$ | $$ |
+
 ## Spolar
 Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten Henry (H).
 
@@ -879,7 +899,7 @@ Spolens egenskaper kallas induktans, betecknas i formler L och mäts i enheten H
 | $1 \ millihenry$ | $mH$ | $10^{-3}$ |
 | $1 \ mikrohenry$ | $\mu H$ | $10^{-6}$ |
 
-### Induktans
+## Induktans
 Induktansen beror på hur många varv spolen har, diametern, avståndet mellan ledarna och om spolen är försedd med järnkärna. Flera lindningsvarv och större diameter ger spolen större indutans.
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
@@ -893,7 +913,7 @@ Induktansen beror på hur många varv spolen har, diametern, avståndet mellan l
 | $$ L=\frac{X_L} {(2 \times \pi \times f)} $$ |
 | $$ L=\frac{1000} {(2 \times 3.14 \times 1.0 \times 10^{3})} $$ | $$ L= 0.16 \ H $$ |
 
-### Induktiv reaktans
+## Induktiv reaktans
 Växelströmsmotståndet är
 frekvensberoende och motståndet ökar när
 frekvensen ökar.
