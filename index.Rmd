@@ -759,11 +759,21 @@ Effektfaktorn är förhållandet mellan aktiv effekt och skenbar effekt. Effektf
 
 | Samband | Beteckning | Storhet | Enhet | Förkortning | 
 |----------|:-------------:|:-------------:|:-------------:|:-------------:|
-| $cos φ = \frac {P}{S}$ | $φ$ | $Effektfaktor$ | $cos \ fi$ | $φ$ |
-
-| Exempel uträkning |
+| $cos φ = \frac {P}{S}$ | $cos φ$ | $Effektfaktor$ | $Vinkel$ | $φ$ |
+| Beräkning av effektfaktorn (1)|
 |:-------------:|
 | $$ cos φ = \frac {P}{S} $$ |
+| $$ cos φ = \frac {2}{2,236} $$ |
+| $$ cos φ = 0,8944 ≈ 0,9$$ |
+
+| Beräkning av effektfaktorn (2)|
+|:-------------:|
+| $$ cos φ = \frac {P}{S} $$ |
+
+| Beräkning av effektfaktorn (3)|
+|:-------------:|
+| $$ cos φ = \frac {P}{S} $$ |
+
 
 # Växelströmsmotstånd
 
