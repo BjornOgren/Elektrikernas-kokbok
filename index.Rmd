@@ -455,7 +455,7 @@ Den momentana effektutvecklingen i en resistor är produkten av spänningen öve
 |:-------------:|
 | $$ Kostnad = kW \times Pris $$ |
 | $$ Kostnad = kW \times Pris = 1,15 \times 1,10 $$ |
-| $$ Kostnad = -:- \ Kr $$ |
+| $$ Kostnad = 1,25 \ Kr $$ |
 
 # Växelströmskretsar  {-}
 
